@@ -1,5 +1,5 @@
 <?php
-class IndexController extends StudipController {
+class PagesController extends StudipController {
 
     public function __construct($dispatcher)
     {
