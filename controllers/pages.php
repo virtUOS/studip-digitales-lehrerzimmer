@@ -12,6 +12,7 @@ class IndexController extends StudipController {
     {
         parent::before_filter($action, $args);
         PageLayout::setTitle(_("Das digitale Lehrerzimmer"));
+        PageLayout::addStylesheet($this->getPluginURL().'/assets/koop.css');
 
         $sidebar = Sidebar::Get();
         $sidebar->setImage('../../' .$this->plugin->getPluginPath() . '/assets/images/teach_os.png');
