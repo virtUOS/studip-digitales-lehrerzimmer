@@ -25,7 +25,30 @@ class IndexController extends StudipController {
         
         
     }
+    
+     public function subjects_action()
+    {
+        Navigation::activateItem('koop/subjects');
+    }
+        
+      
+    public function study_to_practice_action()
+    {
+         Navigation::activateItem('koop/study_to_practice');
+    }
 
+ 
+    public function digital_teaching_action(){
+        Navigation::activateItem('koop/digital_teaching');
+       
+    }
+    
+     public function my_way_action(){
+        Navigation::activateItem('koop/my_way/council');
+        PageLayout::setTitle(_("Mein Weg durchs Studium"));
+
+       
+    }
 
     // customized #url_for for plugins
     public function url_for($to = '')
