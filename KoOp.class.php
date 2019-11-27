@@ -30,12 +30,25 @@ class KoOp extends StudipPlugin implements SystemPlugin
 //            $item = new Navigation(_('Blick in die Fächer'), PluginEngine::getURL($this, array(), 'index'));
 //            $navigation->addSubNavigation('index', $item);
             
+            //page 1
             $item = new Navigation(_('Blick in die Fächer'), PluginEngine::getURL($this, array(), 'pages/subjects'));
+            
+            $sub_nav = new Navigation(_('Zurück'), PluginEngine::getURL($this, array(), 'index'));
+            $sub_nav->setImage(Icon::create('globe', 'navigation'));
+            $item->addSubNavigation('index', $sub_nav);
+            
             $navigation->addSubNavigation('subjects', $item);
             
+            //page 2
             $item = new Navigation(_('Digitaler Unterricht'), PluginEngine::getURL($this, array(), 'pages/digital_teaching'));
+            
+            $sub_nav = new Navigation(_('Zurück'), PluginEngine::getURL($this, array(), 'index'));
+            $sub_nav->setImage(Icon::create('globe', 'navigation'));
+            $item->addSubNavigation('index', $sub_nav);
+            
             $navigation->addSubNavigation('digital_teaching', $item);
             
+            //page 3
             $item = new Navigation(_('Vom Studium in die Praxis'), PluginEngine::getURL($this, array(), 'pages/study_to_practice'));
             
             $sub_nav_6 = new Navigation(_('Zurück'), PluginEngine::getURL($this, array(), 'index'));
@@ -65,7 +78,7 @@ class KoOp extends StudipPlugin implements SystemPlugin
             
             $navigation->addSubNavigation('study_to_practice', $item);
             
-            
+            //page 4
             $item = new Navigation(_('Mein Weg durchs Studium'), PluginEngine::getURL($this, array(), 'pages/my_way'));
             
             $sub_nav_8 = new Navigation(_('Zurück'), PluginEngine::getURL($this, array(), 'index'));
