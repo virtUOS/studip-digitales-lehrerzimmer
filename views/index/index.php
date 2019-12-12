@@ -20,33 +20,40 @@
             </div>
             
             <!-- Zeile2 -->
+            <!-- Spalte1 -->
             <div class="flex-wrapper">
-                <div class='flex-container-200-100'>
-                    <div class="flex-wrapper">
-                        <div class='flex-container-100-100'>
-                            <div class="flex-wrapper-td">
-                                <div class='flex-container-100-50 fill-blue'>text</div>
-                                <div class='flex-container-100-50 fill-blue'>text</div>
+                <div class='flex-container-200-200'>
+                <div class="flex-wrapper-td">
+                    <div class='flex-container-200-100'>
+                        <div class="flex-wrapper">
+                            <div class='flex-container-100-100'>
+                                <div class="flex-wrapper-td">
+                                    <div class='flex-container-100-50 fill-blue'>text</div>
+                                    <div class='flex-container-100-50 fill-blue'>text</div>
+                                </div>
+                            </div>
+                            <div class='flex-container-100-100 fill-blue'>text</div>
+                        </div>
+                    </div>
+                    <div class='flex-container-200-100 fill-blue'>text</div>
+                </div>
+                </div>
+                
+                <div class='flex-container-200-200'>
+                    <div class="flex-wrapper-td">
+                        <div class='flex-container-200-100 fill-blue'>text</div>
+            
+                        <div class="flex-wrapper">
+                            <div class='flex-container-200-100'>
+                            <div class="flex-wrapper">
+                                 <div class='flex-container-100-100 fill-blue'>text</div>
+                                 <div class='flex-container-100-100 fill-blue'>text</div>
+                            </div>
                             </div>
                         </div>
-                        <div class='flex-container-100-100 fill-blue'>text</div>
                     </div>
                 </div>
-                <div class='flex-container-200-100 fill-blue'>text</div>
             </div>
-            
-            <!-- Zeile3 -->
-            <div class="flex-wrapper">
-                <div class='flex-container-200-100 fill-blue'>text</div>
-                <div class='flex-container-200-100'>
-                    <div class="flex-wrapper-td">
-                         <div class='flex-container-100-100 fill-blue'>text</div>
-                         <div class='flex-container-100-100 fill-blue'>text</div>
-                     </div>
-                </div>
-            </div>
-        </div>
-            
     </div>
 </div>
 
