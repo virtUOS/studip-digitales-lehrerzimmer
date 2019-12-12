@@ -12,7 +12,7 @@
     <div class="flex-wrapper">
 
         <div class="flex-container-smallbox">
-         <h1>Lehrer_Innen-Persönlichkeit</h1>
+         <h2>Lehrer_Innen-Persönlichkeit</h2>
             <ul>
               <li>
                   Präsentation
@@ -33,7 +33,7 @@
         </div>
 
         <div class="flex-container-smallbox">
-            <h1>Rund ums Lehramtsstudium</h1>
+            <h2>Rund ums Lehramtsstudium</h2>
             <ul>
               <li>
                   Aktuelle Studien
@@ -57,7 +57,7 @@
         </div>
 
         <div class="flex-container-smallbox">
-            <h1>Lehrformate und Methoden</h1>
+            <h2>Lehrformate und Methoden</h2>
             <ul>
               <li>
                   Forschendes Lernen
@@ -84,7 +84,7 @@
         </div>
 
         <div class="flex-container-smallbox">
-            <h1>Unterrichtsplanung und Durchführung</h1>
+            <h2>Unterrichtsplanung und Durchführung</h2>
             <ul>
               <li>
                   Lehr- und Lenrziele

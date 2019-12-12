@@ -8,10 +8,8 @@
 
             <h1>Fachschaften</h1>
 
-            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. 
-            Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            Auf Fachbereichsebene werden die Studierenden durvh die von ihnen gewählten Fachschaften vertreten. Der Fachschaftsrat gilt als Vertretung der
+            Studierenden eines Fachbereiches. Neben der Vertretungsfunktion erfüllen die Mitglieder der Fachschaften sehr unterschiedliche Aufgaben.
         </div>
 
         <div class="flex-container-half-linklist">
@@ -22,6 +20,14 @@
                   <li>Biologie</li>
                   <li>Chemie</li>
                   <li>Cognitive Science</li>
+                  <li>Erziehungswissenschaften</li>
+                  <li>Evangelische Theologie</li>
+                  <li>Französisch</li>
+                  <li>Geographie</li>
+                  <li>Geoinformatik</li>
+                  <li>Germanistik/Deutsch</li>
+                  <li>Geschichte</li>
+                  <li>Gesundheitswissenschaften</li>
                 </ul>
                 </div>
                         
@@ -31,6 +37,14 @@
                   <li>Biologie</li>
                   <li>Chemie</li>
                   <li>Cognitive Science</li>
+                  <li>Erziehungswissenschaften</li>
+                  <li>Evangelische Theologie</li>
+                  <li>Französisch</li>
+                  <li>Geographie</li>
+                  <li>Geoinformatik</li>
+                  <li>Germanistik/Deutsch</li>
+                  <li>Geschichte</li>
+                  <li>Gesundheitswissenschaften</li>
                 </ul>
                 </div>
             </div>
