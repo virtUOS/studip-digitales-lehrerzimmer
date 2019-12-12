@@ -55,6 +55,15 @@
                 </div>
             </div>
     </div>
+        
+        <div class="flex-container-half">
+
+            <h1>Herzlich willkommen</h1>
+                Du hast gerade dein Studium begonnen und fragst dich, wann du dein erstes Praktikum machen solltest oder welche Prügungsordnung für dich gilt?
+                Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            </div>
 </div>
 
 
@@ -144,20 +153,20 @@
     }
     
     .flex-container-200-100 {
-        width: 200px;
-        height: 97px;
+        width: 194px;
+        height: 94px;
         margin-bottom: 3px
     }
     
     .flex-container-100-100 {
-        width: 98px;
-        height: 97px;
+        width: 95px;
+        height: 94px;
         margin-right: 2px;
     }
     
     .flex-container-100-50 {
-        width: 98px;
-        height: 46px;
+        width: 95px;
+        height: 45px;
         margin-bottom: 2px
     }
     
