@@ -69,9 +69,8 @@ and open the template in the editor.
         padding: 20px;
     }
     
-    .flex-container-half-linklist ul li {
-        padding: 0.5em 0 0 2em; 
-        margin: 5px;
+    .flex-container-half-linklist ul {
+        padding-left: 0px;
     }
     
     .koop-container-full {
