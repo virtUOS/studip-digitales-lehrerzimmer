@@ -7,7 +7,7 @@
     Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 </div>
 
-<div>
+<div class="flex-wrapper">
 
     <div class="flex-container">
      <h1>Lehrer_Innen-Persönlichkeit</h1>
@@ -108,6 +108,10 @@
 
     .koop-content {
         margin: 30px;
+    }
+    
+    .flex-wrapper{
+        display: flex;
     }
     
     #page_title_container {
