@@ -1,10 +1,13 @@
+
+
+
 <h1>Vom Studium in die Praxis</h1>
 <div>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. 
     Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 </div>
 
-
+<div>
 <div class="flex-container">
      <h1>Lehrer_Innen-Persönlichkeit</h1>
 <ul>
@@ -59,7 +62,7 @@
       Bedarfsprognosen Lehramt
   </li>
 </ul>
-<div>
+</div>
 
     <div class="flex-container">
 <h1>Lehrformate und Methoden</h1>
@@ -91,6 +94,7 @@
 </ul>
 </div>
 
+</div>
 <img style="margin-left: auto; margin-right: auto; display: block;" src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() ?>/assets/images/study_to_practice.png"/>
 
 
