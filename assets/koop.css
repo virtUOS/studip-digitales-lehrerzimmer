@@ -46,11 +46,11 @@ and open the template in the editor.
         list-style: none;
         padding-left: 0px;
     }
+    
     .flex-container ul li{
         background-size: 16px;
         background-position: 0 0;
         background-repeat: no-repeat;
         padding-left: 2em; 
-        background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>);
         margin: 5px;
     }

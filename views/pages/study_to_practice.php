@@ -119,6 +119,8 @@
 
 
 <style>
-
+    .flex-container ul li{
+        background-image: url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>);
+    }
     
 </style>
