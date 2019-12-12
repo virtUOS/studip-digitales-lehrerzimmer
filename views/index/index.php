@@ -138,23 +138,27 @@
     }
     
     .flex-container-200-200 {
-        width: 200px;
-        height: 200px;
+        width: 194px;
+        height: 194px;
+        padding: 3px
     }
     
     .flex-container-200-100 {
         width: 200px;
-        height: 100px;
+        height: 97px;
+        padding-bottom: 3px
     }
     
     .flex-container-100-100 {
-        width: 100px;
+        width: 98px;
         height: 100px;
+        padding-right: 2px;
     }
     
     .flex-container-100-50 {
         width: 100px;
-        height: 50px;
+        height: 48px;
+        padding-bottom: 2px
     }
     
     .fill-blue {
