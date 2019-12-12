@@ -7,7 +7,7 @@
         <!-- Kachelen -->
         <div class="flex-container-half">
             
-            <img src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/teach_os.png' ?>'/>
+            <img style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/teach_os.png' ?>'/>
             <!-- Zeile1 -->
             <div class="flex-wrapper">
                  <div class='flex-container-200-200'>
@@ -140,25 +140,25 @@
     .flex-container-200-200 {
         width: 194px;
         height: 194px;
-        padding: 3px
+        margin: 3px
     }
     
     .flex-container-200-100 {
         width: 200px;
         height: 97px;
-        padding-bottom: 3px
+        margin-bottom: 3px
     }
     
     .flex-container-100-100 {
         width: 98px;
-        height: 100px;
-        padding-right: 2px;
+        height: 97px;
+        margin-right: 2px;
     }
     
     .flex-container-100-50 {
-        width: 100px;
-        height: 48px;
-        padding-bottom: 2px
+        width: 98px;
+        height: 46px;
+        margin-bottom: 2px
     }
     
     .fill-blue {
