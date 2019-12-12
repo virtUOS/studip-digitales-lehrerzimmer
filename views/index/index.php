@@ -1,5 +1,5 @@
 
-<div class="koop-content">
+<div class="koop-content-centered">
 
 
     <div class="flex-wrapper">
@@ -82,6 +82,12 @@
     
     .koop-content {
         margin: 30px;
+    }
+    
+    .koop-content-centered {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
     }
     
     .koop-content h1 {
