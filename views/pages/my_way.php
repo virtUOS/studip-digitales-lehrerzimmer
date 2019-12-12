@@ -14,28 +14,28 @@
             Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
         </div>
 
-        
-
-
-        <ul class="flex-container-half-linklist">
-          <li>Anglistik/Amerikanistik</li>
-          <li>Biologie</li>
-          <li>Chemie</li>
-          <li>Cognitive Science</li>
-        </ul>
-
-
-
-<ul class="flex-container">
-  <li class="flex-item"></li>
-  <li class="flex-item"></li>
-</ul>
-
-<ul class="flex-container">
-  <li class="flex-item"></li>
-  <li class="flex-item"></li>
-</ul>
-
+        <div class="flex-container-half-linklist">
+            <div class="flex-wrapper">
+                <div>
+                <ul>
+                  <li>Anglistik/Amerikanistik</li>
+                  <li>Biologie</li>
+                  <li>Chemie</li>
+                  <li>Cognitive Science</li>
+                </ul>
+                </div>
+                        
+                <div>
+                <ul>
+                  <li>Anglistik/Amerikanistik</li>
+                  <li>Biologie</li>
+                  <li>Chemie</li>
+                  <li>Cognitive Science</li>
+                </ul>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </div>
 
