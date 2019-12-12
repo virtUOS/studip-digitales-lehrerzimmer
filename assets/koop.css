@@ -30,6 +30,13 @@ and open the template in the editor.
     .koop-content h1 {
         text-transform: uppercase;
         margin-bottom: 1em;
+        color: #28497c;
+    }
+    
+    .koop-content h2 {
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        color: #28497c;
     }
     
     .flex-wrapper{
