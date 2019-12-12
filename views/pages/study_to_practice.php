@@ -138,5 +138,7 @@
     .flex-container ul li{
         background-size: 16px;
         background-position: 0 0;
+        background-repeat: no-repeat;
+        padding-left: 2em; 
     }
 </style>
