@@ -5,7 +5,8 @@
 </div>
 
 
-<h1>Lehrer_Innen-Persönlichkeit</h1>
+<div class="flex-container">
+     <h1>Lehrer_Innen-Persönlichkeit</h1>
 <ul>
   <li>
     <?= Icon::create('add', 'clickable') ?> 
@@ -28,7 +29,9 @@
       Evaluation
   </li>
 </ul>
+</div>
 
+<div class="flex-container">
 <h1>Rund ums Lehramtsstudium</h1>
 <ul>
   <li>
@@ -56,7 +59,9 @@
       Bedarfsprognosen Lehramt
   </li>
 </ul>
+<div>
 
+    <div class="flex-container">
 <h1>Lehrformate und Methoden</h1>
 <ul>
   <li>
@@ -84,6 +89,7 @@
       Bedarfsprognosen Lehramt
   </li>
 </ul>
+</div>
 
 <img style="margin-left: auto; margin-right: auto; display: block;" src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() ?>/assets/images/study_to_practice.png"/>
 
