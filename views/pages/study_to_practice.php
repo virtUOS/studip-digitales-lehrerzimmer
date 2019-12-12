@@ -13,7 +13,6 @@
   </li>
   <li>
       <img src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>" alt="add" width="16" height="16">
-      <?= Icon::create('add', 'clickable') ?> 
       Stimme und Körpersprache
   </li>
   <li>
