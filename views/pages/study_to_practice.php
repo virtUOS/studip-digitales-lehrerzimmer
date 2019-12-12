@@ -124,5 +124,9 @@
     
     .flex-container {
         width: 200px;
+        border: solid thin #28497c;
+    }
+    .flex-container ul {
+        list-style: none;
     }
 </style>
