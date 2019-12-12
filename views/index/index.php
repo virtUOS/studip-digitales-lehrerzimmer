@@ -12,11 +12,11 @@
             <div class="flex-wrapper">
                  <div class='flex-container-200-200'>
                     <div class="flex-wrapper-td">
-                        <div class='flex-container-200-100'>text</div>
-                        <div class='flex-container-200-100'>text</div>
+                        <div class='flex-container-200-100 fill-blue'>text</div>
+                        <div class='flex-container-200-100 fill-blue'>text</div>
                      </div>
                  </div>
-                <div class='flex-container-200-200'>text</div>
+                <div class='flex-container-200-200 fill-blue'>text</div>
             </div>
             
             <!-- Zeile2 -->
@@ -25,23 +25,23 @@
                     <div class="flex-wrapper">
                         <div class='flex-container-100-100'>
                             <div class="flex-wrapper-td">
-                                <div class='flex-container-100-50'>text</div>
-                                <div class='flex-container-100-50'>text</div>
+                                <div class='flex-container-100-50 fill-blue'>text</div>
+                                <div class='flex-container-100-50 fill-blue'>text</div>
                             </div>
                         </div>
-                        <div class='flex-container-100-100'>text</div>
+                        <div class='flex-container-100-100 fill-blue'>text</div>
                     </div>
                 </div>
-                <div class='flex-container-200-100'>text</div>
+                <div class='flex-container-200-100 fill-blue'>text</div>
             </div>
             
             <!-- Zeile3 -->
             <div class="flex-wrapper">
-                <div class='flex-container-200-100'>text</div>
+                <div class='flex-container-200-100 fill-blue'>text</div>
                 <div class='flex-container-200-100'>
                     <div class="flex-wrapper-td">
-                         <div class='flex-container-100-100'>text</div>
-                         <div class='flex-container-100-100'>text</div>
+                         <div class='flex-container-100-100 fill-blue'>text</div>
+                         <div class='flex-container-100-100 fill-blue'>text</div>
                      </div>
                 </div>
             </div>
@@ -133,24 +133,24 @@
     .flex-container-200-200 {
         width: 200px;
         height: 200px;
-        background-color: #28497c;
     }
     
     .flex-container-200-100 {
-        width: 200x;
+        width: 200px;
         height: 100px;
-        background-color: #28497c;
     }
     
     .flex-container-100-100 {
-        width: 100x;
+        width: 100px;
         height: 100px;
-        background-color: #28497c;
     }
     
     .flex-container-100-50 {
-        width: 100x;
+        width: 100px;
         height: 50px;
+    }
+    
+    .fill-blue {
         background-color: #28497c;
     }
 </style>
