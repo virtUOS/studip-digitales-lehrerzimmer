@@ -13,22 +13,18 @@
      <h1>Lehrer_Innen-Persönlichkeit</h1>
 <ul>
   <li>
-    <?= Icon::create('add', 'clickable') ?> 
       Präsentation
   </li>
   <li style="background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>)">
       Stimme und Körpersprache
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Haltung und Rolle(n)
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Lehrportfolio
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Evaluation
   </li>
 </ul>
@@ -38,27 +34,21 @@
 <h1>Rund ums Lehramtsstudium</h1>
 <ul>
   <li>
-    <?= Icon::create('add', 'clickable') ?> 
       Aktuelle Studien
   </li>
   <li>
-      <img src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>" alt="add" width="16" height="16">
       Wissenschaftliches Arbeiten
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Kommatrainer
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Recherche
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Leitfaden Hausarbeit
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Bedarfsprognosen Lehramt
   </li>
 </ul>
@@ -68,27 +58,21 @@
 <h1>Lehrformate und Methoden</h1>
 <ul>
   <li>
-    <?= Icon::create('add', 'clickable') ?> 
       Forschendes Lernen
   </li>
   <li>
-      <img src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>" alt="add" width="16" height="16">
       Problemorientiertes
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Kommatrainer
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Recherche
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Leitfaden Hausarbeit
   </li>
   <li>
-      <?= Icon::create('add', 'clickable') ?> 
       Bedarfsprognosen Lehramt
   </li>
 </ul>
@@ -140,5 +124,6 @@
         background-position: 0 0;
         background-repeat: no-repeat;
         padding-left: 2em; 
+        background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>)
     }
 </style>
