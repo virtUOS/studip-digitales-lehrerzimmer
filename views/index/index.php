@@ -1,5 +1,5 @@
 
-<div class="koop-content-centered">
+<div class="koop-content-centered koop-content">
 
 
     <div class="flex-wrapper">
@@ -56,7 +56,7 @@
             </div>
     </div>
         
-        <div class="flex-container-half">
+        <div class="flex-container-half-index">
 
             <h1>Herzlich willkommen</h1>
                 Du hast gerade dein Studium begonnen und fragst dich, wann du dein erstes Praktikum machen solltest oder welche Prügungsordnung für dich gilt?
@@ -134,6 +134,12 @@
     .flex-container-half {
         width: 460px;
         margin: 1em;
+    }
+    
+    .flex-container-half-index {
+        width: 460px;
+        margin: 1em;
+        padding-top: 100px;
     }
     
     .flex-container-half-linklist {
