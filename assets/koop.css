@@ -29,28 +29,47 @@ and open the template in the editor.
     
     .koop-content h1 {
         text-transform: uppercase;
+        margin-bottom: 1em;
     }
     
     .flex-wrapper{
         display: flex;
     }
     
-    .flex-container {
+    .flex-container-smallbox {
         width: 230px;
-        border: solid thin #28497c;
+        border: solid 2px #28497c;
         border-radius: 15px;
         margin: 15px;
         padding: 20px;
     }
-    .flex-container ul {
+    .flex-container-smallbox ul {
         list-style: none;
         padding-left: 0px;
     }
     
-    .flex-container ul li{
-        background-size: 16px;
-        background-position: 0 0;
+    .flex-container-smallbox ul li {
+        background-size: 20px;
+        background-position: 0% 50%;
         background-repeat: no-repeat;
-        padding-left: 2em; 
+        padding: 0.5em 0 0 2em; 
         margin: 5px;
+    }
+    
+    flex-container-half {
+        width: 45%;
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .flex-container-half-linklist {
+        width: 45%;
+        border: solid 2px #28497c;
+        border-radius: 15px;
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .koop-container-full {
+        margin: 1em;
     }
