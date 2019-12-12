@@ -16,8 +16,7 @@
     <?= Icon::create('add', 'clickable') ?> 
       Präsentation
   </li>
-  <li>
-      <img src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>" alt="add" width="16" height="16">
+  <li style="background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>)">
       Stimme und Körpersprache
   </li>
   <li>
@@ -127,10 +126,17 @@
     }
     
     .flex-container {
-        width: 200px;
+        width: 230px;
         border: solid thin #28497c;
+        margin: 15px;
+        padding: 20px;
     }
     .flex-container ul {
         list-style: none;
+        padding-left: 0px;
+    }
+    .flex-container ul li{
+        background-size: 16px;
+        background-position: 0 0;
     }
 </style>
