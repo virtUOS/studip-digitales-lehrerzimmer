@@ -1,7 +1,7 @@
 
 <div class="koop-content">
 
-    <div class="koop-container-full"
+    <div class="koop-container-full">
         <h1>Vom Studium in die Praxis</h1>
         <div>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. 
