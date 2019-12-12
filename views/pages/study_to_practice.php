@@ -61,22 +61,53 @@
       Forschendes Lernen
   </li>
   <li>
-      Problemorientiertes
+      Problemorientiertes Lernen
   </li>
   <li>
-      Kommatrainer
+      Handlungsorientiertes Lernen
   </li>
   <li>
-      Recherche
+      Phänomenorientiertes Lernen
   </li>
   <li>
-      Leitfaden Hausarbeit
+      Onterdisziplinäres Lernen
   </li>
   <li>
-      Bedarfsprognosen Lehramt
+      Aktivieren und Motivieren
+  </li>
+   <li>
+      Methoden
   </li>
 </ul>
 </div>
+    
+<div class="flex-container">
+<h1>Unterrichtsplanung und Durchführung</h1>
+<ul>
+  <li>
+      Lehr- und Lenrziele
+  </li>
+  <li>
+      Kompetenzen
+  </li>
+  <li>
+      Feedback
+  </li>
+  <li>
+      Leistungsbeurteilung
+  </li>
+  <li>
+      Didaktische Visualisierung
+  </li>
+  <li>
+      Stundenplanung
+  </li>
+  <li>
+      Unterrichtseinheiten
+  </li>
+</ul>
+</div>    
+    
 
 </div>
 
