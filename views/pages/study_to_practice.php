@@ -120,46 +120,5 @@
 
 <style>
 
-    .koop-content {
-        margin: 30px;
-    }
     
-    .kooo-conten {
-        text-transform: uppercase;
-    }
-    
-    .flex-wrapper{
-        display: flex;
-    }
-    
-    #page_title_container {
-        display: none;
-    }
-    
-    #flex-header {
-/*        display: none !important;*/
-    }
-
-     #barTopMenu, #barTopStudip {
-        display: none !important;
-    }
-    
-    .flex-container {
-        width: 230px;
-        border: solid thin #28497c;
-        margin: 15px;
-        padding: 20px;
-    }
-    .flex-container ul {
-        list-style: none;
-        padding-left: 0px;
-    }
-    .flex-container ul li{
-        background-size: 16px;
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        padding-left: 2em; 
-        background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>);
-        margin: 5px;
-    }
 </style>

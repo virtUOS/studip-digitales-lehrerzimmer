@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : anne
 */
 
+/* hide Stud.IP Stuff */
     #page_title_container {
         display: none;
     }
@@ -18,4 +19,38 @@ and open the template in the editor.
 
      #barTopMenu, #barTopStudip {
         display: none !important;
+    }
+    
+    
+/* Koop CSS */
+    .koop-content {
+        margin: 30px;
+    }
+    
+    .koop-content h1 {
+        text-transform: uppercase;
+    }
+    
+    .flex-wrapper{
+        display: flex;
+    }
+    
+    .flex-container {
+        width: 230px;
+        border: solid thin #28497c;
+        border-radius: 15px;
+        margin: 15px;
+        padding: 20px;
+    }
+    .flex-container ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+    .flex-container ul li{
+        background-size: 16px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        padding-left: 2em; 
+        background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>);
+        margin: 5px;
     }
