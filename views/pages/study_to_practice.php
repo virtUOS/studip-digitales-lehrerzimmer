@@ -93,6 +93,10 @@
         margin: 30px;
     }
     
+    .kooo-conten {
+        text-transform: uppercase;
+    }
+    
     .flex-wrapper{
         display: flex;
     }
@@ -124,6 +128,7 @@
         background-position: 0 0;
         background-repeat: no-repeat;
         padding-left: 2em; 
-        background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>)
+        background-image:url(<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>);
+        margin: 5px;
     }
 </style>
