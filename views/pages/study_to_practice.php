@@ -12,7 +12,7 @@
       Präsentation
   </li>
   <li>
-      <img src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $plugin->getPluginPath() . '/assets/images/koop.png'?>"/>
+      <img src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/koop.png'?>"/>
       <?= Icon::create('add', 'clickable') ?> 
       Stimme und Körpersprache
   </li>

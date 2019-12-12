@@ -21,13 +21,13 @@ Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deseru
 
 
 <ul class="flex-container">
-  <li class="flex-item">4</li>
-  <li class="flex-item">5</li>
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
 </ul>
 
 <ul class="flex-container">
-  <li class="flex-item">1</li>
-  <li class="flex-item">2</li>
+  <li class="flex-item"></li>
+  <li class="flex-item"></li>
 </ul>
 
 
