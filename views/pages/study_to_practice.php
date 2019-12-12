@@ -64,7 +64,7 @@
 </ul>
 </div>
 
-    <div class="flex-container">
+<div class="flex-container">
 <h1>Lehrformate und Methoden</h1>
 <ul>
   <li>
@@ -110,5 +110,9 @@
 
      #barTopMenu, #barTopStudip {
         display: none !important;
+    }
+    
+    .flex-container {
+        width: 200px;
     }
 </style>
