@@ -63,4 +63,94 @@
     #page_title_container{
         display: none;
     }
+    
+    .koop-content {
+        margin: 30px;
+    }
+    
+    .koop-content h1 {
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        color: #28497c;
+    }
+    
+    .koop-content h2 {
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        color: #28497c;
+    }
+    
+    .flex-wrapper{
+        display: flex;
+    }
+    
+    .flex-wrapper-td {
+        flex-direction: column;
+        display: flex;
+    }
+     
+    .flex-container-smallbox {
+        width: 230px;
+        border: solid 2px #28497c;
+        border-radius: 15px;
+        margin: 15px;
+        padding: 20px;
+    }
+    .flex-container-smallbox ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+    
+    .flex-container-smallbox ul li {
+        background-size: 20px;
+        background-position: 0% 50%;
+        background-repeat: no-repeat;
+        padding: 0.5em 0 0 2em; 
+        margin: 5px;
+    }
+    
+    .flex-container-half {
+        width: 460px;
+        margin: 1em;
+    }
+    
+    .flex-container-half-linklist {
+        width: 460px;
+        border: solid 2px #28497c;
+        border-radius: 15px;
+        margin: 1em;
+        padding: 20px;
+    }
+    
+    .flex-container-half-linklist ul {
+        padding: 0 40px 0 10px;
+    }
+    
+    .koop-container-full {
+        margin: 1em;
+    }
+    
+    .flex-container-200-200 {
+        width: 200px;
+        height: 200px;
+        background-color: #28497c;
+    }
+    
+    .flex-container-200-100 {
+        width: 200x;
+        height: 100px;
+        background-color: #28497c;
+    }
+    
+    .flex-container-100-100 {
+        width: 100x;
+        height: 100px;
+        background-color: #28497c;
+    }
+    
+    .flex-container-100-50 {
+        width: 100x;
+        height: 50px;
+        background-color: #28497c;
+    }
 </style>
