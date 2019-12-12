@@ -4,6 +4,21 @@
 
 <h1>Fachschaften</h1>
 
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. 
+Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+
+
+<ul>
+  <li>Anglistik/Amerikanistik</li>
+  <li>Biologie</li>
+  <li>Chemie</li>
+  <li>Cognitive Science</li>
+</ul>
+
+
 
 <ul class="flex-container">
   <li class="flex-item">4</li>
@@ -24,7 +39,7 @@
 <style>
 
     .flex-container {
-        display: flex; /* or inline-flex */
+        display: flex;
     }
     
     
