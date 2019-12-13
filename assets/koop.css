@@ -55,6 +55,9 @@ and open the template in the editor.
         margin: 15px;
         padding: 20px;
     }
+.flex-container-smallbox:hover {
+    color: #ccc;
+}
     .flex-container-smallbox ul {
         list-style: none;
         padding-left: 0px;
