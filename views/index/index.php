@@ -159,27 +159,43 @@
     }
     
     .flex-container-200-200 {
-        width: 194px;
-        height: 194px;
+        width: 200px;
+        height: 200px;
         margin: 3px
     }
     
     .flex-container-200-100 {
-        width: 194px;
-        height: 94px;
-        margin-bottom: 3px
+        width: 200px;
+        height: 97px;
+        margin-bottom: 3px;
+        overflow: hidden;
+    }
+
+    .flex-container-200-100:last-child {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 0;
     }
     
     .flex-container-100-100 {
-        width: 95px;
-        height: 94px;
+        width: 98px;
+        height: 100px;
         margin-right: 2px;
+    }
+    .flex-container-100-100:last-child{
+        width: 100px;
+        margin-right: 0;
     }
     
     .flex-container-100-50 {
-        width: 95px;
+        width: 98px;
         height: 45px;
         margin-bottom: 2px
+    }
+
+    .flex-container-100-50:last-child {
+        height: 50px;
+        margin-bottom: 0;
     }
     
     .fill-blue {

@@ -14,7 +14,7 @@ and open the template in the editor.
     }
     
     #flex-header {
-        display: none !important;
+/*        display: none !important;*/
     }
 
      #barTopMenu, #barTopStudip {
@@ -24,19 +24,18 @@ and open the template in the editor.
     
 /* Koop CSS */
     .koop-content {
-        margin: 30px;
+        max-width: 1080px;
+        margin: 2em;
     }
     
-    .koop-content h1 {
-        text-transform: uppercase;
-        margin-bottom: 1em;
-        color: #28497c;
-    }
-    
+    .koop-content h1,
     .koop-content h2 {
         text-transform: uppercase;
-        margin-bottom: 1em;
+        margin: 0;
+        border: none;
+        font-weight: normal;
         color: #28497c;
+        letter-spacing: -1px;
     }
     
     .flex-wrapper{
@@ -49,11 +48,11 @@ and open the template in the editor.
     }
      
     .flex-container-smallbox {
-        width: 230px;
+        width: 186px;
         border: solid 2px #28497c;
-        border-radius: 15px;
-        margin: 15px;
-        padding: 20px;
+        border-radius: 1.25em;
+        margin-right: 2em;
+        padding: 1.5em 1.25em;
     }
 .flex-container-smallbox:hover {
     color: #ccc;
@@ -69,6 +68,7 @@ and open the template in the editor.
         background-repeat: no-repeat;
         padding: 0.5em 0 0 2em; 
         margin: 5px;
+        color: #28497c;
     }
     
     .flex-container-half {
@@ -89,7 +89,7 @@ and open the template in the editor.
     }
     
     .koop-container-full {
-        margin: 1em;
+        margin-bottom: 2em;
     }
     
     .flex-container-200-200 {
@@ -114,4 +114,10 @@ and open the template in the editor.
         width: 100px;
         height: 50px;
         background-color: #28497c;
+    }
+
+    hr.header-border-bottom {
+        width: 6em;
+        color: #28497c;
+        margin-bottom: 1em;
     }

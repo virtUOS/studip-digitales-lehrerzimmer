@@ -3,6 +3,7 @@
 
     <div class="koop-container-full">
         <h1>Vom Studium in die Praxis</h1>
+        <hr class="header-border-bottom" align="left" />
         <div>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. 
             Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -13,6 +14,7 @@
 
         <div class="flex-container-smallbox">
          <h2>Lehrer_Innen-Persönlichkeit</h2>
+         <hr class="header-border-bottom" align="left" />
             <ul>
               <li>
                   Präsentation
@@ -34,6 +36,7 @@
 
         <div class="flex-container-smallbox">
             <h2>Rund ums Lehramtsstudium</h2>
+            <hr class="header-border-bottom" align="left" />
             <ul>
               <li>
                   Aktuelle Studien
@@ -58,6 +61,7 @@
 
         <div class="flex-container-smallbox">
             <h2>Lehrformate und Methoden</h2>
+            <hr class="header-border-bottom" align="left" />
             <ul>
               <li>
                   Forschendes Lernen
@@ -85,6 +89,7 @@
 
         <div class="flex-container-smallbox">
             <h2>Unterrichtsplanung und Durchführung</h2>
+            <hr class="header-border-bottom" align="left" />
             <ul>
               <li>
                   Lehr- und Lenrziele
