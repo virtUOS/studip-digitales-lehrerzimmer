@@ -87,7 +87,7 @@
     .koop-content-centered {
         margin-left: auto;
         margin-right: auto;
-        width: 1000px;
+        width: 1200px;
     }
     
     .koop-content h1 {
@@ -137,9 +137,10 @@
     }
     
     .flex-container-half-index {
-        width: 460px;
+        width: 660px;
         margin: 1em;
         padding-top: 100px;
+        padding-left: 1em;
     }
     
     .flex-container-half-linklist {
