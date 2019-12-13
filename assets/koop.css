@@ -14,7 +14,7 @@ and open the template in the editor.
     }
     
     #flex-header {
-/*        display: none !important;*/
+        display: none !important;
     }
 
      #barTopMenu, #barTopStudip {
@@ -54,9 +54,11 @@ and open the template in the editor.
         margin-right: 2em;
         padding: 1.5em 1.25em;
     }
-.flex-container-smallbox:hover {
-    color: #ccc;
-}
+
+    .flex-container-smallbox:hover {
+        background-color: #ececed;
+    }
+
     .flex-container-smallbox ul {
         list-style: none;
         padding-left: 0px;
