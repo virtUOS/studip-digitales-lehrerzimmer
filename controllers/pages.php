@@ -39,7 +39,7 @@ class PagesController extends StudipController {
     
     public function consulting_action()
     {
-        Navigation::activateItem('koop/study_to_practice/consulting');
+        Navigation::activateItem('koop/my_way/consulting');
     }
         
       
