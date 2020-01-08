@@ -34,7 +34,7 @@ class PagesController extends StudipController {
     
     public function studyplan_action()
     {
-        Navigation::activateItem('koop/studyplan');
+        Navigation::activateItem('koop/study_to_practice/studyplan');
     }
         
       
