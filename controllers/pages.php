@@ -36,6 +36,11 @@ class PagesController extends StudipController {
     {
         Navigation::activateItem('koop/study_to_practice/studyplan');
     }
+    
+    public function consulting_action()
+    {
+        Navigation::activateItem('koop/study_to_practice/consulting');
+    }
         
       
     public function study_to_practice_action()
