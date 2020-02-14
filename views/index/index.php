@@ -69,7 +69,7 @@
     <div>
         
         <a class='koop-index-navigation faecher_link' href=''>
-            <div class='faecher'><div>
+            <div class='faecher'></div>
         </a>
         <a class='koop-index-navigation studium' href=''></a>
         <a class='koop-index-navigation mystudip' href=''></a>
