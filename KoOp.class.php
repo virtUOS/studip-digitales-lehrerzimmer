@@ -121,7 +121,7 @@ class KoOp extends StudipPlugin implements SystemPlugin
 
     public function initialize ()
     {
-        //PageLayout::addStylesheet($this->getPluginURL().'/assets/koop.css');
+        PageLayout::addStylesheet($this->getPluginURL().'/assets/koop.css');
     }
 
     public function perform($unconsumed_path)
