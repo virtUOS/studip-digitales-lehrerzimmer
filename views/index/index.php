@@ -7,7 +7,9 @@
          Kachelen 
         <div class="flex-container-half">
             
-            <img style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/teach_os.png' ?>'/>
+-->            
+    <img style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS.svg' ?>'/>
+<!--
              Zeile1 
             <div class="flex-wrapper">
                  <div class='flex-container-200-200'>
