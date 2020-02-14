@@ -15,7 +15,7 @@ class IndexController extends StudipController {
 
         $sidebar = Sidebar::Get();
         $sidebar->setImage('../../' .$this->plugin->getPluginPath() . '/assets/images/teach_os.png');
-
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
 
     }
 
