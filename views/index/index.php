@@ -111,7 +111,7 @@
 <img style="margin-left: auto; margin-right: auto; display: block;" src="<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() ?>/assets/images/manual.png"/>
 
 <style>
-    #tabs.navigation{
+    #tabs{
         display: none;
     }
     
