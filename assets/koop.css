@@ -14,11 +14,11 @@ and open the template in the editor.
     }
     
     #flex-header {
-        display: none !important;
+        /*display: none !important;*/
     }
 
      #barTopMenu, #barTopStudip {
-        display: none !important;
+        /*display: none !important;*/
     }
     
     
@@ -153,33 +153,69 @@ and open the template in the editor.
         width: 200px;
         height: 200px;
     }
+    
     a.studium {
         background-image:url("images/3_studium.svg");
         width: 200px;
         height: 200px;
     }
+    a.studium:hover {
+        background-image:url("images/3_studium_mouseover.svg");
+        width: 200px;
+        height: 200px;
+    }
+    
     a.mystudip {
         background-image:url("images/7_mystudip.svg");
         width: 300px;
         height: 200px;
     }
+    a.mystudip:hover {
+        background-image:url("images/7_mystudip_mouseover.svg");
+        width: 300px;
+        height: 200px;
+    }
+    
     a.digital {
         background-image:url("images/8_digital.svg");
         width: 400px;
         height: 210px;
     }
+    a.digital:hover {
+        background-image:url("images/8_digital_mouseover.svg");
+        width: 400px;
+        height: 210px;
+    }
+    
     a.tutorial {
         background-image:url("images/11_tutorial.svg");
         width: 450px;
         height: 100px;
     }
+    a.tutorial:hover {
+        background-image:url("images/11_tutorial_mouseover.svg");
+        width: 450px;
+        height: 100px;
+    }
+    
     a.praxis {
         background-image:url("images/13_praxis.svg");
         width: 300px;
         height: 210px;
     }
+     a.praxis:hover {
+        background-image:url("images/13_praxis_mouseover.svg");
+        width: 300px;
+        height: 210px;
+    }
+    
     a.fachschaften {
         background-image:url("images/12_faechschaften.svg");
+        width: 300px;
+        height: 100px;
+    }
+    a.fachschaften:hover {
+        background-image:url("images/12_faechschaften_mouseover.svg");
         width: 300px;
         height: 100px;
     }
