@@ -127,6 +127,8 @@ and open the template in the editor.
 /* kacheln */
     div.faecher {
         background-image:url("images/2_faecher.svg");
+        width: 100px;
+        heigth: 100px;
     }
     div.faecher:hover {
         background-image:url("images/2_faecher_mouseover.svg");
