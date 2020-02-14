@@ -218,12 +218,12 @@ and open the template in the editor.
     }
     
     a.fachschaften {
-        background-image:url("images/12_fachschaften.svg");
+        background-image:url("images/12_fachschaft.svg");
         width: 200px;
         height: 100px;
     }
     a.fachschaften:hover {
-        background-image:url("images/12_fachschaften_mouseover.svg");
+        background-image:url("images/12_fachschaft_mouseover.svg");
         width: 200px;
         height: 100px;
     }
