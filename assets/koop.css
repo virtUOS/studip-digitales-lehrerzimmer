@@ -123,3 +123,33 @@ and open the template in the editor.
         color: #28497c;
         margin-bottom: 1em;
     }
+
+/* kacheln */
+    a.faecher {
+        background-image:url("images/2_faecher.svg");
+    }
+    a.faecher:hover {
+        background-image:url("images/2_faecher_mouseover.svg");
+    }
+    a.studium {
+        background-image:url("images/3_studium.svg");
+    }
+    a.mystudip {
+        background-image:url("images/7_mystudip.svg");
+    }
+    a.digital {
+        background-image:url("images/8_digital.svg");
+    }
+    a.tutorial {
+        background-image:url("images/11_tutorial.svg");
+    }
+    a.praxis {
+        background-image:url("images/13_praxis.svg");
+    }
+    a.fachschaften {
+        background-image:url("images/12_faechschaften.svg");
+    }
+    
+    .koop-index-navigation {
+        
+        }

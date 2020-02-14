@@ -66,6 +66,17 @@
             </div>
 </div>
 
+    <div>
+        
+        <a class='koop-index-navigation faecher' href=''/>
+        <a class='koop-index-navigation studium' href=''/>
+        <a class='koop-index-navigation mystudip' href=''/>
+        <a class='koop-index-navigation digital' href=''/>
+        <a class='koop-index-navigation tutorial' href=''/>
+        <a class='koop-index-navigation praxis' href=''/>
+        <a class='koop-index-navigation fachschaften' href=''/>
+        
+    </div>
 
 
 
