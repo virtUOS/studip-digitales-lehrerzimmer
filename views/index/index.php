@@ -129,7 +129,7 @@
     .koop-content-centered {
         margin-left: auto;
         margin-right: auto;
-        width: 1200px;
+        width: 750px;
     }
     
     .koop-content h1 {
