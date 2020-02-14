@@ -12,6 +12,8 @@ class PagesController extends StudipController {
     {
         parent::before_filter($action, $args);
         PageLayout::setTitle(_("Das digitale Lehrerzimmer"));
+        
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
 
         $sidebar = Sidebar::Get();
         $sidebar->setImage('../../' .$this->plugin->getPluginPath() . '/assets/images/teach_os.png');
@@ -22,7 +24,6 @@ class PagesController extends StudipController {
     public function index_action()
     {
         Navigation::activateItem('koop/');
-        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
         
     }
     
