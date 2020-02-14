@@ -64,20 +64,20 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum 
                 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
             </div>
-</div>
+    </div>
 
     <div>
         
-        <a class='koop-index-navigation faecher' href=''/>
-        <a class='koop-index-navigation studium' href=''/>
-        <a class='koop-index-navigation mystudip' href=''/>
-        <a class='koop-index-navigation digital' href=''/>
-        <a class='koop-index-navigation tutorial' href=''/>
-        <a class='koop-index-navigation praxis' href=''/>
-        <a class='koop-index-navigation fachschaften' href=''/>
+        <a class='koop-index-navigation faecher' href=''></a>
+        <a class='koop-index-navigation studium' href=''></a>
+        <a class='koop-index-navigation mystudip' href=''></a>
+        <a class='koop-index-navigation digital' href=''></a>
+        <a class='koop-index-navigation tutorial' href=''></a>
+        <a class='koop-index-navigation praxis' href=''></a>
+        <a class='koop-index-navigation fachschaften' href=''></a>
         
     </div>
-
+</div>
 
 
 
