@@ -85,7 +85,7 @@
     </div>
     
     <div class="flex-wrapper">
-        <div class="flex-container-300-200">
+        <div class="flex-container-450-200">
             <div class="flex-wrapper-td">
                 <a class='koop-index-navigation tutorial' href=''></a>
                 <a class='koop-index-navigation fachschaften' href=''></a>
