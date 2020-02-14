@@ -67,7 +67,7 @@
     </div>-->
 
     <div class='flex-wrapper'>
-        <div class="flex-container-800-180-l100">
+        <div class="flex-container-800-115-l100">
             <div class="flex-wrapper">
                 <a class='koop-index-navigation faecher' href=''></a>
                 <a class='koop-index-navigation studium' href=''></a>
@@ -76,7 +76,7 @@
     </div>
     
     <div class="flex-wrapper">
-         <div class="flex-container-800-180">
+         <div class="flex-container-800-125">
              <div class="flex-wrapper">
                 <a class='koop-index-navigation mystudip' href=''></a>
                 <a class='koop-index-navigation digital' href=''></a>
@@ -85,7 +85,7 @@
     </div>
     
     <div class="flex-wrapper">
-        <div class="flex-container-450-200">
+        <div class="flex-container-310-200">
             <div class="flex-wrapper-td">
                 <a class='koop-index-navigation tutorial' href=''></a>
                 <a class='koop-index-navigation fachschaften' href=''></a>
