@@ -127,39 +127,47 @@ and open the template in the editor.
 /* kacheln */
 
     a.faecher{
-        color: transparent;
-        text-shadow: none;
-        background-color: transparent;
-        border: 0;
-        background-repeat: no-repeat;
         background-image: none,url(images/2_faecher.svg);
-        background-size: 130px 92px;
-        display: block;
         width: 130px;
         height: 81px;
     }
-    div.faecher:hover {
+    a.faecher:hover {
         background-image:url("images/2_faecher_mouseover.svg");
+        width: 130px;
+        height: 81px;
     }
     a.studium {
         background-image:url("images/3_studium.svg");
+        width: 130px;
+        height: 81px;
     }
     a.mystudip {
         background-image:url("images/7_mystudip.svg");
+        width: 130px;
+        height: 81px;
     }
     a.digital {
         background-image:url("images/8_digital.svg");
+        width: 130px;
+        height: 81px;
     }
     a.tutorial {
         background-image:url("images/11_tutorial.svg");
+        width: 130px;
+        height: 81px;
     }
     a.praxis {
         background-image:url("images/13_praxis.svg");
+        width: 130px;
+        height: 81px;
     }
     a.fachschaften {
         background-image:url("images/12_faechschaften.svg");
+        width: 130px;
+        height: 81px;
     }
     
     a.koop-index-navigation {
-        
-        }
+        background-repeat: no-repeat;
+        display: block;
+    }
