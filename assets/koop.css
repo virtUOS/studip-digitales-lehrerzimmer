@@ -125,10 +125,18 @@ and open the template in the editor.
     }
 
 /* kacheln */
-    div.faecher {
-        background-image:url("images/2_faecher.svg");
-        width: 100px;
-        heigth: 100px;
+
+    a.faecher{
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+        background-repeat: no-repeat;
+        background-image: none,url(images/2_faecher.svg);
+        background-size: 130px 92px;
+        display: block;
+        width: 130px;
+        height: 81px;
     }
     div.faecher:hover {
         background-image:url("images/2_faecher_mouseover.svg");
