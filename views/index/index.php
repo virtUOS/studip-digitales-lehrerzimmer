@@ -80,7 +80,7 @@
              <div class="flex-wrapper">
                 <a class='koop-index-navigation mystudip' href=''></a>
                 <a class='koop-index-navigation digital' href=''></a>
-            <div class="flex-wrapper">
+             </div>
         </div>
     </div>
     
