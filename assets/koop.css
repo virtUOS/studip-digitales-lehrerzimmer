@@ -250,7 +250,7 @@ and open the template in the editor.
     a.neun_add {
         background-image:url("images/9_add.svg");
         width: 90px;
-        height: 9px;
+        height: 90px;
     }
     a.neun_add:hover {
         background-image:url("images/9_add_mouseover.svg");

@@ -96,8 +96,10 @@
             </div>   
         </div>
         <div class="flex-container-500-200">
-            <a class='koop-index-navigation praxis' href=''></a>
-             <a class='koop-index-navigation achtzehn_add' href=''></a>
+            <div class="flex-wrapper">
+                <a class='koop-index-navigation praxis' href=''></a>
+                <a class='koop-index-navigation achtzehn_add' href=''></a>
+            </div>
         </div>
     </div>
     
