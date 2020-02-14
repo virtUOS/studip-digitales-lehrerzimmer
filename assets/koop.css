@@ -140,43 +140,43 @@ and open the template in the editor.
 
     a.faecher{
         background-image: none,url(images/2_faecher.svg);
-        width: 130px;
-        height: 81px;
+        width: 200px;
+        height: 200px;
     }
     a.faecher:hover {
         background-image:url("images/2_faecher_mouseover.svg");
-        width: 130px;
-        height: 81px;
+        width: 200px;
+        height: 200px;
     }
     a.studium {
         background-image:url("images/3_studium.svg");
-        width: 130px;
-        height: 81px;
+        width: 200px;
+        height: 200px;
     }
     a.mystudip {
         background-image:url("images/7_mystudip.svg");
-        width: 130px;
-        height: 81px;
+        width: 300px;
+        height: 200px;
     }
     a.digital {
         background-image:url("images/8_digital.svg");
-        width: 130px;
-        height: 81px;
+        width: 400px;
+        height: 210px;
     }
     a.tutorial {
         background-image:url("images/11_tutorial.svg");
-        width: 130px;
-        height: 81px;
+        width: 450px;
+        height: 100px;
     }
     a.praxis {
         background-image:url("images/13_praxis.svg");
-        width: 130px;
-        height: 81px;
+        width: 300px;
+        height: 210px;
     }
     a.fachschaften {
         background-image:url("images/12_faechschaften.svg");
-        width: 130px;
-        height: 81px;
+        width: 300px;
+        height: 100px;
     }
     
     a.koop-index-navigation {
