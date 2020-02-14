@@ -67,27 +67,29 @@
     </div>
 
     <div class='flex-wrapper'>
-        <div class="flex-container-200-200">
+        <div class="flex-container-800-200">
             <div class="flex-wrapper">
                 <a class='koop-index-navigation faecher' href=''></a>
                 <a class='koop-index-navigation studium' href=''></a>
             </div>
         </div>
     </div>
+    
     <div class="flex-wrapper">
-         <div class="flex-container-200-200">
+         <div class="flex-container-800-200">
             <a class='koop-index-navigation mystudip' href=''></a>
             <a class='koop-index-navigation digital' href=''></a>
         </div>
     </div>
+    
     <div class="flex-wrapper">
-        <div class="flex-container-200-200">
+        <div class="flex-container-300-200">
             <div class="flex-wrapper-td">
                 <a class='koop-index-navigation tutorial' href=''></a>
                 <a class='koop-index-navigation fachschaften' href=''></a>
             </div>   
         </div>
-        <div class="flex-container-200-200">
+        <div class="flex-container-500-200">
             <a class='koop-index-navigation praxis' href=''></a>
         </div>
     </div>
