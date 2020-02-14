@@ -23,7 +23,7 @@ class PagesController extends StudipController {
     public function index_action()
     {
         Navigation::activateItem('koop/');
-        
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
         
     }
     
