@@ -227,6 +227,56 @@ and open the template in the editor.
         width: 200px;
         height: 100px;
     }
+    a.eins_add {
+        background-image:url("images/1_add.svg");
+        width: 90px;
+        height: 90px;
+    }
+    a.eins_add:hover {
+        background-image:url("images/1_add_mouseover.svg");
+        width: 90px;
+        height: 90px;
+    }
+    a.fuenf_add {
+        background-image:url("images/5_add.svg");
+        width: 200px;
+        height: 90px;
+    }
+    a.fuenf_add:hover {
+        background-image:url("images/5_add_mouseover.svg");
+        width: 200px;
+        height: 90px;
+    }
+    a.neun_add {
+        background-image:url("images/9_add.svg");
+        width: 90px;
+        height: 9px;
+    }
+    a.neun_add:hover {
+        background-image:url("images/9_add_mouseover.svg");
+        width: 90px;
+        height: 90px;
+    }
+    a.zehn_add {
+        background-image:url("images/10_add.svg");
+        width: 200px;
+        height: 90px;
+    }
+    a.zehn_add:hover {
+        background-image:url("images/10_add_mouseover.svg");
+        width: 200px;
+        height: 90px;
+    }
+    a.achtzehn_add {
+        background-image:url("images/18_add.svg");
+        width: 150px;
+        height: 70px;
+    }
+    a.achtzehn_add:hover {
+        background-image:url("images/18_add_mouseover.svg");
+        width: 150px;
+        height: 70px;
+    }
     
     a.koop-index-navigation {
         background-repeat: no-repeat;
