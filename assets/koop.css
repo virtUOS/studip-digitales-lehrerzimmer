@@ -125,10 +125,10 @@ and open the template in the editor.
     }
 
 /* kacheln */
-    a.faecher {
+    div.faecher {
         background-image:url("images/2_faecher.svg");
     }
-    a.faecher:hover {
+    div.faecher:hover {
         background-image:url("images/2_faecher_mouseover.svg");
     }
     a.studium {
@@ -150,6 +150,6 @@ and open the template in the editor.
         background-image:url("images/12_faechschaften.svg");
     }
     
-    .koop-index-navigation {
+    a.koop-index-navigation {
         
         }
