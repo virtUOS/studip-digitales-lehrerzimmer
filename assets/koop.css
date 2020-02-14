@@ -107,9 +107,14 @@ and open the template in the editor.
         width: 500px;
         height: 200px;
     }
-    .flex-container-800-200 {
+    .flex-container-800-180 {
         width: 800px;
-        height: 200px;
+        height: 180px;
+    }
+    .flex-container-800-180-l100 {
+        width: 800px;
+        height: 180px;
+        margin-left: 100px;
     }
     
     .flex-container-200-100 {

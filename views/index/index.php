@@ -2,13 +2,13 @@
 <div class="koop-content-centered koop-content">
 
 
-    <div class="flex-wrapper">
+<!--    <div class="flex-wrapper">
         
-        <!-- Kachelen -->
+         Kachelen 
         <div class="flex-container-half">
             
             <img style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/teach_os.png' ?>'/>
-            <!-- Zeile1 -->
+             Zeile1 
             <div class="flex-wrapper">
                  <div class='flex-container-200-200'>
                     <div class="flex-wrapper-td">
@@ -19,8 +19,8 @@
                 <div class='flex-container-200-200 fill-blue'>text</div>
             </div>
             
-            <!-- Zeile2 -->
-            <!-- Spalte1 -->
+             Zeile2 
+             Spalte1 
             <div class="flex-wrapper">
                 <div class='flex-container-200-200'>
                 <div class="flex-wrapper-td">
@@ -64,10 +64,10 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum 
                 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
             </div>
-    </div>
+    </div>-->
 
     <div class='flex-wrapper'>
-        <div class="flex-container-800-200">
+        <div class="flex-container-800-180-l100">
             <div class="flex-wrapper">
                 <a class='koop-index-navigation faecher' href=''></a>
                 <a class='koop-index-navigation studium' href=''></a>
@@ -76,7 +76,7 @@
     </div>
     
     <div class="flex-wrapper">
-         <div class="flex-container-800-200">
+         <div class="flex-container-800-180">
              <div class="flex-wrapper">
                 <a class='koop-index-navigation mystudip' href=''></a>
                 <a class='koop-index-navigation digital' href=''></a>
