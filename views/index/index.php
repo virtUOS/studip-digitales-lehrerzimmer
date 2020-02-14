@@ -66,17 +66,22 @@
             </div>
     </div>
 
-    <div>
-        
-        <a class='koop-index-navigation faecher' href=''>
-        </a>
-        <a class='koop-index-navigation studium' href=''></a>
-        <a class='koop-index-navigation mystudip' href=''></a>
-        <a class='koop-index-navigation digital' href=''></a>
-        <a class='koop-index-navigation tutorial' href=''></a>
-        <a class='koop-index-navigation praxis' href=''></a>
-        <a class='koop-index-navigation fachschaften' href=''></a>
-        
+    <div class='flex-wrapper'>
+        <div class="flex-wrapper">
+            <a class='koop-index-navigation faecher' href=''></a>
+            <a class='koop-index-navigation studium' href=''></a>
+        </div>
+        <div class="flex-wrapper">
+            <a class='koop-index-navigation mystudip' href=''></a>
+            <a class='koop-index-navigation digital' href=''></a>
+        </div>
+        <div class="flex-wrapper">
+            <div class="flex-wrapper-td">
+                <a class='koop-index-navigation tutorial' href=''></a>
+                <a class='koop-index-navigation fachschaften' href=''></a>
+            </div>    
+            <a class='koop-index-navigation praxis' href=''></a>
+        </div>
     </div>
 </div>
 
