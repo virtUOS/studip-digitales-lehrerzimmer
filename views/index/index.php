@@ -72,8 +72,8 @@
         <div class="flex-container-800-115-l100">
             <div class="flex-wrapper">
                 <a class='koop-index-navigation eins_add' href=''></a>
-                <a class='koop-index-navigation faecher' href=''></a>
-                <a class='koop-index-navigation studium' href=''></a>
+                <a class='koop-index-navigation faecher' href='pages/subjects'></a>
+                <a class='koop-index-navigation studium' href='pages/my_way'></a>
                 <a class='koop-index-navigation fuenf_add' href=''></a>
             </div>
         </div>
@@ -83,7 +83,7 @@
          <div class="flex-container-800-125">
              <div class="flex-wrapper">
                 <a class='koop-index-navigation mystudip' href=''></a>
-                <a class='koop-index-navigation digital' href=''></a>
+                <a class='koop-index-navigation digital' href='pages/digital_teaching'></a>
                 <a class='koop-index-navigation neun_add' href=''></a>
                 <a class='koop-index-navigation zehn_add' href=''></a>
              </div>
@@ -99,7 +99,7 @@
         </div>
         <div class="flex-container-500-200">
             <div class="flex-wrapper">
-                <a class='koop-index-navigation praxis' href=''></a>
+                <a class='koop-index-navigation praxis' href='pages/study_to_practice'></a>
                 <a class='koop-index-navigation achtzehn_add' href=''></a>
             </div>
         </div>
