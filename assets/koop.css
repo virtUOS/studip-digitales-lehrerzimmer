@@ -152,7 +152,7 @@ and open the template in the editor.
 /* kacheln */
 
     a.faecher{
-        background-image: none,url(images/2_faecher.svg);
+        background-image:url("images/2_faecher.svg");
         width: 123px;
         height: 109px;
     }
