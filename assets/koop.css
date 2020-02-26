@@ -242,11 +242,13 @@ and open the template in the editor.
         background-image:url("images/5_add.svg");
         width: 200px;
         height: 90px;
+        margin-top: 1.5em;
     }
     a.fuenf_add:hover {
         background-image:url("images/5_add_mouseover.svg");
         width: 200px;
         height: 90px;
+        margin-top: 1.5em;
     }
     a.neun_add {
         background-image:url("images/9_add.svg");
