@@ -231,6 +231,7 @@ and open the template in the editor.
         background-image:url("images/1_add.svg");
         width: 85px;
         height: 81px;
+        margin-top: 2em;
     }
     a.eins_add:hover {
         background-image:url("images/1_add_mouseover.svg");
