@@ -175,13 +175,13 @@ and open the template in the editor.
     
     a.mystudip {
         background-image:url("images/7_mystudip.svg");
-        width: 200px;
-        height: 110px;
+        width: 179px;
+        height: 94px;
     }
     a.mystudip:hover {
         background-image:url("images/7_mystudip_mouseover.svg");
-        width: 200px;
-        height: 110px;
+        width: 179px;
+        height: 94px;
     }
     
     a.digital {
