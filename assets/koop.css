@@ -176,15 +176,17 @@ and open the template in the editor.
         opacity:0;
     }
     
-    a.studium {
-        background-image:url("images/3_studium.svg");
-        width: 121px;
-        height: 107px;
+    a.studium img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
     }
-    a.studium:hover {
-        background-image:url("images/3_studium_mouseover_dunkel.svg");
-        width: 121px;
-        height: 107px;
+
+    a.studium img.top.hover {
+        opacity:0;
     }
     
     a.mystudip {
