@@ -157,7 +157,7 @@ and open the template in the editor.
         height: 107px;
     }
     a.faecher:hover {
-        background-image:url("images/2_faecher_mouseover.svg");
+        background-image:url("images/2_faecher_mouseover_dunkel.svg");
         width: 121px;
         height: 107px;
     }
@@ -168,7 +168,7 @@ and open the template in the editor.
         height: 107px;
     }
     a.studium:hover {
-        background-image:url("images/3_studium_mouseover.svg");
+        background-image:url("images/3_studium_mouseover_dunkel.svg");
         width: 121px;
         height: 107px;
     }
@@ -179,7 +179,7 @@ and open the template in the editor.
         height: 94px;
     }
     a.mystudip:hover {
-        background-image:url("images/7_mystudip_mouseover.svg");
+        background-image:url("images/7_mystudip_mouseover_dark.svg");
         width: 179px;
         height: 94px;
     }
@@ -190,7 +190,7 @@ and open the template in the editor.
         height: 104px;
     }
     a.digital:hover {
-        background-image:url("images/8_digital_mouseover.svg");
+        background-image:url("images/8_digital_mouseover_dunkel.svg");
         width: 230px;
         height: 104px;
     }
