@@ -153,13 +153,13 @@ and open the template in the editor.
 
     a.faecher{
         background-image:url("images/2_faecher.svg");
-        width: 123px;
-        height: 109px;
+        width: 121px;
+        height: 107px;
     }
     a.faecher:hover {
         background-image:url("images/2_faecher_mouseover.svg");
-        width: 123px;
-        height: 109px;
+        width: 121px;
+        height: 107px;
     }
     
     a.studium {
