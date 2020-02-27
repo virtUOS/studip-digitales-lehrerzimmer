@@ -72,7 +72,10 @@
         <div class="flex-container-800-115-l100">
             <div class="flex-wrapper">
                 <a class='koop-index-navigation eins_add' href=''></a>
-                <a class='koop-index-navigation faecher' href='pages/subjects'></a>
+                <a class='koop-index-navigation faecher' href='pages/subjects'>
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher.svg' ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher_mouseover.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation studium' href='pages/my_way'></a>
                 <a class='koop-index-navigation fuenf_add' href=''></a>
             </div>
