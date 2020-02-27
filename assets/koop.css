@@ -151,6 +151,12 @@ and open the template in the editor.
 
 /* kacheln */
 
+
+    #teachuos-logo {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
     a.faecher{
         background-image:url("images/2_faecher.svg");
         width: 121px;
