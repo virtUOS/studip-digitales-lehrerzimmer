@@ -94,8 +94,8 @@
         <div class="flex-container-310-200">
             <div class="flex-wrapper-td">
                 <a class='koop-index-navigation tutorial' href=''>
-                    <img class="bottom" src="../../assests/images/11_tutorial.svg" />
-                    <img class="top" src="../../images/11_tutorial_mouseover.svg" />
+                    <img class="bottom" src="<?=$this->plugin->getPluginPath() . '/assests/images/11_tutorial.svg' ?>" />
+                    <img class="top" src="<?=$this->plugin->getPluginPath() . '/assets/images/11_tutorial_mouseover.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation fachschaften' href=''></a>
             </div>   
