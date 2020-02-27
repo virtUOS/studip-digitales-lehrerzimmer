@@ -179,7 +179,7 @@ and open the template in the editor.
         height: 94px;
     }
     a.mystudip:hover {
-        background-image:url("images/7_mystudip_mouseover_dark.svg");
+        background-image:url("images/7_mystudip_mouseover.svg");
         width: 179px;
         height: 94px;
     }
