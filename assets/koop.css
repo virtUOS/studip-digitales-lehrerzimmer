@@ -186,13 +186,13 @@ and open the template in the editor.
     
     a.digital {
         background-image:url("images/8_digital.svg");
-        width: 270px;
-        height: 125px;
+        width: 230px;
+        height: 104px;
     }
     a.digital:hover {
         background-image:url("images/8_digital_mouseover.svg");
-        width: 270px;
-        height: 125px;
+        width: 230px;
+        height: 104px;
     }
     
     a.tutorial {
