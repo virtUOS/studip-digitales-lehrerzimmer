@@ -244,14 +244,14 @@ and open the template in the editor.
     }
     a.fuenf_add {
         background-image:url("images/5_add.svg");
-        width: 144px;
+        width: 141px;
         height: 69px;
         margin-left: 0.25em;
         margin-top: 2.7em;
     }
     a.fuenf_add:hover {
         background-image:url("images/5_add_mouseover.svg");
-        width: 144px;
+        width: 141px;
         height: 69px;
         margin-left: 0.25em;
         margin-top: 2.7em;
