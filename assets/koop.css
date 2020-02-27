@@ -229,15 +229,15 @@ and open the template in the editor.
     
     a.fachschaften {
         background-image:url("images/12_fachschaft.svg");
-        width: 200px;
-        height: 100px;
+        width: 185px;
+        height: 60px;
         margin-left: 7.7em;
         margin-top: -0.5em;
     }
     a.fachschaften:hover {
         background-image:url("images/12_fachschaft_mouseover.svg");
-        width: 200px;
-        height: 100px;
+        width: 185px;
+        height: 60px;
         margin-left: 7.7em;
         margin-top: -0.5em;
     }
