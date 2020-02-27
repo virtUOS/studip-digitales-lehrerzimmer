@@ -264,13 +264,13 @@ and open the template in the editor.
         margin-top: -0.5em;
     }
     a.eins_add {
-        background-image:url("images/1_add.svg");
+        background-image:url("images/1_add_test.svg");
         width: 83px;
         height: 79px;
         margin-top: 2em;
     }
     a.eins_add:hover {
-        background-image:url("images/1_add_mouseover.svg");
+        background-image:url("images/1_add_test_mouseover.svg");
         width: 83px;
         height: 79px;
     }
