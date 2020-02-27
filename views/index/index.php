@@ -77,8 +77,8 @@
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation studium' href='pages/my_way'>
-                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_studium_mouseover_dunkel.svg' ?>" />
-                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_studium.svg' ?>" />
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/3_studium_mouseover_dunkel.svg' ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/3_studium.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation fuenf_add' href=''></a>
             </div>
