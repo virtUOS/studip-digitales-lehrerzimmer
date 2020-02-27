@@ -73,8 +73,8 @@
             <div class="flex-wrapper">
                 <a class='koop-index-navigation eins_add' href=''></a>
                 <a class='koop-index-navigation faecher' href='pages/subjects'>
-                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher.svg' ?>" />
-                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher_mouseover_dunkel.svg' ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher.svg' ?>" />
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher_mouseover_dunkel.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation studium' href='pages/my_way'></a>
                 <a class='koop-index-navigation fuenf_add' href=''></a>
@@ -97,8 +97,8 @@
         <div class="flex-container-310-200">
             <div class="flex-wrapper-td">
                 <a class='koop-index-navigation tutorial' href=''>
-                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/11_tutorial.svg' ?>" />
-                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/11_tutorial_mouseover.svg' ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/11_tutorial.svg' ?>" />
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/11_tutorial_mouseover.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation fachschaften' href=''></a>
             </div>   
