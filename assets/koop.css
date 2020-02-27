@@ -172,7 +172,7 @@ and open the template in the editor.
         transition: opacity 1s ease-in-out;
     }
 
-    a.tutorial img.top:hover {
+    a.faecher img.top:hover {
         opacity:0;
     }
     
