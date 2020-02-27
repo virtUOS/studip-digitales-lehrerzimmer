@@ -199,6 +199,8 @@ and open the template in the editor.
         width: 270px;
         height: 52px;
         position: relative;
+        margin-left: 2em;
+        margin-bottom: 1em;
     }
    
     a.tutorial img {
