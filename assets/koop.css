@@ -196,16 +196,16 @@ and open the template in the editor.
     }
     
     a.tutorial {
-        background-image:url("images/11_tutorial.svg");
-        width: 310px;
-        height: 70px;
+        background-image:url("images/11_veranstaltungen.svg");
+        width: 270px;
+        height: 52px;
         transition: 800ms background-image;
         transition-timing-function: ease-in;
     }
     a.tutorial:hover {
-        background-image:url("images/11_tutorial_mouseover.svg");
-        width: 310px;
-        height: 70px;
+        background-image:url("images/11_veranstaltungen_mouseover_dunkel.svg");
+        width: 270px;
+        height: 52px;
         transition: 800ms background-image;
         transition-timing-function: ease-in;
     }
