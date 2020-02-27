@@ -200,13 +200,13 @@ and open the template in the editor.
         width: 310px;
         height: 70px;
         transition: 800ms background-image;
-        transition-timing-function: ease-out;
+        transition-timing-function: ease-in;
     }
     a.tutorial:hover {
         background-image:url("images/11_tutorial_mouseover.svg");
         width: 310px;
         height: 70px;
-        transition: 800ms border-color;
+        transition: 800ms background-image;
         transition-timing-function: ease-in;
     }
     
