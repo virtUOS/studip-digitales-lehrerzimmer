@@ -233,14 +233,14 @@ and open the template in the editor.
     }
     a.eins_add {
         background-image:url("images/1_add.svg");
-        width: 85px;
-        height: 81px;
+        width: 83px;
+        height: 79px;
         margin-top: 2em;
     }
     a.eins_add:hover {
         background-image:url("images/1_add_mouseover.svg");
-        width: 85px;
-        height: 81px;
+        width: 83px;
+        height: 79px;
     }
     a.fuenf_add {
         background-image:url("images/5_add.svg");
