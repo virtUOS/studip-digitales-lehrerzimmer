@@ -157,15 +157,23 @@ and open the template in the editor.
         margin-bottom: 2em;
     }
 
-    a.faecher{
-        background-image:url("images/2_faecher.svg");
+    a.faecher {
         width: 121px;
         height: 107px;
+        position: relative;
     }
-    a.faecher:hover {
-        background-image:url("images/2_faecher_mouseover_dunkel.svg");
-        width: 121px;
-        height: 107px;
+   
+    a.faecher img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+
+    a.tutorial img.top:hover {
+        opacity:0;
     }
     
     a.studium {
