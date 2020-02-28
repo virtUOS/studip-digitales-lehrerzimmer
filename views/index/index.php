@@ -94,7 +94,10 @@
     <div class="flex-wrapper">
          <div class="flex-container-800-125">
              <div class="flex-wrapper">
-                <a class='koop-index-navigation mystudip' href=''></a>
+                <a class='koop-index-navigation mystudip' href=''>
+                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/7_mystudip_mouseover.svg' ?>" />
+                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/7_mystudip.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation digital' href='pages/digital_teaching'>
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/8_digital_mouseover_dunkel.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/8_digital.svg' ?>" />
@@ -112,7 +115,10 @@
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/11_veranstaltungen_mouseover_dunkel.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/11_veranstaltungen.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation fachschaften' href=''></a>
+                <a class='koop-index-navigation fachschaften' href=''>
+                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/12_fachschaft_mouseover.svg' ?>" />
+                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/12_fachschaft.svg' ?>" />
+                </a>
             </div>   
         </div>
         <div class="flex-container-500-200">
