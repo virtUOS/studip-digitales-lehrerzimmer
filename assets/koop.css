@@ -196,18 +196,26 @@ and open the template in the editor.
     a.studium img.top:hover {
         opacity:0;
     }
-    
+     
     a.mystudip {
-        background-image:url("images/7_mystudip.svg");
         width: 179px;
         height: 94px;
         margin-left: 5.5em;
         margin-top: -0.3em;
+        position: relative;
     }
-    a.mystudip:hover {
-        background-image:url("images/7_mystudip_mouseover.svg");
-        width: 179px;
-        height: 94px;
+    
+    a.mystudip img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    a.mystudip img.top:hover {
+        opacity:0;
     }
     
     a.digital {
@@ -262,20 +270,26 @@ and open the template in the editor.
         width: 200px;
         height: 210px;
     }
-    
+       
     a.fachschaften {
-        background-image:url("images/12_fachschaft.svg");
         width: 185px;
         height: 60px;
+        position: relative;
         margin-left: 4.9em;
         margin-top: -1em;
     }
-    a.fachschaften:hover {
-        background-image:url("images/12_fachschaft_mouseover.svg");
-        width: 185px;
-        height: 60px;
-        margin-left: 4.9em;
-        margin-top: -1em;
+    
+    a.fachschaften img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    a.fachschaften img.top:hover {
+        opacity:0;
     }
 
     a.eins_add {
