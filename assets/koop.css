@@ -286,6 +286,8 @@ and open the template in the editor.
     a.fuenf_add {
         width: 141px;
         height: 69px;
+        margin-left: 0.25em;
+        margin-top: 2.75em;
         position: relative;
     }
     
