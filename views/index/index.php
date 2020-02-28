@@ -80,7 +80,10 @@
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/3_studium_mouseover_dunkel.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/3_studium.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation fuenf_add' href=''></a>
+                <a class='koop-index-navigation fuenf_add' href=''>
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/5_add_klick.svg' ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/5_add.svg' ?>" />
+                    </a>
             </div>
         </div>
     </div>
