@@ -123,7 +123,10 @@
         </div>
         <div class="flex-container-500-200">
             <div class="flex-wrapper">
-                <a class='koop-index-navigation praxis' href='pages/study_to_practice'></a>
+                <a class='koop-index-navigation praxis' href='pages/study_to_practice'>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/13_praxis_test_dunkel.svg' ?>" />
+                <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/13_praxis_test.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation achtzehn_add' href=''></a>
             </div>
         </div>
