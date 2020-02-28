@@ -259,13 +259,14 @@ and open the template in the editor.
     a.tutorial img.top:hover {
         opacity:0;
     }
-   
+  
     a.praxis {
         width: 188px;
         height: 116x;
+        margin-left: 0.1em;
+        margin-top: 0.1em;
         position: relative;
     }
-
     a.praxis img {
         position:absolute;
         left:0;
@@ -274,7 +275,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.praxis img.top:hover {
         opacity:0;
     }
