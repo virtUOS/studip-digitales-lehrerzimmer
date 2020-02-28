@@ -207,14 +207,22 @@ and open the template in the editor.
     }
     
     a.digital {
-        background-image:url("images/8_digital.svg");
         width: 230px;
         height: 104px;
+        position: relative;
     }
-    a.digital:hover {
-        background-image:url("images/8_digital_mouseover_dunkel.svg");
-        width: 230px;
-        height: 104px;
+
+    a.digital img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.8s ease-in-out;
+        -moz-transition: opacity 0.8s ease-in-out;
+        -o-transition: opacity 0.8s ease-in-out;
+        transition: opacity 0.8s ease-in-out;
+    }
+
+    a.digital img.top:hover {
+        opacity:0;
     }
     
     a.tutorial {
