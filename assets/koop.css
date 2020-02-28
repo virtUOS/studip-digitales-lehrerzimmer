@@ -166,10 +166,10 @@ and open the template in the editor.
     a.faecher img {
         position:absolute;
         left:0;
-        -webkit-transition: opacity 0.2s ease-in-out;
-        -moz-transition: opacity 0.2s ease-in-out;
-        -o-transition: opacity 0.2s ease-in-out;
-        transition: opacity 0.2s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
 
     a.faecher img.top:hover {
@@ -185,10 +185,10 @@ and open the template in the editor.
     a.studium img {
         position:absolute;
         left:0;
-        -webkit-transition: opacity 0.2s ease-in-out;
-        -moz-transition: opacity 0.2s ease-in-out;
-        -o-transition: opacity 0.2s ease-in-out;
-        transition: opacity 0.2s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
 
     a.studium img.top:hover {
@@ -215,10 +215,10 @@ and open the template in the editor.
     a.digital img {
         position:absolute;
         left:0;
-        -webkit-transition: opacity 0.8s ease-in-out;
-        -moz-transition: opacity 0.8s ease-in-out;
-        -o-transition: opacity 0.8s ease-in-out;
-        transition: opacity 0.8s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
 
     a.digital img.top:hover {
@@ -236,10 +236,10 @@ and open the template in the editor.
     a.tutorial img {
         position:absolute;
         left:0;
-        -webkit-transition: opacity 1s ease-in-out;
-        -moz-transition: opacity 1s ease-in-out;
-        -o-transition: opacity 1s ease-in-out;
-        transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
 
     a.tutorial img.top:hover {
