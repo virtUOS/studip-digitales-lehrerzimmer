@@ -282,20 +282,28 @@ and open the template in the editor.
         width: 82px;
         height: 79px;
     }
+
     a.fuenf_add {
-        background-image:url("images/5_add.svg");
         width: 141px;
         height: 69px;
         margin-left: 0.25em;
         margin-top: 2.7em;
     }
-    a.fuenf_add:hover {
-        background-image:url("images/5_add_mouseover.svg");
-        width: 141px;
-        height: 69px;
+    
+    a.fuenf_add img {
         margin-left: 0.25em;
         margin-top: 2.7em;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
+
+    a.fuenf_add img.top:hover {
+        opacity:0;
+    }
+
     a.neun_add {
         background-image:url("images/9_add.svg");
         width: 90px;
