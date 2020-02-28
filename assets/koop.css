@@ -191,7 +191,7 @@ and open the template in the editor.
         transition: opacity 0.2s ease-in-out;
     }
 
-    a.studium img.top.hover {
+    a.studium img.top:hover {
         opacity:0;
     }
     
