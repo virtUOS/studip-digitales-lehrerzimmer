@@ -71,7 +71,10 @@
     <div class='flex-wrapper'>
         <div class="flex-container-800-115-l100">
             <div class="flex-wrapper">
-                <a class='koop-index-navigation eins_add' href=''></a>
+                <a class='koop-index-navigation eins_add' href=''>
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/1_add_test_mouseover.svg' ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/1_add_test.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation faecher' href='pages/subjects'>
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher_mouseover_dunkel.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/2_faecher.svg' ?>" />
