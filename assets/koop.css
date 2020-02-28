@@ -162,8 +162,7 @@ and open the template in the editor.
         width: 123px;
         height: 107px;
         position: relative;
-    }
-   
+    } 
     a.faecher img {
         position:absolute;
         left:0;
@@ -172,7 +171,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.faecher img.top:hover {
         opacity:0;
     }
@@ -183,7 +181,6 @@ and open the template in the editor.
         position: relative;
         margin-top: -0.04em;
     }
-
     a.studium img {
         position:absolute;
         left:0;
@@ -192,7 +189,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.studium img.top:hover {
         opacity:0;
     }
@@ -203,8 +199,7 @@ and open the template in the editor.
         margin-left: 5.5em;
         margin-top: -0.3em;
         position: relative;
-    }
-    
+    }  
     a.mystudip img {
         position:absolute;
         left:0;
@@ -213,18 +208,16 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.mystudip img.top:hover {
         opacity:0;
-    }
-    
+    }  
+
     a.digital {
         width: 230px;
         height: 104px;
         position: relative;
         margin-top: -0.3em;
     }
-
     a.digital img {
         position:absolute;
         left:0;
@@ -233,7 +226,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.digital img.top:hover {
         opacity:0;
     }
@@ -246,7 +238,6 @@ and open the template in the editor.
         margin-top: -2.45em;
         margin-bottom: 1em;
     }
-   
     a.tutorial img {
         position:absolute;
         left:0;
@@ -255,7 +246,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.tutorial img.top:hover {
         opacity:0;
     }
@@ -285,8 +275,7 @@ and open the template in the editor.
         position: relative;
         margin-left: 4.9em;
         margin-top: -1em;
-    }
-    
+    } 
     a.fachschaften img {
         position:absolute;
         left:0;
@@ -295,7 +284,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.fachschaften img.top:hover {
         opacity:0;
     }
@@ -307,7 +295,6 @@ and open the template in the editor.
         margin-top: 2.1em;
         position: relative;
     }
-
     a.eins_add img {
         position:absolute;
         left:0;
@@ -316,7 +303,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.eins_add img.top:hover {
         opacity:0;
     }
@@ -327,8 +313,7 @@ and open the template in the editor.
         margin-left: 0.27em;
         margin-top: 2.8em;
         position: relative;
-    }
-    
+    } 
     a.fuenf_add img {
         position:absolute;
         left:0;
@@ -337,7 +322,6 @@ and open the template in the editor.
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
-
     a.fuenf_add img.top:hover {
         opacity:0;
     }
