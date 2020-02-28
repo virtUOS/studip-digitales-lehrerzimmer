@@ -277,17 +277,26 @@ and open the template in the editor.
         margin-left: 4.9em;
         margin-top: -1em;
     }
+
     a.eins_add {
-        background-image:url("images/1_add_test.svg");
         width: 82px;
         height: 79px;
         margin-left: 1.9em;
         margin-top: 2.1em;
+        position: relative;
     }
-    a.eins_add:hover {
-        background-image:url("images/1_add_test_mouseover.svg");
-        width: 82px;
-        height: 79px;
+
+    a.eins_add img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    a.eins_add img.top:hover {
+        opacity:0;
     }
 
     a.fuenf_add {
