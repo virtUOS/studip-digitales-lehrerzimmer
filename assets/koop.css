@@ -234,7 +234,8 @@ and open the template in the editor.
         width: 270px;
         height: 52px;
         position: relative;
-        margin-left: 2em;
+        margin-left: -1.2em;
+        margin-top: -2.35em;
         margin-bottom: 1em;
     }
    
@@ -266,15 +267,15 @@ and open the template in the editor.
         background-image:url("images/12_fachschaft.svg");
         width: 185px;
         height: 60px;
-        margin-left: 7.7em;
-        margin-top: -0.5em;
+        margin-left: 4.9em;
+        margin-top: -1em;
     }
     a.fachschaften:hover {
         background-image:url("images/12_fachschaft_mouseover.svg");
         width: 185px;
         height: 60px;
-        margin-left: 7.7em;
-        margin-top: -0.5em;
+        margin-left: 4.9em;
+        margin-top: -1em;
     }
     a.eins_add {
         background-image:url("images/1_add_test.svg");
