@@ -154,11 +154,12 @@ and open the template in the editor.
 
     #teachuos-logo {
         margin-top: 3em;
-        margin-bottom: 2em;
+        margin-bottom: 1.8em;
+        margin-left: 1.7em;
     }
 
     a.faecher {
-        width: 121px;
+        width: 123px;
         height: 107px;
         position: relative;
     }
@@ -177,9 +178,10 @@ and open the template in the editor.
     }
         
     a.studium {
-        width: 121px;
+        width: 124px;
         height: 107px;
         position: relative;
+        margin-top: -0.04em;
     }
 
     a.studium img {
@@ -199,6 +201,8 @@ and open the template in the editor.
         background-image:url("images/7_mystudip.svg");
         width: 179px;
         height: 94px;
+        margin-left: 5.5em;
+        margin-top: -0.3em;
     }
     a.mystudip:hover {
         background-image:url("images/7_mystudip_mouseover.svg");
@@ -210,6 +214,7 @@ and open the template in the editor.
         width: 230px;
         height: 104px;
         position: relative;
+        margin-top: -0.3em;
     }
 
     a.digital img {
@@ -275,8 +280,8 @@ and open the template in the editor.
         background-image:url("images/1_add_test.svg");
         width: 82px;
         height: 79px;
-        margin-left: 2em;
-        margin-top: 2em;
+        margin-left: 1.9em;
+        margin-top: 2.1em;
     }
     a.eins_add:hover {
         background-image:url("images/1_add_test_mouseover.svg");
@@ -288,7 +293,7 @@ and open the template in the editor.
         width: 140px;
         height: 69px;
         margin-left: 0.27em;
-        margin-top: 2.75em;
+        margin-top: 2.8em;
         position: relative;
     }
     
