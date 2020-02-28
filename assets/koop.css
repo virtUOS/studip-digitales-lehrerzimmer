@@ -291,8 +291,7 @@ and open the template in the editor.
     }
     
     a.fuenf_add img {
-        margin-left: 0.25em;
-        margin-top: 2.7em;
+        position:absolute;
         left:0;
         -webkit-transition: opacity 0.3s ease-in-out;
         -moz-transition: opacity 0.3s ease-in-out;
