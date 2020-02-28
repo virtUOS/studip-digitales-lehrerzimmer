@@ -263,8 +263,8 @@ and open the template in the editor.
     a.praxis {
         width: 188px;
         height: 116x;
-        margin-left: 0.1em;
-        margin-top: 0.1em;
+        margin-left: -2.1em;
+        margin-top: -1.8em;
         position: relative;
     }
     a.praxis img {
