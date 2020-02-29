@@ -340,8 +340,8 @@ and open the template in the editor.
     a.zehn_add {
         width: 149px;
         height: 81px;
-        margin-left: 1em;
-        margin-top: 1em;
+        margin-left: 0em;
+        margin-top: -0.4em;
         position: relative;
     }
     a.zehn_add img {
