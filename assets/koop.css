@@ -329,8 +329,8 @@ and open the template in the editor.
     a.neun_add {
         width: 84px;
         height: 82px;
-        margin-left: 0.1em;
-        margin-top: 0.1em;
+        margin-left: -0.01em;
+        margin-top: -0.5em;
         position: relative;
     } 
     a.neun_add img {
@@ -348,7 +348,7 @@ and open the template in the editor.
     a.zehn_add {
         width: 149px;
         height: 81px;
-        margin-left: 0em;
+        margin-left: 0.2em;
         margin-top: -0.4em;
         position: relative;
     }
