@@ -327,14 +327,22 @@ and open the template in the editor.
     }
 
     a.neun_add {
-        background-image:url("images/9_add.svg");
-        width: 90px;
-        height: 90px;
+        width: 84px;
+        height: 82px;
+        margin-left: 0.1em;
+        margin-top: 0.1em;
+        position: relative;
+    } 
+    a.neun_add img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
-    a.neun_add:hover {
-        background-image:url("images/9_add_mouseover.svg");
-        width: 90px;
-        height: 90px;
+    a.neun_add img.top:hover {
+        opacity:0;
     }
     
     a.zehn_add {
