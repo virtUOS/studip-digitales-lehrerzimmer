@@ -336,16 +336,26 @@ and open the template in the editor.
         width: 90px;
         height: 90px;
     }
+    
     a.zehn_add {
-        background-image:url("images/10_add.svg");
-        width: 200px;
-        height: 90px;
+        width: 149px;
+        height: 81px;
+        margin-left: 1em;
+        margin-top: 1em;
+        position: relative;
     }
-    a.zehn_add:hover {
-        background-image:url("images/10_add_mouseover.svg");
-        width: 200px;
-        height: 90px;
+    a.zehn_add img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
+    a.zehn_add img.top:hover {
+        opacity:0;
+    }
+
     a.achtzehn_add {
         background-image:url("images/18_add.svg");
         width: 150px;
