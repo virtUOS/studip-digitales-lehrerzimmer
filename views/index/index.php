@@ -102,7 +102,10 @@
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/8_digital_mouseover_dunkel.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/8_digital.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation neun_add' href=''></a>
+                <a class='koop-index-navigation neun_add' href=''>
+                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/9_add_test_dunkel.svg' ?>" />
+                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/9_add_test.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation zehn_add' href=''>
                       <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/10_add_new_mouseover.svg' ?>" />
                       <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/10_add_new.svg' ?>" />
