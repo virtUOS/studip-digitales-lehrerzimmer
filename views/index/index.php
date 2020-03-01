@@ -152,6 +152,9 @@
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/18_add_dunkel.svg' ?>" />
                 <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/18_add_hell.svg' ?>" />
                 </a>
+                <a class='koop-index-navigation schweben' href=''>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/21_schweben.svg' ?>" />
+                </a>
             </div>
         </div>
     </div>
