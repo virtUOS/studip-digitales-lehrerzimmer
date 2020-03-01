@@ -217,6 +217,7 @@ and open the template in the editor.
         height: 104px;
         position: relative;
         margin-top: -0.3em;
+        margin-left: 0.1em;
     }
     a.digital img {
         position:absolute;
