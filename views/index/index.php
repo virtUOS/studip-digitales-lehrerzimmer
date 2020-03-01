@@ -143,7 +143,6 @@
                 </a>
                 <a class='koop-index-navigation vierzehn_mini' href=''>
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/14_mini.svg' ?>" />
-                <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/14_mini.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation achtzehn_add' href=''></a>
             </div>
