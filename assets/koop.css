@@ -363,6 +363,25 @@ and open the template in the editor.
     }
     a.zehn_add img.top:hover {
         opacity:0;
+    
+    }
+    a.fuenfzehn_add {
+        width: 63px;
+        height: 62px;
+        margin-left: 0.2em;
+        margin-top: -0.4em;
+        position: relative;
+    }
+    a.fuenfzehn_add img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+    a.fuenfzehn_add img.top:hover {
+        opacity:0;
     }
 
     a.achtzehn_add {
