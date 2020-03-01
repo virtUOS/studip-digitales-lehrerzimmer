@@ -450,18 +450,10 @@ and open the template in the editor.
         position: relative;
     }
    
-    a.vier {
-        width: 102px;
-        height: 38px;
-        margin-left: -10.1em;
-        margin-top: -0.15em;
-        position: relative;
-    }
-
     a.sechs {
         width: 54px;
         height: 50px;
-        margin-left: 2.75em;
+        margin-left: -0.1em;
         margin-top: 4.1em;
         position: relative;
     }
