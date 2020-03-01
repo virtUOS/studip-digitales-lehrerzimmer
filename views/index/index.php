@@ -137,6 +137,10 @@
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/15_info_dunkel.svg' ?>" />
                 <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/15_info.svg' ?>" />
                 </a>
+                <a class='koop-index-navigation sechzehn_add' href=''>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/16_kontakt_dunkel_b.svg' ?>" />
+                <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/16_kontakt_hell.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation achtzehn_add' href=''></a>
             </div>
         </div>
