@@ -441,7 +441,7 @@ and open the template in the editor.
         opacity:0;
     }
 
-/* Bitte nur als einfaches Bild einfügen */
+/* Bitte nur als einfache Bilder einfügen */
     a.vierzehn_mini {
         width: 38px;
         height: 34px;
@@ -449,6 +449,15 @@ and open the template in the editor.
         margin-top: -1.6em;
         position: relative;
     }
+
+    a.schweben {
+        width: 500px;
+        height: 52px;
+        margin-left: 1em;
+        margin-top: 1em;
+        position: relative;
+    }
+/* Danke! */
 
     a.koop-index-navigation {
         background-repeat: no-repeat;
