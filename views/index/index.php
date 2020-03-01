@@ -87,8 +87,8 @@
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/5_add_klick.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/5_add.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation vier' href=''>
-                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/4_box.svg' ?>" />
+                <a class='koop-index-navigation comic' href=''>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/teachUOS_Comic.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation sechs' href=''>
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/6_box.svg' ?>" />
