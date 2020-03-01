@@ -406,8 +406,8 @@ and open the template in the editor.
     a.verwalten {
         width: 108px;
         height: 63px;
-        margin-left: 0.1em;
-        margin-top: 0.1em;
+        margin-left: -2.65em;
+        margin-top: 1.34em;
         position: relative;
     }
     a.verwalten img {
