@@ -142,7 +142,7 @@
                 <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/16_kontakt_hell.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation vierzehn_mini' href=''>
-                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/14_mini.svg' ?>" />
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/14_mini_a.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation achtzehn_add' href=''></a>
             </div>
