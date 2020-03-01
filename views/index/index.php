@@ -133,6 +133,10 @@
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/13_praxis_test_dunkel.svg' ?>" />
                 <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/13_praxis_test.svg' ?>" />
                 </a>
+                <a class='koop-index-navigation fuenfzehn_add' href=''>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/15_info_dunkel.svg' ?>" />
+                <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/15_info.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation achtzehn_add' href=''></a>
             </div>
         </div>
