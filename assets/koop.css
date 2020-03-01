@@ -461,16 +461,16 @@ and open the template in the editor.
     a.sechs {
         width: 54px;
         height: 50px;
-        margin-left: 1em;
-        margin-top: 1em;
+        margin-left: 0.1em;
+        margin-top: 0.1em;
         position: relative;
     }
 
     a.schweben {
         width: 500px;
         height: 52px;
-        margin-left: 1em;
-        margin-top: 1em;
+        margin-left: 0.1em;
+        margin-top: 0-1em;
         position: relative;
     }
 /* Danke! */
