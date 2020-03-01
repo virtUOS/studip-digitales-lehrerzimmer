@@ -449,7 +449,15 @@ and open the template in the editor.
         margin-top: -1.6em;
         position: relative;
     }
-   
+      
+    a.comic {
+        width: 43px;
+        height: 41px;
+        margin-left: 1em;
+        margin-top: 1em;
+        position: relative;
+    }
+
     a.sechs {
         width: 54px;
         height: 50px;
