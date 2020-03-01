@@ -403,6 +403,25 @@ and open the template in the editor.
         opacity:0;
     }
 
+    a.verwalten {
+        width: 108px;
+        height: 63px;
+        margin-left: 0.1em;
+        margin-top: 0.1em;
+        position: relative;
+    }
+    a.verwalten img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+    }
+    a.verwalten img.top:hover {
+        opacity:0;
+    }
+
 /* soll einfach nur als Bild eingefügt werden */
     a.vierzehn_mini {
         width: 38px;
