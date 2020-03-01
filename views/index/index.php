@@ -8,7 +8,7 @@
         <div class="flex-container-half">
             
 -->            
-    <img id='teachuos-logo' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS.svg' ?>'/>
+    <img id='teachuos-logo' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS_a.svg' ?>'/>
 <!--
              Zeile1 
             <div class="flex-wrapper">
@@ -281,8 +281,11 @@
         height: 50px;
         margin-bottom: 0;
     }
+   
+       <img id='teachuos-logo' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/schweben.svg' ?>'/>
     
-    .fill-blue {
+     .fill-blue 
+        {
         background-color: #28497c;
     }
 </style>
