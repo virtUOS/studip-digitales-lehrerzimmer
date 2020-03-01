@@ -144,6 +144,10 @@
                 <a class='koop-index-navigation vierzehn_mini' href=''>
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/14_mini_a.svg' ?>" />
                 </a>
+                <a class='koop-index-navigation verwalten' href=''>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/17_verwalten_dunkel.svg' ?>" />
+                <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/17_verwalten.svg' ?>" />
+                </a>
                 <a class='koop-index-navigation achtzehn_add' href=''></a>
             </div>
         </div>
