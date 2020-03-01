@@ -8,7 +8,7 @@
         <div class="flex-container-half">
             
 -->            
-    <img id='teachuos-logo' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS_a.svg' ?>'/>
+    <img id='teachuos-logo' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS.svg' ?>'/>
 <!--
              Zeile1 
             <div class="flex-wrapper">
