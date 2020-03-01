@@ -425,8 +425,8 @@ and open the template in the editor.
     a.achtzehn_add {
         width: 108px;
         height: 63px;
-        margin-left: 0.1em;
-        margin-top: 0.1em;
+        margin-left: 0.05em;
+        margin-top: 1.35em;
         position: relative;
     }
     a.achtzehn_add img {
@@ -449,6 +449,7 @@ and open the template in the editor.
         margin-top: -1.6em;
         position: relative;
     }
+/* soll einfach nur als Bild eingefügt werden */
 
     a.koop-index-navigation {
         background-repeat: no-repeat;
