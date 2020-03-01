@@ -441,12 +441,28 @@ and open the template in the editor.
         opacity:0;
     }
 
-/* Bitte nur als einfache Bilder einfügen */
+/* Bitte folgende nur als einfache Bilder einfügen */
     a.vierzehn_mini {
         width: 38px;
         height: 34px;
         margin-left: -12.2em;
         margin-top: -1.6em;
+        position: relative;
+    }
+   
+    a.vier {
+        width: 102px;
+        height: 38px;
+        margin-left: 1em;
+        margin-top: 1em;
+        position: relative;
+    }
+
+    a.sechs {
+        width: 54px;
+        height: 50px;
+        margin-left: 1em;
+        margin-top: 1em;
         position: relative;
     }
 
