@@ -384,6 +384,25 @@ and open the template in the editor.
         opacity:0;
     }
 
+    }
+    a.sechzehn_add {
+        width: 62px;
+        height: 61px;
+        margin-left: 0.1em;
+        margin-top: 0.1em;
+        position: relative;
+    }
+    a.sechzehn_add img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+    a.sechzehn_add img.top:hover {
+        opacity:0;
+    }
 
     a.koop-index-navigation {
         background-repeat: no-repeat;
