@@ -385,7 +385,7 @@ and open the template in the editor.
     }
 
     a.sechzehn_add {
-        width: 61px;
+        width: 62px;
         height: 61px;
         margin-left: 0.3em;
         margin-top: -3.3em;
@@ -394,10 +394,10 @@ and open the template in the editor.
     a.sechzehn_add img {
         position:absolute;
         left:0;
-        -webkit-transition: opacity 0.3s ease-in-out;
-        -moz-transition: opacity 0.3s ease-in-out;
-        -o-transition: opacity 0.3s ease-in-out;
-        transition: opacity 0.3s ease-in-out;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
     }
     a.sechzehn_add img.top:hover {
         opacity:0;
