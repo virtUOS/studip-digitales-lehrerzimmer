@@ -368,8 +368,8 @@ and open the template in the editor.
     a.fuenfzehn_add {
         width: 63px;
         height: 62px;
-        margin-left: 0.2em;
-        margin-top: -0.4em;
+        margin-left: 3.05em;
+        margin-top: -3.4em;
         position: relative;
     }
     a.fuenfzehn_add img {
@@ -384,17 +384,6 @@ and open the template in the editor.
         opacity:0;
     }
 
-    a.achtzehn_add {
-        background-image:url("images/18_add.svg");
-        width: 150px;
-        height: 70px;
-    }
-    a.achtzehn_add:hover {
-        background-image:url("images/18_add_mouseover.svg");
-        width: 150px;
-        height: 70px;
-    }
-    
     a.koop-index-navigation {
         background-repeat: no-repeat;
         display: block;
