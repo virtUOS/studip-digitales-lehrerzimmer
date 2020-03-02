@@ -469,8 +469,9 @@ and open the template in the editor.
     .schwebend img {
         width: 500px;
         height: 52px;
-        margin-left: 0.1em;
-        margin-top: 0.1em;
+        margin-left: 8em;
+        margin-bottom: 4.5em;
+        margin-top: -8em;
         position: relative;
     }
 /* Danke! :) */
