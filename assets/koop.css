@@ -466,7 +466,7 @@ and open the template in the editor.
         position: relative;
     }
 
-    a.schweben {
+    .schwebend img {
         width: 500px;
         height: 52px;
         margin-left: 0.1em;
