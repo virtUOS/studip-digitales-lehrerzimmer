@@ -161,6 +161,9 @@
             </div>
         </div>
     </div>
+        
+    <div class="schwebend"><img src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . 'assets/images/A_schweben.svg">
+        </div>
     
     
 </div>
