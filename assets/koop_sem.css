@@ -1,3 +1,7 @@
 section#courseware .cw-sidebar {
-  display: none !imporant;
+  display: none !important;
+}
+
+#page_title_container{
+  display: none !important;
 }
