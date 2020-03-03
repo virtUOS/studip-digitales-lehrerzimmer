@@ -9,3 +9,7 @@ section#courseware .cw-sidebar {
 #tabs {
   display: none !important;
 }
+
+section#courseware ol.active-subchapter{
+  display: none !important;
+}
