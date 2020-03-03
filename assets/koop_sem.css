@@ -13,3 +13,7 @@ section#courseware .cw-sidebar {
 section#courseware ol.active-subchapter{
   display: none !important;
 }
+
+#koop-sidebar {
+  background-image: url('/images/0_teachUOS.svg');
+}
