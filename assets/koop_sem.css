@@ -5,3 +5,7 @@ section#courseware .cw-sidebar {
 #page_title_container{
   display: none !important;
 }
+
+#tabs {
+  display: none !important;
+}
