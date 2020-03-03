@@ -1,4 +1,4 @@
 $( document ).ready(function() {
-    $('.cw-sidebar').before('<p>Test</p>');
-    alert('test');
+    $('.cw-sidebar').before('<div id='koop-sidebar'></div>');
+
 });
