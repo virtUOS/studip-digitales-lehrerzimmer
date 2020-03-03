@@ -117,15 +117,13 @@ class KoOp extends StudipPlugin implements SystemPlugin
             
             Navigation::addItem('/koop', $navigation);  
         }    
-        
-        if (true || Course::findCurrent()->id == 'a4204c684df5c46ec74a6f6420f1d81d'){
-            PageLayout::addStylesheet($this->getPluginURL().'/assets/koop_sem.css');
-        }
     }
 
     public function initialize ()
     {
-        //PageLayout::addStylesheet($this->getPluginURL().'/assets/koop.css');
+        if (Course::findCurrent()->id == 'a4204c684df5c46ec74a6f6420f1d81d'){
+            PageLayout::addStylesheet($this->getPluginURL().'/assets/koop.css');
+        }
     }
 
     public function perform($unconsumed_path)
