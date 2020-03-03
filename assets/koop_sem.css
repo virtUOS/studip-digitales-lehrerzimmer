@@ -15,5 +15,11 @@ section#courseware ol.active-subchapter{
 }
 
 #koop-sidebar {
-  background-image: url('/images/0_teachUOS.svg');
+  background-image: url('images/0_teachUOS.svg');
+  background-image: url('images/0_teachUOS.svg');
+  width: 250px;
+  height: 100px;
+  background-repeat: no-repeat;
+  margin-left: -300px;
+  position: absolute;
 }
