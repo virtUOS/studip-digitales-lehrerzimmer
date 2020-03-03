@@ -122,6 +122,7 @@ class KoOp extends StudipPlugin implements SystemPlugin
     public function initialize ()
     {
         if (true || Course::findCurrent()->id == 'a4204c684df5c46ec74a6f6420f1d81d'){
+            var_dump(Course::findCurrent());die();
             PageLayout::addStylesheet($this->getPluginURL().'/assets/koop.css');
         }
     }
