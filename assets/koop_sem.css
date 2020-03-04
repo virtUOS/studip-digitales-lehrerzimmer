@@ -20,6 +20,7 @@ section#courseware ol.active-subchapter{
   height: 388px;
   background-repeat: no-repeat;
   margin-left: -300px;
+  margin-top: 160px;
   position: absolute;
   background-size: 100%;
 }
