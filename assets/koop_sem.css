@@ -19,8 +19,13 @@ section#courseware ol.active-subchapter{
   width: 386px;
   height: 388px;
   background-repeat: no-repeat;
-  margin-left: -300px;
+  margin-left: -370px;
   margin-top: 160px;
   position: absolute;
   background-size: 100%;
+}
+
+section#courseware {
+    padding-left: 370px !important;
+    max-width: 1000px !important;
 }
