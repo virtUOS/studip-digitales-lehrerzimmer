@@ -28,12 +28,12 @@ section#courseware ol.active-subchapter{
 section#courseware {
     padding-top: 100px !important;
     padding-left: 530px !important;
-    max-width: 1000px !important;
+    max-width: 1200px !important;
 }
 
 #layout_content {
     margin-left: auto !important;
     margin-right: auto !important;
-    max-width: 1000px !important;
+    max-width: 1200px !important;
 }
 
