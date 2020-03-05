@@ -15,9 +15,9 @@ section#courseware ol.active-subchapter{
 }
 
 #koop-sidebar {
-  background-image: url('images/faecher_test.png');
-  width: 386px;
-  height: 388px;
+  background-image: url('images/faecher_prev.svg');
+  width: 385px;
+  height: 383px;
   background-repeat: no-repeat;
   margin-left: -500px;
   margin-top: 0px;
