@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.144 44">
+  <title>B0_comic</title>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <g>
+        <rect x="15.622" y="37.298" width="0.849" height="6.077" fill="#2e3192"/>
+        <rect x="20.358" y="37.298" width="0.849" height="6.077" fill="#2e3192"/>
+        <ellipse cx="18.459" cy="20.766" rx="7.037" ry="11.841" fill="#8a94ff"/>
+        <ellipse cx="28.804" cy="23.148" rx="2.734" ry="8.697" transform="translate(-1.897 43.713) rotate(-72.603)" fill="#2e3192"/>
+        <ellipse cx="27.498" cy="24.203" rx="2.772" ry="7.881" transform="translate(-7.211 35.915) rotate(-60)" fill="#2e3192"/>
+        <ellipse cx="8.34" cy="23.192" rx="8.697" ry="2.734" transform="translate(-6.553 3.554) rotate(-17.397)" fill="#2e3192"/>
+        <ellipse cx="9.646" cy="24.247" rx="7.881" ry="2.772" transform="translate(-10.831 8.072) rotate(-30)" fill="#2e3192"/>
+        <ellipse cx="18.415" cy="26.53" rx="7.037" ry="11.841" fill="#8a94ff"/>
+        <circle cx="12.896" cy="16.364" r="5.429" fill="#2e3192"/>
+        <ellipse cx="18.37" cy="28.339" rx="6.188" ry="7.395" fill="#aab1ff"/>
+        <polygon points="21.718 19.157 14.71 19.157 18.214 26.285 21.718 19.157" fill="#322697"/>
+        <circle cx="12.896" cy="16.364" r="5.205" fill="#fff"/>
+        <circle cx="12.896" cy="16.253" r="1.698" fill="#2e3192"/>
+        <circle cx="23.62" cy="16.186" r="5.429" fill="#2e3192"/>
+        <circle cx="23.62" cy="16.186" r="5.205" fill="#f4f4ff"/>
+        <circle cx="23.62" cy="16.074" r="1.698" fill="#2e3192"/>
+        <ellipse cx="15.175" cy="43.397" rx="1.296" ry="0.514" fill="#2e3192"/>
+        <ellipse cx="21.654" cy="43.486" rx="1.296" ry="0.514" fill="#2e3192"/>
+        <ellipse cx="18.799" cy="5.535" rx="5.55" ry="1.365" transform="translate(11.838 23.854) rotate(-85.598)" fill="#2e3192"/>
+        <ellipse cx="19.444" cy="6.219" rx="4.944" ry="1.408" transform="translate(8.756 23.611) rotate(-76.163)" fill="#2e3192"/>
+        <path d="M16.136,12.142a5.43,5.43,0,0,0-9.518,0Z" fill="#2e3192"/>
+        <path d="M29.317,12.142a5.43,5.43,0,0,0-9.518,0Z" fill="#2e3192"/>
+        <ellipse cx="24.73" cy="15.493" rx="0.946" ry="0.867" fill="#fff"/>
+        <ellipse cx="14.065" cy="15.493" rx="0.946" ry="0.867" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
