@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     $.ajax({
-      url: "https://studip3g-test.rz.uni-osnabrueck.de/studip/qplus-koop/plugins_packages/virtUOS/KoOp/menu/faecher",
+      url: "https://studip3g-test.rz.uni-osnabrueck.de/studip/qplus-koop/plugins.php/KoOp/menu/faecher",
       success: function (data){
             console.log(data);
       }
