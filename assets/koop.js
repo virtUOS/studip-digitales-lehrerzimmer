@@ -1,3 +1,6 @@
 $( document ).ready(function() {
-    $('.cw-sidebar').before('<a href="/studip/qplus-koop/plugins.php/koop/index"><div id="koop-sidebar"></div></a>');
+    vonSeite = window.open("datei.txt");
+    vonSeite.close();
+    $('.cw-sidebar').before(vonSeite.document.body.innerText;);
 });
+
