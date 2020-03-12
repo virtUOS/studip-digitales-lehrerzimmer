@@ -1,4 +1,4 @@
 $( document ).ready(function() {
-    $('.cw-sidebar').load('../../demo.html');
+    $('.cw-sidebar').load('../demo.html');
 });
 
