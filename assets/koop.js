@@ -5,6 +5,6 @@ $( document ).ready(function() {
     xmlhttp.send();
     var text = xmlhttp.responseText;
     console.log($('.cw-sidebar'));
-     $('.cw-sidebar').before(text);
+     $('.cw-sidebar').after(text);
 });
 
