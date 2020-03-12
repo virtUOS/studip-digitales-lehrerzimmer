@@ -7,7 +7,7 @@ $( document ).ready(function() {
             text = data;
       }
     });
-
+    console.log(text);
     console.log($('.cw-sidebar'));
      $('.cw-sidebar').after(text);
 });
