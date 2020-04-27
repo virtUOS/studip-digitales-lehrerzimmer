@@ -74,9 +74,9 @@
    </div> 
    <div class="koop-text-behalter">
 
-            <h3>Fachschaften</h3>
+            <h3>Vorwort / Einführung</h3>
 
-            Auf Fachbereichsebene werden die Studierenden durvh die von ihnen gewählten Fachschaften vertreten. Der Fachschaftsrat gilt als Vertretung der Studierenden eines Fachbereiches. Neben der Vertretungsfunktion erfüllen die Mitglieder der Fachschaften sehr unterschiedliche Aufgaben. 
+            Egal ob am Anfang des Studiums oder mittendrin: Fragen zu Studienplanung, Pralktika und Auslandsaufenthalen, Finanzierung und vielem mehr tauchen immer wieder auf. Wo bekommst du Unterstützung? Welche Angebote gibt es an der Uni neben denen deiner Fächer noch? Welche Erfahrungen haben Kommiliton*innen gesammelt? Fächerübergreifende Orientierung und Hinweise sind auf dieser Seite kurz und knapp zusammengefasst.
 </div>
 </div>
 <img   src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/3_studium.png' ?>'/>
