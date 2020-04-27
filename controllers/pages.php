@@ -70,6 +70,27 @@ class PagesController extends StudipController {
     {
         $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=151');
     }
+    public function Praktikum_action()
+    {
+        $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=152');
+    }
+    public function Fachschaften_action()
+    {
+        $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=153');
+    }
+    public function Professionalisierung_action()
+    {
+        $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=154');
+    }
+    public function Auslandsaufenthalte_action()
+    {
+        $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=155');
+    }
+    public function Beratungsangebote_action()
+    {
+        $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=150');
+    }
+
 
     // customized #url_for for plugins
     public function url_for($to = '')

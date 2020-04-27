@@ -16,11 +16,11 @@
     	
         <div class='flex-wrapper'>
     
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C1_faq_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C1_faq.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/subjects'>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C2_verlaufsplan_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C2_verlaufsplan.svg' ?>" />
                     </a>
@@ -32,15 +32,15 @@
         
         <div class='flex-wrapper'>
       
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='./Fachschaften'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/subjects'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./Praktikum'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C5_praktika_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C5_praktika.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/my_way'>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C6_stipendien_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C6_stipendien.svg' ?>" />
                     </a>
@@ -49,15 +49,15 @@
         
         <div class='flex-wrapper'>
             
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='./Auslandsaufenthalte'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C7_ausland_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C7_ausland.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/subjects'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./Beratungsangebote'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C8_beratung_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C8_beratung.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/my_way'>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos.svg' ?>" />
                     </a>
