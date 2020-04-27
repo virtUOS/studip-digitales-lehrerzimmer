@@ -24,7 +24,7 @@
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C2_verlaufsplan_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C2_verlaufsplan.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/my_way'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./Pruefungsordnungen'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C3_kcl_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C3_kcl.svg' ?>" />
                     </a>

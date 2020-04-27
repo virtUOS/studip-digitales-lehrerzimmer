@@ -65,6 +65,11 @@ class PagesController extends StudipController {
         Navigation::activateItem('koop/my_way2');
         PageLayout::setTitle(_("Mein Weg durchs Studium"));
     }
+    
+    public function Pruefungsordnungen_action()
+    {
+        $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=151');
+    }
 
     // customized #url_for for plugins
     public function url_for($to = '')
