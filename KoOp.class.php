@@ -115,6 +115,14 @@ class KoOp extends StudipPlugin implements SystemPlugin
             
             $navigation->addSubNavigation('my_way', $item);
             
+            
+            //my_way2 page
+            $item = new Navigation(_('my_way2'), PluginEngine::getURL($this, array(), 'pages/my_way2'));
+            $sub_nav = new Navigation(_('Zurück'), PluginEngine::getURL($this, array(), 'index'));
+            $sub_nav->setImage(Icon::create('globe', 'navigation'));
+            $item->addSubNavigation('index', $sub_nav);
+            $navigation->addSubNavigation('my_way2', $item);
+            
             Navigation::addItem('/koop', $navigation);  
         }    
         if (Course::findCurrent()->id == 'a4204c684df5c46ec74a6f6420f1d81d'){
