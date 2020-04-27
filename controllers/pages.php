@@ -60,6 +60,11 @@ class PagesController extends StudipController {
 
        
     }
+    
+    public function my_way2_action(){
+        Navigation::activateItem('koop/my_way2');
+        PageLayout::setTitle(_("Mein Weg durchs Studium"));
+    }
 
     // customized #url_for for plugins
     public function url_for($to = '')
