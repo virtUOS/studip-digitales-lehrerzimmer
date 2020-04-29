@@ -16,11 +16,11 @@
     	
         <div class='flex-wrapper'>
     
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C1_faq_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C1_faq.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D2_ref_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D2_ref.svg' ?>" />
                     </a>
@@ -32,15 +32,15 @@
         
         <div class='flex-wrapper'>
       
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D5_yuosi_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D5_yuosi.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos_hover.svg' ?>" />
                         <img class="top"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos.svg' ?>" />
                     </a>
@@ -49,15 +49,15 @@
         
         <div class='flex-wrapper'>
             
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D7_prof_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D7_prof.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D8_planung_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D8_planung.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href=''>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D9_job_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D9_job.svg' ?>" />
                     </a>
