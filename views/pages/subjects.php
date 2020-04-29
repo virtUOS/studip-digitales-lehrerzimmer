@@ -74,7 +74,7 @@
    </div> 
    <div class="koop-text-behalter">
 
-            <h3> Blick in die F�cher</h3>
+            <h3> Blick in die Fächer</h3>
 
             Du wolltest immer schon mal über den Tellerrand deiner Studienfächer hinausblicken? Du denkst über einen Fächerwechseln nach? Mit Blick auf deine Zukunft als Lehrkraft möchtest du einen Einblick in andere Unterrichtsfächer bekommen - vielleicht diese später auch unterrichten? Für dich kommt das Studium eines Erweiterungsfachs nach? Oder suchst du nach besonderen Lehr-Lern-Angeboten in deinen Studienfächern?
 Dann bist du hier genau richtig. Wirf einen "Blick in die Fächer", die die Universität Osnabrück für das Lehramtsstudium anbietet. Neben Online-Anboten findest du einführende Fachliteratur, Hinweise zu Beratungsmöglichkeiten, besondere Lerntools und vieles mehr.
