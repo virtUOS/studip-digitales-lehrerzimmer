@@ -22,7 +22,7 @@ class KoOp extends StudipPlugin implements SystemPlugin
 
         if(RolePersistence::isAssignedRole($GLOBALS['user']->user_id,
                                                             self::KOOP_ROLE)){
-            $navigation = new Navigation('Lehrer_innenzimmer');
+            $navigation = new Navigation('teach UOS');
             $navigation->setImage(Icon::create('doctoral_cap', 'navigation'));
             //$navigation->setImage($GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->getPluginPath() . '/assets/images/koop.png');
             $navigation->setURL(PluginEngine::getURL($this, array(), 'index'));

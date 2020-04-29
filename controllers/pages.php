@@ -29,7 +29,7 @@ class PagesController extends StudipController {
      public function subjects_action()
     {
         Navigation::activateItem('koop/subjects');
-         $this->redirect(URLHelper::getURL('/studip/qplus-koop/seminar_main.php', ['auswahl' => 'a4204c684df5c46ec74a6f6420f1d81d']));
+        //$this->redirect(URLHelper::getURL('/studip/qplus-koop/seminar_main.php', ['auswahl' => 'a4204c684df5c46ec74a6f6420f1d81d']));
     }
     
     public function studyplan_action()
