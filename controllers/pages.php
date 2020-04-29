@@ -11,7 +11,7 @@ class PagesController extends StudipController {
     public function before_filter(&$action, &$args)
     {
         parent::before_filter($action, $args);
-        PageLayout::setTitle(_("teach UOS"));
+        PageLayout::setTitle(_("teachUOS"));
         PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
 
         $sidebar = Sidebar::Get();
