@@ -48,6 +48,10 @@ class PagesController extends StudipController {
          Navigation::activateItem('koop/study_to_practice');
     }
 
+    public function study_to_practice2_action()
+    {
+        Navigation::activateItem('koop/study_to_practice2');
+    }
  
     public function digital_teaching_action(){
         Navigation::activateItem('koop/digital_teaching');
