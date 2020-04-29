@@ -11,7 +11,7 @@
 	<div class="koop-kacheln-behalter"> 
     	<div class='flex-wrapper kacheln_header'>        
         	<img  style='width:200px;margin-bottom: 1em;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B0_faecher.svg' ?>'/>
-    		<img  style='width:38px;margin-left: 60px;margin-bottom: -10px;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B0_comic.svg' ?>'/>
+    		<img  style='width:38px;margin-left: 60px;margin-bottom: -17px;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B0_comic.svg' ?>'/>
     	</div>
     	
         <div class='flex-wrapper'>
@@ -41,8 +41,8 @@
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B5_geo.svg' ?>" />
                     </a>
                     <a class='koop-index-navigation sub_kacheln'  href=''>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B6_kunst_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B6_kunst.svg' ?>" />
+                        <img class="bottom" style="height: 90px;" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B6_kunst_hover.svg' ?>" />
+                        <img class="top" style="height: 90px;" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B6_kunst.svg' ?>" />
                     </a>
      
         </div>
@@ -106,7 +106,8 @@ Dann bist du hier genau richtig. Wirf einen "Blick in die Fächer", die die Univ
     }
 
     .kacheln_header{
-    	
+    	z-index: 3;
+    	position: relative;
     }
     
     .koop-kacheln-behalter{
