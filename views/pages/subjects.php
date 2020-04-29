@@ -20,7 +20,7 @@
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B1_deutsch_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B1_deutsch.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/subjects'>
+                    <a class='koop-index-navigation sub_kacheln'  href=''>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B2_mathe_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B2_mathe.svg' ?>" />
                     </a>
@@ -36,11 +36,11 @@
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/subjects'>
+                    <a class='koop-index-navigation sub_kacheln'  href=''>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B5_geo_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B5_geo.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/my_way'>
+                    <a class='koop-index-navigation sub_kacheln'  href=''>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B6_kunst_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B6_kunst.svg' ?>" />
                     </a>
@@ -53,11 +53,11 @@
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B7_chem_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B7_chem.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/subjects'>
+                    <a class='koop-index-navigation sub_kacheln'  href=''>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B8_englisch_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B8_englisch.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='pages/my_way'>
+                    <a class='koop-index-navigation sub_kacheln'  href=''>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B9_bio_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B9_bio.svg' ?>" />
                     </a>
@@ -74,10 +74,10 @@
    </div> 
    <div class="koop-text-behalter">
 
-            <h3> Blick in die Fächer</h3>
+            <h3> Blick in die Fï¿½cher</h3>
 
-            Du wolltest immer schon mal über den Tellerrand deiner Studienfächer hinausblicken? Du denkst über einen Fächerwechseln nach? Mit Blick auf deine Zukunft als Lehrkraft möchtest du einen Einblick in andere Unterrichtsfächer bekommen - vielleicht diese später auch unterrichten? Für dich kommt das Studium eines Erweiterungsfachs nach? Oder suchst du nach besonderen Lehr-Lern-Angeboten in deinen Studienfächern?
-Dann bist du hier genau richtig. Wirf einen "Blick in die Fächer", die die Universität Osnabrück für das Lehramtsstudium anbietet. Neben Online-Anboten findest du einführende Fachliteratur, Hinweise zu Beratungsmöglichkeiten, besondere Lerntools und vieles mehr.
+            Du wolltest immer schon mal Ã¼ber den Tellerrand deiner StudienfÃ¤cher hinausblicken? Du denkst Ã¼ber einen FÃ¤cherwechseln nach? Mit Blick auf deine Zukunft als Lehrkraft mÃ¶chtest du einen Einblick in andere UnterrichtsfÃ¤cher bekommen - vielleicht diese spÃ¤ter auch unterrichten? FÃ¼r dich kommt das Studium eines Erweiterungsfachs nach? Oder suchst du nach besonderen Lehr-Lern-Angeboten in deinen StudienfÃ¤chern?
+Dann bist du hier genau richtig. Wirf einen "Blick in die FÃ¤cher", die die UniversitÃ¤t OsnabrÃ¼ck fÃ¼r das Lehramtsstudium anbietet. Neben Online-Anboten findest du einfÃ¼hrende Fachliteratur, Hinweise zu BeratungsmÃ¶glichkeiten, besondere Lerntools und vieles mehr.
 </div>
 </div>
 
