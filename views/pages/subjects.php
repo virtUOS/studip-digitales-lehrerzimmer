@@ -137,7 +137,7 @@ Dann bist du hier genau richtig. Wirf einen "Blick in die Fächer", die die Univ
     .sub_schwebend_blick img {
         width: 370px;
         height: 52px;
-        margin-left: -30px;
+        margin-left: -35px;
        /* margin-left: 8em;
         margin-bottom: 4.5em;
         margin-top: -8em;*/
