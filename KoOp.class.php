@@ -126,10 +126,9 @@ class KoOp extends StudipPlugin implements SystemPlugin
             
             //study_to_practice2 page
             $item = new Navigation(_('Vom Studium in die Praxis'), PluginEngine::getURL($this, array(), 'pages/study_to_practice2'));
+            $navigation->addSubNavigation('study_to_practice2', $item);
             
-            $sub_nav_6 = new Navigation(_('Zurück'), PluginEngine::getURL($this, array(), 'index'));
-            $sub_nav_6->setImage(Icon::create('globe', 'navigation'));
-            $item->addSubNavigation('index', $sub_nav_6);
+            
             Navigation::addItem('/koop', $navigation);  
         }    
         if (Course::findCurrent()->id == 'a4204c684df5c46ec74a6f6420f1d81d'){
