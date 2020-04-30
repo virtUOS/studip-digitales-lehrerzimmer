@@ -10,8 +10,8 @@
 -->    
 	<div class="koop-kacheln-behalter"> 
     	<div class='flex-wrapper kacheln_header'>        
-        	<img  style='width:200px;margin-bottom: 1em;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D0_praxis.svg' ?>'/>
-    		<img  style='width:38px;margin-left: 60px;margin-bottom: -18px;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C0_comic.svg' ?>'/>
+        	<img  style='width:200px;margin-bottom: 1em;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E0_digi.svg' ?>'/>
+    		<img  style='width:35px;margin-left: 60px;margin-bottom: -18px;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E0_Comic_digi.svg' ?>'/>
     	</div>
     	
         <div class='flex-wrapper'>
@@ -21,24 +21,24 @@
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C1_faq.svg' ?>" />
                     </a>
                     <a class='koop-index-navigation sub_kacheln'  href='#'>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D2_ref_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D2_ref.svg' ?>" />
+                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E2_tools_studium_hover.svg' ?>" />
+                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E2_tools_studium.svg' ?>" />
                     </a>
                     <a class='koop-index-navigation sub_kacheln'  href='#'>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D3_methoden_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D3_methoden.svg' ?>" />
+                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E3_glossar_hover.svg' ?>" />
+                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E3_glossar.svg' ?>" />
                     </a>
         </div>
         
         <div class='flex-wrapper'>
       
                     <a class='koop-index-navigation sub_kacheln'  href='#'>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen.svg' ?>" />
+                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E4_tools_schule_hover.svg' ?>" />
+                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E4_tools_schule.svg' ?>" />
                     </a>
                     <a class='koop-index-navigation sub_kacheln'  href='#'>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D5_yuosi_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D5_yuosi.svg' ?>" />
+                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E5_flipped_hover.svg' ?>" />
+                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E5_flipped.svg' ?>" />
                     </a>
                     <a class='koop-index-navigation sub_kacheln'  href='../'>
                         <img class="bottom"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos_hover.svg' ?>" />
@@ -49,17 +49,17 @@
         
         <div class='flex-wrapper'>
             
-                    <a class='koop-index-navigation sub_kacheln'  href='#'>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D7_prof_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D7_prof.svg' ?>" />
+                    <a class='koop-index-navigation sub_kacheln'  href='../'>
+                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos_hover.svg' ?>" />
+                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/B_teachuos.svg' ?>" />
                     </a>
                     <a class='koop-index-navigation sub_kacheln'  href='#'>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D8_planung_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D8_planung.svg' ?>" />
+                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E8_beratung_hover.svg' ?>" />
+                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E8_beratung.svg' ?>" />
                     </a>
                     <a class='koop-index-navigation sub_kacheln'  href='#'>
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D9_job_hover.svg' ?>" />
-                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/D9_job.svg' ?>" />
+                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E9_datenschutz_hover.svg' ?>" />
+                        <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E9_datenschutz.svg' ?>" />
                     </a>
         </div>
     
@@ -74,10 +74,9 @@
    </div> 
    <div class="koop-text-behalter">
 
-            <h3>Vorwort / Einführung</h3>
+            <h3>Lehren und lernen mit Smartphone und Co.</h3>
 
-           Du suchst nach Anregungen und Tipps für die Unterrichtspraxis? Du bist an Eindrücken und Berichten von Referendar*innen und Lehrkräften interessiert? Angebote zur individuellen Weiterbildung interssieren dich? Dann bist du hier richtg.
-Auch wenn ganz konkret der Schritt ins Referendariat ansteht, findest du hier erste Informationen zum Bewerbungsprozess und zu möglichen Ansprechpartner*innen.
+          Digitale Medien und Tools spielen eine zunehmend wichtigere Rolle in Lehre und Lernen. Wie analoge Medien auch, gehören sie zu einem modernen, abwechslungsreichen Unterricht fraglos dazu. Die Qualität des Unterrichts erwächst aus der geschickten Kombination von Methode, Inhalt und Medien [vgl. constructive alignment = allgemein: 1. Lernziele, 2. Prüfungsform, 3. Lernmethoden/-aktivitäten].
 </div>
 </div>
 

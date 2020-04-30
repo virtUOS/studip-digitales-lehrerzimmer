@@ -58,6 +58,10 @@ class PagesController extends StudipController {
        
     }
     
+    public function digital_teaching2_action(){
+        Navigation::activateItem('koop/digital_teaching2');
+    }
+    
      public function my_way_action(){
         Navigation::activateItem('koop/my_way/council');
         PageLayout::setTitle(_("Mein Weg durchs Studium"));
