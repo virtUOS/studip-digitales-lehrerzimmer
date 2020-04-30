@@ -104,7 +104,7 @@
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A7_mystudip_mouseover.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A7_mystudip.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation digital' href='pages/digital_teaching'>
+                <a class='koop-index-navigation digital' href='pages/digital_teaching2'>
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A8_digital_mouseover_dunkel.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A8_digital.svg' ?>" />
                 </a>
