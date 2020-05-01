@@ -74,7 +74,7 @@
    </div> 
    <div class="koop-text-behalter">
 
-            <h3>Lehren und lernen mit Smartphone und Co.</h3>
+            <h3>Digitale Medien fürs Studium und den Unterricht</h3>
 
           Digitale Medien und Tools spielen eine zunehmend wichtigere Rolle in Lehre und Lernen. Wie analoge Medien auch, gehören sie zu einem modernen, abwechslungsreichen Unterricht fraglos dazu. Die Qualität des Unterrichts erwächst aus der geschickten Kombination von Methode, Inhalt und Medien [vgl. constructive alignment = allgemein: 1. Lernziele, 2. Prüfungsform, 3. Lernmethoden/-aktivitäten].
 </div>
