@@ -10,8 +10,8 @@
 -->    
 	<div class="koop-kacheln-behalter"> 
     	<div class='flex-wrapper kacheln_header'>        
-        	<img  style='width:200px;margin-bottom: 1em;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E0_digi.svg' ?>'/>
-    		<img  style='width:35px;margin-left: 60px;margin-bottom: -18px;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E0_Comic_digi.svg' ?>'/>
+        	<img  style='width:195px;margin-bottom: 1em;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E0_digi.svg' ?>'/>
+    		<img  style='width:32px;margin-left: 65px;margin-bottom: -19px;' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/E0_Comic_digi.svg' ?>'/>
     	</div>
     	
         <div class='flex-wrapper'>
