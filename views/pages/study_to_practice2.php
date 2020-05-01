@@ -74,7 +74,7 @@
    </div> 
    <div class="koop-text-behalter">
 
-            <h3>Vorwort / Einführung</h3>
+            <h3>Vom Studium in die Praxis</h3>
 
            Du suchst nach Anregungen und Tipps für die Unterrichtspraxis? Du bist an Eindrücken und Berichten von Referendar*innen und Lehrkräften interessiert? Angebote zur individuellen Weiterbildung interssieren dich? Dann bist du hier richtg.
 Auch wenn ganz konkret der Schritt ins Referendariat ansteht, findest du hier erste Informationen zum Bewerbungsprozess und zu möglichen Ansprechpartner*innen.
