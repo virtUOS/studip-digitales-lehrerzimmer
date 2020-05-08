@@ -14,6 +14,7 @@ $( document ).ready(function() {
 	$("#courseware").prependTo(".koop-text-behalter");
 	$(".koop-sub-content").appendTo("#layout_content");
 	$("#courseware").css("padding-left", "0");
+	$("#courseware").show();
 	$(".koop-sub-content").show();
     //console.log($('.cw-sidebar'));
     // $('.cw-sidebar').after(text);

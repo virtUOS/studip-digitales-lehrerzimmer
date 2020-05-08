@@ -107,6 +107,7 @@ class PagesController extends StudipController {
         PageLayout::addStyle('.active-subchapter { display: none; }');
         PageLayout::addStyle('.mode-switch { display: none; }');
         PageLayout::addStyle('#tabs { display: none; }');
+        PageLayout::addStyle('#courseware { display: none; }');
         
         // add koop css
         PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
