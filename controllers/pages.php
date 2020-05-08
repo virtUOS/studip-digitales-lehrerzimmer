@@ -99,6 +99,116 @@ class PagesController extends StudipController {
         $this->redirect('../courseware/courseware?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=150');
     }
 
+    public function cw_action(){
+        
+        // hide courseware navigation
+        PageLayout::addStyle('.cw-sidebar { display: none; }');
+        PageLayout::addStyle('.breadcrumb { display: none; }');
+        PageLayout::addStyle('.active-subchapter { display: none; }');
+        PageLayout::addStyle('.mode-switch { display: none; }');
+        PageLayout::addStyle('#tabs { display: none; }');
+        
+        // add koop css
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/menu.css');
+        
+        // add koop menu
+        PageLayout::addBodyElements($this->get_cw_menu());
+        PageLayout::addScript($this->plugin->getPluginURL() . '/assets/menu.js');
+        
+        require_once 'vendor/trails/trails.php';
+        require_once 'app/controllers/studip_controller.php';
+        require_once 'app/controllers/authenticated_controller.php';
+        
+        $Courseware_Plugin = \PluginManager::getInstance()->getPlugin('Courseware');
+        
+        $dispatcher = new Trails_Dispatcher(
+            $Courseware_Plugin->getPluginPath(),
+            rtrim(PluginEngine::getLink($Courseware_Plugin, array(), null), '/'),
+            'courseware'
+            );
+        $dispatcher->plugin = $Courseware_Plugin;
+        
+        $uri = 'courseware?'.explode('?',$_SERVER['REQUEST_URI'])[1];
+        echo $dispatcher->map_uri_to_response($dispatcher->clean_request_uri((string) $uri))->output();
+        exit();
+    }
+    
+    public function get_cw_menu(){
+        $menu_content = "
+<div class='koop-sub-content koop-content-centered' style='width:100%;  display: none;'>
+      <div class='koop-kacheln-behalter'>
+        <div class='flex-wrapper kacheln_header'>
+        	<img  style='width:200px;margin-bottom: 1em;' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D0_praxis.svg'/>
+    		<img  style='width:38px;margin-left: 60px;margin-bottom: -18px;' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/C0_comic.svg'/>
+    	</div>
+        <div class='flex-wrapper'>
+    		    
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/C1_faq_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/C1_faq.svg' />
+                    </a>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D2_ref_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D2_ref.svg' />
+                    </a>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D3_methoden_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D3_methoden.svg' />
+                    </a>
+        </div>
+        <div class='flex-wrapper'>
+                            
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/C4_erfahrungen_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/C4_erfahrungen.svg' />
+                    </a>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D5_yuosi_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D5_yuosi.svg' />
+                    </a>
+                    <a class='koop-index-navigation sub_kacheln'  href='../'>
+                        <img class='bottom'  src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/B_teachuos_hover.svg' />
+                        <img class='top'  src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/B_teachuos.svg' />
+                    </a>
+                            
+        </div>
+                            
+        <div class='flex-wrapper'>
+                            
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D7_prof_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D7_prof.svg' />
+                    </a>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D8_planung_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D8_planung.svg' />
+                    </a>
+                    <a class='koop-index-navigation sub_kacheln'  href='#'>
+                        <img class='bottom' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D9_job_hover.svg' />
+                        <img class='top' src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath()."/assets/images/D9_job.svg' />
+                    </a>
+        </div>
+                            
+                            
+                            
+                            
+        <div class='flex-wrapper'>
+        </div>
+                            
+                            
+        <div class='sub_schwebend_blick'><img src='".$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() ."/assets/images/A_schweben.svg'>
+            </div>
+            
+   </div>
+   <div class='koop-text-behalter'>
+            
+   </div>
+</div>
+";
+        
+        return $menu_content;
+    }
 
     // customized #url_for for plugins
     public function url_for($to = '')
