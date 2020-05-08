@@ -24,7 +24,7 @@
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C2_verlaufsplan_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C2_verlaufsplan.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='./Pruefungsordnungen'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./cw?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=151'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C3_kcl_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C3_kcl.svg' ?>" />
                     </a>
@@ -32,11 +32,11 @@
         
         <div class='flex-wrapper'>
       
-                    <a class='koop-index-navigation sub_kacheln'  href='./Fachschaften'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./cw?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=153'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C4_erfahrungen.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='./Praktikum'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./cw?cid=99965fd1039274ecc637698846c52f2b&selected=58'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C5_praktika_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C5_praktika.svg' ?>" />
                     </a>
@@ -49,11 +49,11 @@
         
         <div class='flex-wrapper'>
             
-                    <a class='koop-index-navigation sub_kacheln'  href='./Auslandsaufenthalte'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./cw?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=155'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C7_ausland_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C7_ausland.svg' ?>" />
                     </a>
-                    <a class='koop-index-navigation sub_kacheln'  href='./Beratungsangebote'>
+                    <a class='koop-index-navigation sub_kacheln'  href='./cw?cid=a4204c684df5c46ec74a6f6420f1d81d&selected=150'>
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C8_beratung_hover.svg' ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/C8_beratung.svg' ?>" />
                     </a>
