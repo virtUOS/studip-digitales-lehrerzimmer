@@ -158,12 +158,14 @@ class PagesController extends StudipController {
         
         $images_files = scandir($this->plugin->getPluginPath().'/assets/images/');
         $kacheln_images=array();
-        foreach($images_files as $img){
+        foreach($images_files as $key => $img){
             if(file_exists($this->plugin->getPluginPath().'/assets/images/'.str_replace('.','_hover.',$img))&& strlen($img)>4){
                 $kacheln_images[]=$img;
             }
+            if(strlen($img)<3)unset($images_files[$key]);
         }
         $edit_menu_template->set_attribute('kacheln_images',$kacheln_images );
+        $edit_menu_template->set_attribute('all_images',$images_files );
         
         $new_page=false;
         
@@ -171,11 +173,19 @@ class PagesController extends StudipController {
         
         $kacheln=array();
         
+        // default header images
+        $header = array( 'image' => 'C0_studium.svg',
+            'comic' => 'C0_comic.svg');
+        
         if($koop_menu){
-            $kacheln = json_decode($koop_menu['content'], true);
+            $content = json_decode($koop_menu['content'], true);
+            $kacheln = $content['kacheln'];
             foreach($kacheln as $id => $kachel){
                 $kacheln[$id]['link']=str_replace('{ABSOLUTE_URI_STUDIP}',$GLOBALS['ABSOLUTE_URI_STUDIP'],$kachel['link']);
             }
+            
+            if(isset($content['header']))$header = $content['header'];
+            
         }else{
             // empty menu
             for($i=1;$i<=9;$i++){
@@ -186,7 +196,7 @@ class PagesController extends StudipController {
         
         
         $koop_page_template->set_attribute('kacheln', $kacheln);
-        
+        $koop_page_template->set_attribute('header', $header);
         
         $menu_content = $koop_page_template->render();
         
@@ -194,6 +204,8 @@ class PagesController extends StudipController {
         // edit
         $edit_menu_template->set_attribute('new_page', $new_page);
         $edit_menu_template->set_attribute('kacheln', $kacheln);
+        $edit_menu_template->set_attribute('header', $header);
+        
         $menu_content .= $edit_menu_template->render();
         
         
@@ -224,11 +236,16 @@ class PagesController extends StudipController {
             $kacheln[$id]['img_hover']=str_replace('.svg', '_hover.svg', $kacheln[$id]['img']);
             $kacheln[$id]['link']=str_replace($GLOBALS['ABSOLUTE_URI_STUDIP'],'{ABSOLUTE_URI_STUDIP}',$kachel['link']);
         }
+        $content = array();
+        $content['kacheln'] = $kacheln;
+        
+        if(isset($_POST['header']))$content['header'] =$_POST['header'];
+        
         
         if($_POST['new_page'] == "1"){
-            $this->add_koop_page('9kacheln',0, $_POST['cid'], $_POST['selected'],'test',json_encode($kacheln));
+            $this->add_koop_page('9kacheln',0, $_POST['cid'], $_POST['selected'],'test',json_encode($content));
         }else{
-            $this->update_koop_page('9kacheln',0, $_POST['cid'], $_POST['selected'],'test',json_encode($kacheln));
+            $this->update_koop_page('9kacheln',0, $_POST['cid'], $_POST['selected'],'test',json_encode($content));
         }
         $this->redirect($_SERVER['HTTP_REFERER']);
         
