@@ -37,7 +37,10 @@
                           <? endforeach ?>
                         </select>
                         <br>
+                        Größe: <input type="text" name="header[image_width]" value="<?= $header['image_width'] ?>" >
+                        <br>
                     <img id='header_img_preview' style="margin-top:10px" width="200" src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images/<?= $header['image'] ?>'/>
+                    
               </div>
               
               <div style="float: right;margin-top:10px">
@@ -54,6 +57,8 @@
                         <br>
                         X-Pos: <input type="text" name="header[comic_x_pos]" value="<?= $header['comic_x_pos'] ?>" >
                         Y-Pos: <input type="text" name="header[comic_y_pos]" value="<?= $header['comic_y_pos'] ?>" >
+                        <br>
+                        Größe: <input type="text" name="header[comic_width]" value="<?= $header['comic_width'] ?>" >
                     </div>
               
             <div style="float: right; width: 200px;margin-top:10px">

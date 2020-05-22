@@ -174,8 +174,13 @@ class PagesController extends StudipController {
         $kacheln=array();
         
         // default header images
-        $header = array( 'image' => 'C0_studium.svg',
-            'comic' => 'C0_comic.svg');
+        $header = array('image' => 'C0_studium.svg',
+            'image_width' => 181,
+            'comic' => 'C0_comic.svg',
+            'comic_x_pos' => 75,
+            'comic_y_pos' => 10,
+            'comic_width' => 42
+        );
         
         if($koop_menu){
             $content = json_decode($koop_menu['content'], true);

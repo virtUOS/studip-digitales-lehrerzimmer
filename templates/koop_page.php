@@ -1,8 +1,8 @@
 <div class='koop-sub-content koop-content-centered' style='width:100%;  display: none;'>
       <div class='koop-kacheln-behalter'>
         <div class='flex-wrapper kacheln_header'>        
-        	<img  style='width:181px;margin-bottom: 1em;' src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images/<?=$header['image'] ?>' />
-    		<img  style='width:42px;margin-left: <?= $header['comic_x_pos'] ?>px;margin-bottom: <?= $header['comic_y_pos'] ?>px;' src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images/<?=$header['comic'] ?>' />
+        	<img  style='width:<?= $header['image_width'] ?>px;margin-bottom: 1em;' src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images/<?=$header['image'] ?>' />
+    		<img  style='width:<?= $header['comic_width'] ?>px;margin-left: <?= $header['comic_x_pos'] ?>px;margin-bottom: <?= $header['comic_y_pos'] ?>px;' src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images/<?=$header['comic'] ?>' />
     	</div>
     	
         <div class='flex-wrapper'>
