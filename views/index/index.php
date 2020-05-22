@@ -75,7 +75,7 @@
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A1_add_test_mouseover.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A1_add_test.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation faecher' href='pages/subjects'>
+                <a class='koop-index-navigation faecher' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=27'>
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A2_faecher_mouseover_dunkel.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A2_faecher.svg' ?>" />
                 </a>
@@ -104,7 +104,7 @@
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A7_mystudip_mouseover.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A7_mystudip.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation digital' href='pages/digital_teaching2'>
+                <a class='koop-index-navigation digital' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=30'>
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A8_digital_mouseover_dunkel.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A8_digital.svg' ?>" />
                 </a>
@@ -135,7 +135,7 @@
         </div>
         <div class="flex-container-500-200">
             <div class="flex-wrapper">
-                <a class='koop-index-navigation praxis' href='pages/study_to_practice2'>
+                <a class='koop-index-navigation praxis' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=33'>
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A13_praxis_test_dunkel.svg' ?>" />
                 <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A13_praxis_test.svg' ?>" />
                 </a>
