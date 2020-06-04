@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__file__).'\..\models\koop_page.php';
+require_once dirname(__file__).'/../models/koop_page.php';
 
 class PagesController extends StudipController {
     
