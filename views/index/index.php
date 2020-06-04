@@ -74,7 +74,7 @@
             	<? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img) && 
                     isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img_hover) &&
                     isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link)) : ?>                	
-                <a class='koop-index-navigation eins_add' href='<?= str_replace('{ABSOLUTE_URI_STUDIP}',$GLOBALS['ABSOLUTE_URI_STUDIP'],UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link); ?>' >
+                <a class='koop-index-navigation eins_add' href="<?= str_ireplace('{ABSOLUTE_URI_STUDIP}',$GLOBALS['ABSOLUTE_URI_STUDIP'],UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link); ?>" >
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img_hover ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img ?>" />
                 </a>
