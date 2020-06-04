@@ -71,10 +71,20 @@
     <div class='flex-wrapper'>
         <div class="flex-container-800-115-l100">
             <div class="flex-wrapper">
-                <a class='koop-index-navigation eins_add' href=''>
+            	<? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img) && 
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img_hover) &&
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link)) : ?>                	
+                <a class='koop-index-navigation eins_add' href='<?= UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link ?>' >
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img_hover ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img ?>" />
+                </a>
+        		<? else: ?>
+        		<a class='koop-index-navigation eins_add' href='#' onClick='openCustomizable(1);' >
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A1_add_test_mouseover.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A1_add_test.svg' ?>" />
                 </a>
+                <? endif ?>
+                
                 <a class='koop-index-navigation faecher' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=27'>
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A2_faecher_mouseover_dunkel.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A2_faecher.svg' ?>" />
@@ -83,16 +93,32 @@
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A3_studium_mouseover_dunkel.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A3_studium.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation fuenf_add' href=''>
+                <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img) && 
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img_hover) &&
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_2_link)) : ?>                	
+                <a class='koop-index-navigation fuenf_add' href='<?= UserConfig::get($GLOBALS['user']->id)->koop_custom_2_link ?>' >
+                    <img class="bottom" width="75" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img_hover ?>" />
+                    <img class="top"  width="75" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img ?>" />
+                </a>
+                <a class='koop-index-navigation comic' href=''>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A_teachUOS_Comic.svg' ?>" />
+                </a>
+                <a  style="margin-left: 15px;" class='koop-index-navigation sechs' href=''>
+                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A6_box.svg' ?>" />
+                </a>
+        		<? else: ?>
+                <a class='koop-index-navigation fuenf_add' href='#' onClick='openCustomizable(2);'>
                     <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A5_add_klick.svg' ?>" />
                     <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A5_add.svg' ?>" />
                 </a>
                 <a class='koop-index-navigation comic' href=''>
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A_teachUOS_Comic.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation sechs' href=''>
+                <a  class='koop-index-navigation sechs' href=''>
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A6_box.svg' ?>" />
                 </a>
+                <? endif ?>
+                
             </div>
         </div>
     </div>
@@ -108,14 +134,33 @@
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A8_digital_mouseover_dunkel.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A8_digital.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation neun_add' href=''>
+                <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img) && 
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img_hover) &&
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_3_link)) : ?>                	
+                <a  class='koop-index-navigation custom_kachel' href='<?= UserConfig::get($GLOBALS['user']->id)->koop_custom_3_link ?>' >
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img_hover ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img ?>" />
+                </a>
+        		<? else: ?>
+                <a class='koop-index-navigation neun_add' href='#' onClick='openCustomizable(3);'>
                      <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A9_add_a_dunkel.svg' ?>" />
                      <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A9_add_a.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation zehn_add' href=''>
+                <? endif ?>
+                
+                <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img) && 
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img_hover) &&
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_4_link)) : ?>                	
+                <a  style="margin-left: 3px;" class='koop-index-navigation custom_kachel' href='<?= UserConfig::get($GLOBALS['user']->id)->koop_custom_4_link ?>' >
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img_hover ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img ?>" />
+                </a>
+        		<? else: ?>
+                <a class='koop-index-navigation zehn_add' href='#' onClick='openCustomizable(4);'>
                       <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A10_add_new_mouseover.svg' ?>" />
                       <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A10_add_new.svg' ?>" />
                 </a>
+                <? endif ?>
              </div>
         </div>
     </div>
@@ -150,26 +195,106 @@
                 <a class='koop-index-navigation vierzehn_mini' href=''>
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A14_mini_a.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation verwalten' href=''>
+                <a class='koop-index-navigation verwalten' href='#' onClick='$( "#koop_personal_settings" ).dialog({
+                                                                                                            resizable: true,
+                                                                                                            modal: true,
+                                                                                                          width: 900,});' >
                 <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A17_verwalten_dunkel.svg' ?>" />
                 <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A17_verwalten.svg' ?>" />
                 </a>
-                <a class='koop-index-navigation achtzehn_add' href=''>
-                <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A18_add_dunkel.svg' ?>" />
-                <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A18_add_hell.svg' ?>" />
+                <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img) && 
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img_hover) &&
+                    isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_5_link)) : ?>                	
+                <a  style="margin-top: 17px;"  class='koop-index-navigation custom_kachel' href='<?= UserConfig::get($GLOBALS['user']->id)->koop_custom_5_link ?>' >
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img_hover ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img ?>" />
                 </a>
+        		<? else: ?>
+                <a class='koop-index-navigation achtzehn_add' href='#' onClick='openCustomizable(5);'>
+                    <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A18_add_dunkel.svg' ?>" />
+                    <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A18_add_hell.svg' ?>" />
+                </a>
+                <? endif ?>
             </div>
         </div>
     </div>
         
     <div class="schwebend"><img src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A_schweben.svg' ?>">
         </div>
+        
     
-    
+    <div id='koop_edit_kachel_dialog' title='Auswähbare Kachel'  style='display: none;'>
+		<div class='flex-wrapper'>
+			<form id='customizable_kachel_form'  method="post" action="index/set_customizable_kachel">
+				<input type="hidden" name="k_id" value="">
+				<input type="hidden" name="k_img" value="">
+				<input type="hidden" name="k_img_hover" value="">
+				<input type="hidden" name="k_link" value="">
+			</form>
+		</div>
+	</div>
+	
+	<div id='koop_personal_settings' title='Verwaltung'  style='display: none;'>
+		<div class='flex-wrapper'>
+			<form id='reset_customizable_kachel'  method="post" action="index/reset_customizable_kachel">
+				<input type="hidden" name="k_id" value="1">
+				<button>1. Kachel zurücksetzen</button>
+			</form>
+		</div>
+		<div class='flex-wrapper'>
+			<form id='reset_customizable_kachel'  method="post" action="index/reset_customizable_kachel">
+				<input type="hidden" name="k_id" value="2">
+				<button>2. Kachel zurücksetzen</button>
+			</form>
+		</div>
+		<div class='flex-wrapper'>
+			<form id='reset_customizable_kachel'  method="post" action="index/reset_customizable_kachel">
+				<input type="hidden" name="k_id" value="3">
+				<button>3. Kachel zurücksetzen</button>
+			</form>
+		</div>
+		<div class='flex-wrapper'>
+			<form id='reset_customizable_kachel'  method="post" action="index/reset_customizable_kachel">
+				<input type="hidden" name="k_id" value="4">
+				<button>4. Kachel zurücksetzen</button>
+			</form>
+		</div>
+		<div class='flex-wrapper'>
+			<form id='reset_customizable_kachel'  method="post" action="index/reset_customizable_kachel">
+				<input type="hidden" name="k_id" value="5">
+				<button>5. Kachel zurücksetzen</button>
+			</form>
+		</div>
+	</div>
+	
 </div>
 
 
 <style>
+
+    
+    a.custom_kachel {
+        width: 85px;
+        height: 79px;
+        margin-top: -5px;
+        
+        /*margin-left: 1.9em;
+        margin-top: 2.1em;*/
+        position: relative;
+    }
+    a.custom_kachel img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+    a.custom_kachel img.top:hover {
+        opacity:0;
+    }
+    
+
     #tabs{
         display: none;
     }
@@ -305,3 +430,33 @@
         background-color: #28497c;
     }
 </style>
+<script>
+var unique_kacheln;
+var current_customizable_id = -1;
+function openCustomizable(k_id){
+	current_customizable_id = k_id;
+	if(!unique_kacheln){
+    	$.get( "index/get_unique_kacheln", function( data ) {
+    		  unique_kacheln = JSON.parse(data);
+    		  $.each(unique_kacheln, function(key, item) {
+    			   $( "#koop_edit_kachel_dialog" ).append("<img onClick='submitCustomizable(\""+item.img+"\",\""+item.img_hover+"\",\""+item.link+"\");' width=100 src='<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'?>"+item.img+"'>");
+    		  });
+    		  
+    	});
+	}
+
+	$( "#koop_edit_kachel_dialog" ).dialog({
+        resizable: true,
+        modal: true,
+      width: 900,});
+}
+
+function submitCustomizable(img,hover,link){
+	$('input[name="k_id"]').val(current_customizable_id);
+	$('input[name="k_img"]').val(img);
+	$('input[name="k_img_hover"]').val(hover);
+	$('input[name="k_link"]').val(link);
+	$( "#customizable_kachel_form" ).submit();
+}
+
+</script>

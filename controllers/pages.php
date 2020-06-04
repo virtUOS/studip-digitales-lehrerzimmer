@@ -1,5 +1,5 @@
 <?php
-
+require_once dirname(__file__).'\..\models\koop_page.php';
 
 class PagesController extends StudipController {
     
@@ -139,8 +139,8 @@ class PagesController extends StudipController {
     }
     
     public function get_koop_content(){
-        //die(var_dump($this->get_koop_page($_GET['cid'], $_GET['selected'])));
-        $koop_menu = $this->get_koop_page($_GET['cid'], $_GET['selected']);
+        $koop_menu = KoopPage::findOneBySQL("seminar_id = ?  and selected = ? ", [$_GET['cid'], $_GET['selected']]);
+        
         
         # load flexi templates
         $path_to_the_templates = dirname(__FILE__) . '/../templates';
@@ -167,6 +167,7 @@ class PagesController extends StudipController {
         $edit_menu_template->set_attribute('kacheln_images',$kacheln_images );
         $edit_menu_template->set_attribute('all_images',$images_files );
         
+        
         $new_page=false;
         
         
@@ -181,10 +182,11 @@ class PagesController extends StudipController {
             'comic_y_pos' => 10,
             'comic_width' => 42
         );
-        
+        $title='';
         if($koop_menu){
             $content = json_decode($koop_menu['content'], true);
             $kacheln = $content['kacheln'];
+            $title = $koop_menu['title'];
             foreach($kacheln as $id => $kachel){
                 $kacheln[$id]['link']=str_replace('{ABSOLUTE_URI_STUDIP}',$GLOBALS['ABSOLUTE_URI_STUDIP'],$kachel['link']);
             }
@@ -200,6 +202,8 @@ class PagesController extends StudipController {
         }
         
         
+        
+        $koop_page_template->set_attribute('title',$title );
         $koop_page_template->set_attribute('kacheln', $kacheln);
         $koop_page_template->set_attribute('header', $header);
         
@@ -210,6 +214,7 @@ class PagesController extends StudipController {
         $edit_menu_template->set_attribute('new_page', $new_page);
         $edit_menu_template->set_attribute('kacheln', $kacheln);
         $edit_menu_template->set_attribute('header', $header);
+        $edit_menu_template->set_attribute('title',$title );
         
         $menu_content .= $edit_menu_template->render();
         
@@ -218,19 +223,21 @@ class PagesController extends StudipController {
     }
     
     public function create_db_action(){
-        $db = DBManager::get();
-        $db->exec("CREATE TABLE IF NOT EXISTS `koop_pages` (
-          `id` int(11) NOT NULL AUTO_INCREMENT,
-          `type` varchar(64) NOT NULL,
-          `parent_id` int(11) DEFAULT NULL,
-          `seminar_id` varchar(32) DEFAULT NULL,
-          `selected` int(11) DEFAULT NULL,
-          `title` varchar(255) DEFAULT NULL,
-          `content` text NOT NULL,
-          `chdate` int(11) DEFAULT NULL,
-          `mkdate` int(11) DEFAULT NULL,
-          PRIMARY KEY (`id`)
-        )");
+        /*
+         $db = DBManager::get();
+         $db->exec("CREATE TABLE IF NOT EXISTS `koop_pages` (
+         `id` int(11) NOT NULL AUTO_INCREMENT,
+         `type` varchar(64) NOT NULL,
+         `parent_id` int(11) DEFAULT NULL,
+         `seminar_id` varchar(32) DEFAULT NULL,
+         `selected` int(11) DEFAULT NULL,
+         `title` varchar(255) DEFAULT NULL,
+         `content` text NOT NULL,
+         `chdate` int(11) DEFAULT NULL,
+         `mkdate` int(11) DEFAULT NULL,
+         PRIMARY KEY (`id`)
+         )");
+         */
     }
     
     
@@ -248,55 +255,31 @@ class PagesController extends StudipController {
         
         
         if($_POST['new_page'] == "1"){
-            $this->add_koop_page('9kacheln',0, $_POST['cid'], $_POST['selected'],'test',json_encode($content));
+            $k1 = new KoopPage();
+            
+            $k1['type'] = '9kacheln';
+            $k1['parent_id'] = 0;
+            $k1['seminar_id'] = $_POST['cid'];
+            $k1['selected'] = $_POST['selected'];
+            $k1['title'] = $_POST['title'];
+            $k1['content'] = json_encode($content);
+            //$k1['user_id'] = $GLOBALS['user']->id;
+            $k1->store();
+            
         }else{
-            $this->update_koop_page('9kacheln',0, $_POST['cid'], $_POST['selected'],'test',json_encode($content));
+            $koop_page = KoopPage::findOneBySQL("seminar_id = ?  and selected = ?", [$_POST['cid'], $_POST['selected']]);
+            $koop_page['type'] = '9kacheln';
+            $koop_page['parent_id'] = 0;
+            $koop_page['seminar_id'] = $_POST['cid'];
+            $koop_page['selected'] = $_POST['selected'];
+            $koop_page['title'] = $_POST['title'];
+            $koop_page['content'] = json_encode($content);
+            $koop_page->store();
         }
         $this->redirect($_SERVER['HTTP_REFERER']);
         
     }
     
-    
-    public function add_koop_page($type,$parent_id, $seminar_id, $selected,$title,$content)
-    {
-        $stmt = \DBManager::get()->prepare("INSERT INTO koop_pages
-                    (type,parent_id, seminar_id, selected,title,content)
-                    VALUES (?, ?, ?, ?, ?, ?)");
-        
-        $stmt->execute(array($type,$parent_id, $seminar_id, $selected,$title,$content));
-    }
-    
-    public function update_koop_page($type,$parent_id, $seminar_id, $selected,$title,$content)
-    {
-        $stmt = \DBManager::get()->prepare("UPDATE koop_pages
-                    SET type = ?,parent_id = ?, title = ?, content = ?
-                    WHERE
-                        seminar_id = ? and selected = ?");
-        
-        $stmt->execute(array($type,$parent_id,$title,$content, $seminar_id, $selected));
-    }
-    
-    public function get_koop_page($cid,$selected)
-    {
-        $db = \DBManager::get();
-        $stmt = $db->prepare("
-            SELECT
-                *
-            FROM
-                koop_pages
-            WHERE
-                seminar_id = :cid and
-                selected = :selected
-            LIMIT
-                1
-        ");
-        $stmt->bindParam(":cid", $cid);
-        $stmt->bindParam(":selected", $selected);
-        
-        $stmt->execute();
-        
-        return $stmt->fetch();
-    }
     
     // customized #url_for for plugins
     public function url_for($to = '')

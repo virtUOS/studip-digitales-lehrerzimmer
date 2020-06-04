@@ -29,6 +29,11 @@
 
         	</table>
         	
+        	<div style="float: left;margin-top:10px">
+            	         Title: <input type="text" name="title" value="<?= $title ?>" >
+                   
+              </div>
+              
         	  <div style="float: right;margin-top:10px">
             	         Header:
                 	    <select id="header_img" name="header[image]" onchange="$('#header_img_preview').attr('src',getImagesFolder()+$(this).val())">
