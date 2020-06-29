@@ -1,4 +1,4 @@
-<? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_layout1)) : ?>   
+<? if (UserConfig::get($GLOBALS['user']->id)->koop_layout1 == true) : ?>
     <div class="koop-content-centered koop-content">
     
     
