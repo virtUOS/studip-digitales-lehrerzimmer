@@ -57,6 +57,12 @@ class IndexController extends StudipController {
         $this->redirect($_SERVER['HTTP_REFERER']);
     }
     
+    public function set_layout_action(){
+        UserConfig::get($GLOBALS['user']->id)->store('koop_layout', $_POST['koop_layout']);
+        
+        $this->redirect($_SERVER['HTTP_REFERER']);
+    }
+    
     // customized #url_for for plugins
     public function url_for($to = '')
     {

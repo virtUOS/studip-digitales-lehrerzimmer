@@ -1,4 +1,4 @@
-<? if (UserConfig::get($GLOBALS['user']->id)->koop_layout1 == true) : ?>
+<? if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1) : ?>
     <div class="koop-content-centered koop-content">
     
     
@@ -265,6 +265,10 @@
     				<button>5. Kachel zurücksetzen</button>
     			</form>
     		</div>
+    		<form id='reset_customizable_kachel'  method="post" action="index/set_layout">
+    				<input type="hidden" name="koop_layout" value="2">
+    				<button>Layout 2</button>
+    		</form>
     	</div>
     	
     </div>
@@ -469,7 +473,7 @@
          </div>  
          
          <div class="koop-footer22 light">
-            <img width="110" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_quali.svg' ?>" />
+            <img style="cursor: pointer;" onclick="$( '#set_layout_form' ).submit();" width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_quali.svg' ?>" />
          <!-- 
          	VOM ZENTRUM FÜR LEHRERBILDUNG DER
          	<p class="black fontsize13">
@@ -479,6 +483,9 @@
          </div>  
       
     </div>
+    <form id='set_layout_form'  method="post" action="index/set_layout">
+    				<input type="hidden" name="koop_layout" value="1">
+    </form>
    
     <style>
     #tabs{
@@ -608,6 +615,7 @@
         bottom: 40px; 
         width: 96.5%;
     }
+
     #layout_content{
         padding:0px;
     }
