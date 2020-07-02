@@ -8,7 +8,7 @@
             <div class="flex-container-half">
                 
     -->            
-        <img id='teachuos-logo' alt='koop_layout1' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS.svg' ?>'/>
+        <img id='teachuos-logo' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS.svg' ?>'/>
     <!--
                  Zeile1 
                 <div class="flex-wrapper">
@@ -432,40 +432,52 @@
 	<div class="koop-content-centered2 ">
 		<div class=koop-content2>
 		    <div>
-        		<img id='teachuos-logo2' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/0_teachUOS.svg' ?>'/>
+        		<img id='teachuos-logo2' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_teachUOS.svg' ?>'/>
         	</div>
         	<div class="flex-container-1000-200-l100">	
-                    <a class='koop-index-navigation index_comic1' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=33' >
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A1_praxis.svg' ?>" />
-                    	IN DIE <b>PRAXIS</b>
-                    </a>
-                    <a class='koop-index-navigation index_comic2' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=21' >
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A2_studium.svg' ?>" />
-                        <div style="margin-top: -10px;">DURCH'S <b>STUDIUM</b></div>
-                    </a>
-                    <a class='koop-index-navigation index_comic3' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=30' >
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A3_digital.svg' ?>" />
-                    	<b>DIGITALE</b> MEDIEN
-                    </a>
-                    <a class='koop-index-navigation index_comic4' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=27' >
-                        <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A4_faecher.svg' ?>" />
-                    	BLICK IN DIE <b>FÄCHER</b>
-                    </a>
+        			<div class="index_comic">
+                        <a class='koop-index-navigation index_comic1' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=33' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A1_praxis.svg' ?>" />
+                        	IN DIE <b>PRAXIS</b>
+                        </a>
+                    </div>
+                    <div class="index_comic">
+                        <a class='koop-index-navigation index_comic2' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=21' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A2_studium.svg' ?>" />
+                            <div style="margin-top: -10px;">DURCH'S <b>STUDIUM</b></div>
+                        </a>
+                    </div>
+                    <div class="index_comic">
+                        <a class='koop-index-navigation index_comic3' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=30' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A3_digital.svg' ?>" />
+                        	<b>DIGITALE</b> MEDIEN
+                        </a>
+                    </div>
+                    <div class="index_comic">
+                        <a class='koop-index-navigation index_comic4' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=27' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A4_faecher.svg' ?>" />
+                        	BLICK IN DIE <b>FÄCHER</b>
+                        </a>
+                    </div>
             </div>
          </div>   
          <div class="koop-footer2">
          	<b class="black">HERZLICH WILLKOMMEN!</b>
          	<p class="light">
-         		Egal ob am Anfang des Studiums oder mittendrin: Fragen zu Studienplanung, Pralktika und Auslandsaufenthalen, Finanzierung und vielem mehr tauchen immer wieder auf. Wo bekommst du Unterstützung? Welche Angebote gibt es an der Uni neben denen deiner Fächer noch? Welche Erfahrungen haben Kommiliton*innen gesammelt? Fächerübergreifende Orientierung und Hinweise sind auf dieser Seite kurz und knapp zusammengefasst.
+         		Du suchst nach Orientierung in deinem Lehramtsstudium? Wer kann dir helfen und wo findest du die richtigen Informationen? Du möchtest deinen eigenen Lernprozess durch Lerntools oder -videos unterstützen? Du interessierst dich über das Studienangebot hinaus für Möglichkeiten des digitalen Unterrichts? Vielleicht hast du auch Lust, einen Blick in andere Fächer zu werfen oder denkst über einen Auslandsaufenthalt nach? Viele Anregungen, Hinweise und Tipps findest du hier auf teachUOS!
          	</p>
          </div>  
+         
          <div class="koop-footer22 light">
+            <img width="110" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_quali.svg' ?>" />
+         <!-- 
          	VOM ZENTRUM FÜR LEHRERBILDUNG DER
          	<p class="black fontsize13">
          		UNVERSITÄT OSNABRÜCK
          	</p>
+           -->
          </div>  
-        
+      
     </div>
    
     <style>
@@ -486,39 +498,68 @@
         margin-bottom: 0px;
     }
     
-    .index_comic1{
-        width:250px;
-        margin-left: 50px;
-        margin-top: 62px;
+    
+    .flex-container-1000-200-l100 {
+        width: 70%;
+        height: 200px;
+        margin-left: 15%;
+        font-size: 13px;
+    }
+    
+    .index_comic{
         float:left;
         text-align: center;
         color: #ffffff;
+        width: 25%;
+    }
+    
+    .index_comic1{
+        width:250px;
+        margin-top: 62px;
+        margin-left: auto;
+        margin-right: auto;
+        /*margin-left: 30%;
+        */
+        
+        
     }
     
     .index_comic2{
         width:300px;
-        margin-left: 50px;
         margin-top: 65px;
-        float:left;
-        text-align: center;
+        margin-left: auto;
+       margin-right: auto;
+        /*
+        margin-left: 15%;
+        
+        float:left;*/
         color: #ffffff;
     }
     
     .index_comic3{
         width:250px;
-        margin-left: 50px;
         margin-top: 91px;
+        margin-left: auto;
+        margin-right: auto;
+        /*
+        margin-left: 10%;
+        
         float:left;
-        text-align: center;
+        */
         color: #ffffff;
     }
     
     .index_comic4{
         width:250px;
-        margin-left: 60px;
         margin-top: 83px;
+        margin-left: auto;
+        margin-right: auto;
+        /*
+        margin-left: 10%;
+        
         float:left;
-        text-align: center;
+        */
+        
         color: #ffffff;
     }
     
@@ -528,12 +569,7 @@
         color: #ffffff;
     }
     
-    .flex-container-1000-200-l100 {
-        width: 1300px;
-        height: 200px;
-        margin-left: 15%;
-        font-size: 13px;
-    }
+    
     
     .koop-content-centered2 {
         margin-left: auto;
@@ -560,8 +596,17 @@
         font-size: 10px;
         float: right;
         color: #ffffff;
+        
+        
+        /*
         text-align: center;
-        margin-right: 9%;
+        margin-right: 4%;
+        margin-top: 5%;
+        */
+        text-align: right;
+        position: absolute; 
+        bottom: 40px; 
+        width: 96.5%;
     }
     #layout_content{
         padding:0px;
