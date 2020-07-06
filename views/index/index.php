@@ -437,6 +437,7 @@
 		<div class=koop-content2>
 		    <div>
         		<img id='teachuos-logo2' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_teachUOS.svg' ?>'/>
+        		<img align="right" style="cursor: pointer;" onclick="$( '#set_layout_form' ).submit();" width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_switch.svg' ?>" />
         	</div>
         	<div class="flex-container-1000-200-l100">	
         			<div class="index_comic">
@@ -473,7 +474,7 @@
          </div>  
          
          <div class="koop-footer22 light">
-            <img style="cursor: pointer;" onclick="$( '#set_layout_form' ).submit();" width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_quali.svg' ?>" />
+            <img width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_quali.svg' ?>" />
          <!-- 
          	VOM ZENTRUM FÜR LEHRERBILDUNG DER
          	<p class="black fontsize13">
