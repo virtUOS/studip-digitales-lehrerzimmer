@@ -118,6 +118,7 @@ class PagesController extends StudipController {
         // add koop menu
         PageLayout::addBodyElements($this->get_koop_content());
         PageLayout::addScript($this->plugin->getPluginURL() . '/assets/menu.js');
+        //test
         
         require_once 'vendor/trails/trails.php';
         require_once 'app/controllers/studip_controller.php';
