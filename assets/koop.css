@@ -38,6 +38,19 @@ and open the template in the editor.
         letter-spacing: -1px;
     }
     
+
+    a.hover_image img {
+        position:absolute;
+        /*left:0;*/
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+    a.hover_image img.top:hover {
+        opacity:0;
+    }
+    
     .flex-wrapper{
         display: flex;
     }
@@ -153,9 +166,9 @@ and open the template in the editor.
 
 
     #teachuos-logo {
-        margin-top: 6.4em;
-        margin-bottom: 1.2em;
-        margin-left: 6em;
+        margin-top: 6em;
+        margin-bottom: 1.8em;
+        margin-left: 2.7em;
     }
 
     a.faecher {
@@ -293,7 +306,7 @@ and open the template in the editor.
         width: 82px;
         height: 79px;
         margin-left: 1.9em;
-        margin-top: 2.2em;
+        margin-top: 2.1em;
         position: relative;
     }
     a.eins_add img {
@@ -468,10 +481,10 @@ and open the template in the editor.
 
     .schwebend img {
         width: 500px;
-        height: 58px;
+        height: 52px;
         margin-left: 8em;
         margin-bottom: 4.5em;
-        margin-top: -9em;
+        margin-top: -8em;
         position: relative;
     }
 

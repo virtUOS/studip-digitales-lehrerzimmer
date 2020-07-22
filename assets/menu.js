@@ -16,6 +16,13 @@ $( document ).ready(function() {
 	$("#courseware").prependTo(".koop-text-behalter");
 	$(".koop-sub-content").appendTo("#layout_content");
 	$("#courseware").css("padding-left", "0");
+	
+	$(".navigate").attr("data-title","");
+	//$(".subchapters").prependTo(".koop-kacheln-behalter");
+	$(".chapter.selected").prependTo(".koop-kacheln-behalter");
+	// hide first sub section in menu
+	$(".active-subchapter").children(".section:first").hide();
+	
 	$("#courseware").show();
 	$(".koop-sub-content").show();
 });

@@ -215,10 +215,12 @@
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A18_add_hell.svg' ?>" />
                     </a>
                     <? endif ?>
+                    
+                     
                 </div>
             </div>
         </div>
-            
+        
         <div class="schwebend"><img src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/A_schweben.svg' ?>">
             </div>
             
@@ -435,11 +437,12 @@
 <? else: ?>
 	<div class="koop-content-centered2 ">
 		<div class=koop-content2>
-		    <div>
-        		<img id='teachuos-logo2' style='width:350px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_teachUOS.svg' ?>'/>
+		    <div >
+        		<img id='teachuos-logo2' style='width:290px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_teachUOS.svg' ?>'/>
         		<img align="right" style="cursor: pointer;" onclick="$( '#set_layout_form' ).submit();" width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_switch.svg' ?>" />
         	</div>
         	<div class="flex-container-1000-200-l100">	
+        	<!--  
         			<div class="index_comic">
                         <a class='koop-index-navigation index_comic1' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=33' >
                             <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A1_praxis.svg' ?>" />
@@ -464,13 +467,50 @@
                         	BLICK IN DIE <b>FÄCHER</b>
                         </a>
                     </div>
+             -->
+             		<div class="index_comic">
+                        <a class='koop-index-navigation hover_image index_comic2' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=21' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_studium_hover.svg' ?>" />
+                            <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_studium.svg' ?>" />
+                            <p class="index_comic_txt">DURCH'S <b>STUDIUM</b></p>
+                        </a>
+                    </div>
+                    
+                    
+             		<div class="index_comic">
+             			<a class='koop-index-navigation hover_image index_comic1' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=33' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_praxis_hover.svg' ?>" />
+         					<img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_praxis.svg' ?>" />
+                    		<p class="index_comic_txt">IN DIE <b>PRAXIS</b></p>
+                    	</a> 
+                    	
+                        
+                    </div>
+                    
+                    <div class="index_comic">
+                        <a class='koop-index-navigation hover_image index_comic3' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=30' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_digital_hover.svg' ?>" />
+                        	<img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_digital.svg' ?>" />
+                        	<p class="index_comic_txt">DIGITALE <b>MEDIEN</b></p>
+                        </a>
+                    </div>
+                    <div class="index_comic">
+                        <a class='koop-index-navigation hover_image index_comic4' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=27' >
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_faecher.svg' ?>" />
+                        	<img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_faecher.svg' ?>" />
+                        	<p class="index_comic_txt">BLICK IN DIE <b>FÄCHER</b></p>
+                        </a>
+                    </div>
             </div>
          </div>   
          <div class="koop-footer2">
-         	<b class="black">HERZLICH WILLKOMMEN!</b>
+         	<h3>Herzlich Willkommen auf teachUOS!</h3>
          	<p class="light">
-         		Du suchst nach Orientierung in deinem Lehramtsstudium? Wer kann dir helfen und wo findest du die richtigen Informationen? Du möchtest deinen eigenen Lernprozess durch Lerntools oder -videos unterstützen? Du interessierst dich über das Studienangebot hinaus für Möglichkeiten des digitalen Unterrichts? Vielleicht hast du auch Lust, einen Blick in andere Fächer zu werfen oder denkst über einen Auslandsaufenthalt nach? Viele Anregungen, Hinweise und Tipps findest du hier auf teachUOS!
+         		Du suchst nach Orientierung in deinem Lehramtsstudium? Wer kann dir helfen und wo findest du die richtigen Informationen? Du möchtest deinen eigenen Lernprozess durch Lerntools oder -videos unterstützen? Du interessierst dich über das Studienangebot hinaus für Möglichkeiten des digitalen Unterrichts? Vielleicht hast du auch Lust, einen Blick in andere Fächer zu werfen oder denkst über einen Auslandsaufenthalt nach? Viele Anregungen, Hinweise und Tipps findest du hier auf <font color="#7F9CE3" >teachUOS</font>!
          	</p>
+         	<p class="light">
+         		<font color="#7F9CE3" >teachUOS</font> ist fächerübergreifend angelegt und richtet sich an alle Lehramtsstudierende. Unimitarbeitende aus dem wissenschaftlichen und organisatorischen Bereich sowie Studierende haben an der Entwicklung dieses Portals mitgewirkt. <font color="#7F9CE3" >teachUOS</font> lädt zum Stöbern und Mitgestalten ein. Melde dich gerne hier, falls du Infos vermisst oder Tipps für Verbesserungen hast! 
+			</p>
          </div>  
          
          <div class="koop-footer22 light">
@@ -497,34 +537,75 @@
         display: none;
     }
     #page_title_container{
-        display: none;
+        padding-top: 0px;
+    }
+    
+    #layout_container{
+    	padding:0px !important;
     }
     
     #teachuos-logo2{
-        margin-top: 150px;
-        margin-left: 400px;
+        margin-top: 105px;
+        margin-left: 490px;
         margin-bottom: 0px;
     }
     
     
     .flex-container-1000-200-l100 {
         width: 70%;
-        height: 200px;
-        margin-left: 15%;
+        height: 150px;
+        /*margin-left: 15%;*/
         font-size: 13px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .index_comic{
         float:left;
-        text-align: center;
+        /*text-align: center;*/
         color: #ffffff;
         width: 25%;
+        height: 100px;
+    }
+    /*
+    .index_comic img{
+        margin-left: 2.5%;
+    }
+    */
+    .index_comic_txt{
+        position: absolute;
+        /*margin-left: 4.5%;*/
+        margin-top: 165px;
+        /*margin-top: 250px;*/
+        /*color: #28497C; */
+        color: #97ACE0;
+        font-size: 15px;
     }
     
-    .index_comic1{
-        width:250px;
-        margin-top: 62px;
-        margin-left: auto;
+    .index_comic_txt b{
+        color: #28497C;
+    }
+    
+    .index_comic1 p{
+        margin-left: 6.8%;
+    }
+    .index_comic2 p{
+        margin-left: 5%;
+    }
+    .index_comic3 p{
+        margin-left: 7.0%;
+    }
+    .index_comic4 p{
+        margin-left: 5.8%;
+    }
+
+    
+    .index_comic1 img{
+        width:230px;
+        margin-top: 24px;
+        margin-left: 3.3%;
+        /* margin-left: 5%;*/
         margin-right: auto;
         /*margin-left: 30%;
         */
@@ -532,11 +613,17 @@
         
     }
     
-    .index_comic2{
-        width:300px;
-        margin-top: 65px;
-        margin-left: auto;
+    
+    
+    
+    .index_comic2 img{
+        width:230px;
+        margin-top: 6px;
+        margin-left: 2.9%;
+        /*margin-top: 62px;
+        margin-left: 5%;*/
        margin-right: auto;
+       
         /*
         margin-left: 15%;
         
@@ -544,10 +631,12 @@
         color: #ffffff;
     }
     
-    .index_comic3{
-        width:250px;
-        margin-top: 91px;
-        margin-left: auto;
+    .index_comic3 img{
+        width:230px;
+        margin-top: 43px;
+        margin-left: 3.4%;
+        /*margin-top: 91px;
+         margin-left: 5%;*/
         margin-right: auto;
         /*
         margin-left: 10%;
@@ -557,10 +646,12 @@
         color: #ffffff;
     }
     
-    .index_comic4{
-        width:250px;
-        margin-top: 83px;
-        margin-left: auto;
+    .index_comic4 img{
+        width:245px;
+        margin-top: 35px;
+        margin-left: 3.8%;
+        /*margin-top: 83px;
+        /* margin-left: 5%;*/
         margin-right: auto;
         /*
         margin-left: 10%;
@@ -584,22 +675,32 @@
         margin-right: auto;
         width: 100%;
         height: 100%;
-        background-color: #28497c;
+        background-color: #ffffff;
     }
     
     .koop-content2{
         width: 100%;
         font-size: 13px;
-        background-color: #ffffff;
+        background-color: #28497c;
 
     }
     .koop-footer2{
-        font-size: 13px;
-        width: 50%;
-        margin-top: 130px;
-        margin-left: 25%;
-        color: #ffffff;
+        font-size: 15px;
+        width: 56.5%;
+        margin-top: 105px;
+        margin-left: 24%;
+        color: black;
+        border-left: 1.5px solid #28497c;
+        padding-left: 2%;
+        padding-bottom: 15px;
     }
+    .koop-footer2 h3{
+        font-size: 17.5px;
+        color: #4F6EB9;
+        font-weight: normal;
+        padding-top: 15px;
+    }
+    
     .koop-footer22{
         font-size: 10px;
         float: right;
@@ -620,6 +721,8 @@
     #layout_content{
         padding:0px;
     }
+    
+    
     .light {
       font-weight: 300;
     }

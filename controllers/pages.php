@@ -106,19 +106,39 @@ class PagesController extends StudipController {
         // hide courseware navigation
         PageLayout::addStyle('.cw-sidebar { display: none; }');
         PageLayout::addStyle('.breadcrumb { display: none; }');
-        PageLayout::addStyle('.active-subchapter { display: none; }');
         PageLayout::addStyle('.mode-switch { display: none; }');
         PageLayout::addStyle('#tabs { display: none; }');
         PageLayout::addStyle('#courseware { display: none; }');
+        PageLayout::addStyle('.prev { display: none !important; }');
+        PageLayout::addStyle('.next { display: none !important; }');
         
-        // add koop css
-        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
-        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/menu.css');
+        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+            PageLayout::addStyle('.active-subchapter { display: none; }');
+            PageLayout::addStyle('.subchapters { display: none; }');
+            PageLayout::addStyle('.chapter { display: none; }');
+            
+            // add koop css
+            PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
+            PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/menu.css');
+            
+        }elseif (UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
+            
+            PageLayout::addStyle('ol.subchapters{ list-style:none !important; }');
+            PageLayout::addStyle('.controls { display: none; }');
+            PageLayout::addStyle('.handle { display: none; }');
+            PageLayout::addStyle('.no-content { display: none; }');
+            
+            // add koop css
+            PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/koop.css');
+            PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/menu_2.css');
+        }
+        
+        
+        
         
         // add koop menu
         PageLayout::addBodyElements($this->get_koop_content());
         PageLayout::addScript($this->plugin->getPluginURL() . '/assets/menu.js');
-        //test
         
         require_once 'vendor/trails/trails.php';
         require_once 'app/controllers/studip_controller.php';
@@ -146,7 +166,21 @@ class PagesController extends StudipController {
         # load flexi templates
         $path_to_the_templates = dirname(__FILE__) . '/../templates';
         $factory = new Flexi_TemplateFactory($path_to_the_templates);
-        $koop_page_template = $factory->open('koop_page');
+        $koop_page_template = '';
+        
+        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+            $koop_page_template = $factory->open('koop_page');
+        }elseif (UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
+            $koop_page_template = $factory->open('koop_page_2');
+        }
+        
+        /*
+         if (UserConfig::get($GLOBALS['user']->id)->koop_layout1 == true){
+         $koop_page_template = $factory->open('koop_page');
+         }else{
+         $koop_page_template = $factory->open('koop_page_2');
+         }
+         */
         $koop_page_template->set_attribute('ABSOLUTE_URI_STUDIP', $GLOBALS['ABSOLUTE_URI_STUDIP']);
         $koop_page_template->set_attribute('getPluginPath', $this->plugin->getPluginPath());
         
@@ -184,7 +218,7 @@ class PagesController extends StudipController {
             'comic_width' => 42
         );
         $title='';
-        if($koop_menu){
+        if($koop_menu && UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
             $content = json_decode($koop_menu['content'], true);
             $kacheln = $content['kacheln'];
             $title = $koop_menu['title'];
