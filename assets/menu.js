@@ -22,6 +22,8 @@ $( document ).ready(function() {
 	$(".chapter.selected").prependTo(".koop-kacheln-behalter");
 	// hide first sub section in menu
 	$(".active-subchapter").children(".section:first").hide();
+	$("ol.subchapters").children(".subchapter:first").hide();
+	
 	
 	$("#courseware").show();
 	$(".koop-sub-content").show();
