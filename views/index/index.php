@@ -637,7 +637,21 @@
         */
     }
     
-    
+    .light {
+      font-weight: 300;
+    }
+    .regular {
+      font-weight: 400;
+    }
+    .bold {
+      font-weight: 700;
+    }
+    .black {
+      font-weight: 900;
+    }
+    .fontsize13 {
+      font-size: 13px;
+    }
     
     
     .index_comic2 img{
