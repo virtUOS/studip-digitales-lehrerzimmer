@@ -631,7 +631,7 @@
     
     .index_comic1 img{
         width:209px;
-        margin-top: 5px;
+        margin-top: 5.25px;
         margin-left: 87px;
         /* margin-left: 3.3%;*/
         margin-right: auto;
@@ -658,7 +658,7 @@
     
     .index_comic2 img{
         width:209px;
-        margin-top: -12px;
+        margin-top: -11.75px;
         margin-left: 105px;
         /*margin-top: 62px;
         margin-left: 2.9%;*/
@@ -688,7 +688,7 @@
     
     .index_comic4 img{
         width:214px;
-        margin-top: 18.5px;
+        margin-top: 19.5px;
         margin-left: 35px;
         /*margin-top: 83px;
         /* margin-left: 3.8%;*/
