@@ -27,4 +27,13 @@ $( document ).ready(function() {
 	
 	$("#courseware").show();
 	$(".koop-sub-content").show();
+	
+	// add styles to the header in sidemenu
+	$('.chapter.selected a').each(function() {
+	  var text = $(this).html().replace('DIGITALE MEDIAN', '<b>DIGITALE</b> MEDIAN');
+	  text = text.replace('BLICK IN DIE FÄCHER', '<b>BLICK IN DIE</b> FÄCHER');
+	  text = text.replace('IN DIE PRAXIS', '<b>IN DIE</b> PRAXIS');
+	  text = text.replace("DURCH'S STUDIUM", "<b>DURCH'S</b> STUDIUM");
+	  $(this).html(text);
+	});
 });

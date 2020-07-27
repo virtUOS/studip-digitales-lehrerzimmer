@@ -503,7 +503,7 @@
                     </div>
                     <div class="index_comic">
                         <a class='koop-index-navigation hover_image index_comic4' href='pages/cw?cid=99965fd1039274ecc637698846c52f2b&selected=27' >
-                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_faecher.svg' ?>" />
+                            <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_faecher_hover.svg' ?>" />
                         	<img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_faecher.svg' ?>" />
                         	<p class="index_comic_txt">BLICK IN DIE <b>FÄCHER</b></p>
                         </a>

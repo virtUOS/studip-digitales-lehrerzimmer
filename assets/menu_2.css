@@ -13,8 +13,10 @@
 	padding:0px !important;
 }
 #layout_page{
-	min-width: 1200px !important;
+	/*min-width: 1200px !important;*/
 }
+
+
 
 .koop-footer22{
      font-size: 10px;
@@ -53,7 +55,28 @@
   font-size: 13px;
 }
     
+.subchapter.selected a:before{
+		    content:"• ";
+}
 
+.chapter.selected b{
+		    color: #83a3d1;
+		    font-weight: normal;
+}
+
+.section.selected{
+		  border-bottom: 4px double #28497c !important;
+}
+
+.active-section{
+	max-width: 1500px !important;
+}
+
+.subchapter:hover{
+            /*text-shadow: 2px 2px #768eb5;*/
+}
+
+    
 .title h1{
     color:#28497C !important;
 }    
