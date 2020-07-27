@@ -442,7 +442,7 @@
 </style>
 <? else: ?>
 	<div class="koop-content-centered2 ">
-		<div class=koop-content2>
+		<div class="koop-content2 verlauf">
 			<img align="right" style="cursor: pointer;margin: 30px;" onclick="$( '#set_layout_form' ).submit();" width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_switch.svg' ?>" />
         	
 		    <div class="teachuos_logo">
@@ -539,6 +539,14 @@
     </form>
    
     <style>
+    
+    .verlauf {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-image: url('<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_blue.svg' ?>');
+    }
+    
     #tabs{
         display: none;
     }
