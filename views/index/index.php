@@ -559,22 +559,23 @@
     
     
     .teachuos_logo {
-    	font-size: 13px;
-    	width: 1200px;
+    	font-size: 10px;
+    	width: 1190px;
     	margin-left: auto;
     	margin-right: auto;
     }
     
     #teachuos-logo2{
-        margin-top: 105px;
-        margin-left: 132px;
-        margin-bottom: 0px;
+        width: 260px !important;
+        margin-top: 94px;
+        margin-left: 170px;
+        margin-bottom: 18px;
     }
     
     
     .flex-container-1000-200-l100 {
         /*width: 70%;*/
-        height: 150px;
+        height: 120px;
         /*margin-left: 15%;*/
         font-size: 13px;
         width: 1200px;
@@ -598,39 +599,40 @@
     .index_comic_txt{
         position: absolute;
         /*margin-left: 4.5%;*/
-        margin-top: 165px;
+        margin-top: 133px;
         /*margin-top: 250px;*/
         /*color: #28497C; */
         color: #97ACE0;
-        font-size: 15px;
+        font-size: 13px;
     }
     
     .index_comic_txt b{
         color: #28497C;
+        
     }
     
     .index_comic1 p{
-        margin-left: 130px;
+        margin-left: 148px;
         width: max-content;
     }
     .index_comic2 p{
-        margin-left: 100px;
+        margin-left: 148px;
         width: max-content;
     }
     .index_comic3 p{
-        margin-left: 135px;
+        margin-left: 122px;
         width: max-content;
     }
     .index_comic4 p{
-        margin-left: 120px;
+        margin-left: 72px;
         width: max-content;
     }
 
     
     .index_comic1 img{
-        width:230px;
-        margin-top: 24px;
-        margin-left: 65px;
+        width:209px;
+        margin-top: 5px;
+        margin-left: 87px;
         /* margin-left: 3.3%;*/
         margin-right: auto;
         /*margin-left: 30%;
@@ -655,9 +657,9 @@
     
     
     .index_comic2 img{
-        width:230px;
-        margin-top: 6px;
-        margin-left: 52px;
+        width:209px;
+        margin-top: -12px;
+        margin-left: 105px;
         /*margin-top: 62px;
         margin-left: 2.9%;*/
        margin-right: auto;
@@ -670,9 +672,9 @@
     }
     
     .index_comic3 img{
-        width:230px;
-        margin-top: 43px;
-        margin-left: 65px;
+        width:208.5px;
+        margin-top: 23px;
+        margin-left: 54px;
         /*margin-top: 91px;
          margin-left: 3.4%;*/
         margin-right: auto;
@@ -685,9 +687,9 @@
     }
     
     .index_comic4 img{
-        width:245px;
-        margin-top: 35px;
-        margin-left: 75px;
+        width:214px;
+        margin-top: 18.5px;
+        margin-left: 35px;
         /*margin-top: 83px;
         /* margin-left: 3.8%;*/
         margin-right: auto;
@@ -724,20 +726,20 @@
         min-width: 1300px;
     }
     .koop-footer2{
-        font-size: 15px;
+        font-size: 13px;
         /*width: 56.5%;*/
-        width: 1170px;
-        margin-top: 105px;
+        width: 1090px;
+        margin-top: 95px;
         /*margin-left: 24%;*/
         margin-left: auto;
         margin-right: auto;
         color: black;
         /*border-left: 1.5px solid #28497c;
         /*padding-left: 2%;*/
-        padding-bottom: 15px;
+        padding-bottom: 14px;
     }
     .koop-footer2 h3{
-        font-size: 17.5px;
+        font-size: 16px;
         color: #4F6EB9;
         font-weight: normal;
         padding-top: 15px;
@@ -749,10 +751,10 @@
     
     .koop-footer-line{
         border-left: 1.5px solid #28497c;
-        height: 230px;
+        height: 180px;
         float: left;
         width: 40px;
-	    margin-left: 80px;
+	    margin-left: 77px;
     }
     
     .koop-footer22{
