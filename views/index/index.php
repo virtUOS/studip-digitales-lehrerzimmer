@@ -736,7 +736,7 @@
         color: black;
         /*border-left: 1.5px solid #28497c;
         /*padding-left: 2%;*/
-        padding-bottom: 14px;
+        padding-bottom: 80px;
     }
     .koop-footer2 h3{
         font-size: 16px;
