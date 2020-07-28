@@ -1,5 +1,5 @@
 <? if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1) : ?>
-	<img align="right" style="cursor: pointer;margin: 30px;background-color: #3c68ac;" onclick="$( '#set_layout_form' ).submit();" width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_switch.svg' ?>" />
+	<img align="right" style="cursor: pointer;margin: 30px;" onclick="$( '#set_layout_form' ).submit();" width="70"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch1.svg' ?>" />
         
     <div class="koop-content-centered koop-content">
     
