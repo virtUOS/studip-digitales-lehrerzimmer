@@ -443,7 +443,7 @@
 <? else: ?>
 	<div class="koop-content-centered2 ">
 		<div class="koop-content2 verlauf">
-			<img align="right" style="cursor: pointer;margin: 30px;" onclick="$( '#set_layout_form' ).submit();" width="110"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images2/A0_switch.svg' ?>" />
+			<img align="right" style="cursor: pointer;margin: 30px;" onclick="$( '#set_layout_form' ).submit();" width="70"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch.svg' ?>" />
         	
 		    <div class="teachuos_logo">
         		<img id='teachuos-logo2' style='width:290px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_teachUOS.svg' ?>'/>
