@@ -758,7 +758,7 @@
     }
     
     .koop-footer-line{
-        border-left: 1.5px solid #28497c;
+        border-left: 0.75px solid #28497c;
         height: 180px;
         float: left;
         width: 40px;
