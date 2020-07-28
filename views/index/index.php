@@ -1,5 +1,5 @@
 <? if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1) : ?>
-	<img align="right" style="cursor: pointer;margin: 40px;" onclick="$( '#set_layout_form' ).submit();" width="80"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch1.svg' ?>" />
+	<img align="right" style="cursor: pointer;margin: 40px;" onclick="$( '#set_layout_form' ).submit();" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch1.svg' ?>" />
         
     <div class="koop-content-centered koop-content">
     
@@ -443,7 +443,7 @@
 <? else: ?>
 	<div class="koop-content-centered2 ">
 		<div class="koop-content2 verlauf">
-			<img align="right" style="cursor: pointer;margin: 30px;" onclick="$( '#set_layout_form' ).submit();" width="70"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch.svg' ?>" />
+			<img align="right" style="cursor: pointer;margin: 30px;" onclick="$( '#set_layout_form' ).submit();" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch.svg' ?>" />
         	
 		    <div class="teachuos_logo">
         		<img id='teachuos-logo2' style='width:290px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_teachUOS.svg' ?>'/>
