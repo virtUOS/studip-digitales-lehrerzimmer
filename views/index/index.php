@@ -638,7 +638,7 @@
 
     
     .index_comic1 img{
-        width:209px;
+        width:210px;
         margin-top: 5.25px;
         margin-left: 87px;
         /* margin-left: 3.3%;*/
@@ -665,8 +665,8 @@
     
     
     .index_comic2 img{
-        width:209px;
-        margin-top: -11.75px;
+        width:214px;
+        margin-top: -13.55px;
         margin-left: 105px;
         /*margin-top: 62px;
         margin-left: 2.9%;*/
@@ -680,8 +680,8 @@
     }
     
     .index_comic3 img{
-        width:208.5px;
-        margin-top: 23px;
+        width:206px;
+        margin-top: 24px;
         margin-left: 54px;
         /*margin-top: 91px;
          margin-left: 3.4%;*/
