@@ -666,7 +666,7 @@
     
     .index_comic2 img{
         width:214px;
-        margin-top: -13.55px;
+        margin-top: -13.50px;
         margin-left: 105px;
         /*margin-top: 62px;
         margin-left: 2.9%;*/
