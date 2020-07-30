@@ -6,7 +6,7 @@
     
     <!--    <div class="flex-wrapper">
             
-             Kachelen 
+             Kacheln 
             <div class="flex-container-half">
                 
     -->            
