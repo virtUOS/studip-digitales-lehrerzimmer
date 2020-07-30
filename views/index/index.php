@@ -681,7 +681,7 @@
     
     .index_comic3 img{
         width:206px;
-        margin-top: 24px;
+        margin-top: 24.5px;
         margin-left: 54px;
         /*margin-top: 91px;
          margin-left: 3.4%;*/
