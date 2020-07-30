@@ -639,7 +639,7 @@
     
     .index_comic1 img{
         width:210px;
-        margin-top: 6px;
+        margin-top: 6.44px;
         margin-left: 87px;
         /* margin-left: 3.3%;*/
         margin-right: auto;
