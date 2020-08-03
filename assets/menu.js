@@ -37,6 +37,6 @@ $( document ).ready(function() {
 	  $(this).html(text);
 	});
 	
-	// align main images with heading in the first page of level 2
+	// align main images with heading in the first page of level 2 
 	$('img[alt~="-Main"]').css("margin-top", "-140px");
 });
