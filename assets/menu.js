@@ -36,4 +36,7 @@ $( document ).ready(function() {
 	  text = text.replace("Durch's Studium", "<b>Durch's</b> Studium");
 	  $(this).html(text);
 	});
+	
+	// align main images with heading in the first page of level 2
+	$('img[alt~="-Main"]').css("margin-top", "-140px");
 });
