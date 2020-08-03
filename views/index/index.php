@@ -443,7 +443,8 @@
 <? else: ?>
 	<div class="koop-content-centered2 ">
 		<div class="koop-content2 verlauf">
-			<img align="right" style="cursor: pointer;margin: 32px;" onclick="$( '#set_layout_form' ).submit();" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch.svg' ?>" />
+			<img align="right" style="cursor: pointer;margin: 32px;" onclick="switchFullscreen()" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_forum.svg' ?>" />
+        	<img align="right" style="cursor: pointer;margin-top: 32px;" onclick="$( '#set_layout_form' ).submit();" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch.svg' ?>" />
         	
 		    <div class="teachuos_logo">
         		<img id='teachuos-logo2' style='width:290px' src='<?= $GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A_teachUOS.svg' ?>'/>
