@@ -75,7 +75,7 @@ $( document ).ready(function() {
     $(".subchapter").each(function( index ) {
     	 if(index>$(".edit_kachel").length){
     		 current_add_id = index;
-    		 $('#edit_kacheln_table').append('<tr class="edit_kachel"><td><div> *neu*: '+$( this ).find("a").text()+'</div><br><div>'+current_add_id+'. Image:<select id="k'+current_add_id+'_img" name="kacheln['+current_add_id+'][img]" onchange="$(\'#k'+current_add_id+'_preview\').attr(\'src\',getImagesFolder()+$(this).val())"><? foreach ($kacheln_images as $kacheln_image) : ?><option value="<?= $kacheln_image ?>"><?= $kacheln_image ?></option><? endforeach ?></select></div></td><td><a href="#" class="koop-index-navigation sub_kacheln"><img id="k'+current_add_id+'_preview" src="<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images3/B1_deutsch.svg"/></a></td></tr>');
+    		 $('#edit_kacheln_table').append('<tr class="edit_kachel"><td><div> *neu*: '+$( this ).find("a").text()+'</div><br><div>'+current_add_id+'. Image:<select id="k'+current_add_id+'_img" name="kacheln['+current_add_id+'][img]" onchange="$(\'#k'+current_add_id+'_preview\').attr(\'src\',getImagesFolder()+$(this).val())"><? foreach ($kacheln_images as $kacheln_image) : ?><option value="<?= $kacheln_image ?>"><?= $kacheln_image ?></option><? endforeach ?></select></div></td><td><a href="#" class="koop-index-navigation sub_kacheln"><img id="k'+current_add_id+'_preview" src="<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images3/C1_deutsch.svg"/></a></td></tr>');
     	 }
     });
     /*
