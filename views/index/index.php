@@ -77,7 +77,7 @@
                 	<? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img) && 
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img_hover) &&
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link)) : ?>                	
-                    <a class='koop-index-navigation eins_add' href='<?= str_replace('{ABSOLUTE_URI_STUDIP}plugins.php/courseware/courseware',$GLOBALS['ABSOLUTE_URI_STUDIP']."plugins.php/koop/pages/cw",UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link); ?>' >
+                    <a class='koop-index-navigation eins_add' href='<?= str_replace(array('{ABSOLUTE_URI_STUDIP}','plugins.php/courseware/courseware'),array($GLOBALS['ABSOLUTE_URI_STUDIP'],'plugins.php/koop/pages/cw'),UserConfig::get($GLOBALS['user']->id)->koop_custom_1_link); ?>' >
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img_hover ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_1_img ?>" />
                     </a>
@@ -99,7 +99,7 @@
                     <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img) && 
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img_hover) &&
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_2_link)) : ?>                	
-                    <a class='koop-index-navigation fuenf_add' href='<?= str_replace('{ABSOLUTE_URI_STUDIP}plugins.php/courseware/courseware',$GLOBALS['ABSOLUTE_URI_STUDIP']."plugins.php/koop/pages/cw",UserConfig::get($GLOBALS['user']->id)->koop_custom_2_link); ?>' >
+                    <a class='koop-index-navigation fuenf_add' href='<?= str_replace(array('{ABSOLUTE_URI_STUDIP}','plugins.php/courseware/courseware'),array($GLOBALS['ABSOLUTE_URI_STUDIP'],'plugins.php/koop/pages/cw'),UserConfig::get($GLOBALS['user']->id)->koop_custom_2_link); ?>' >
                         <img class="bottom" width="75" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img_hover ?>" />
                         <img class="top"  width="75" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_2_img ?>" />
                     </a>
@@ -140,7 +140,7 @@
                     <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img) && 
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img_hover) &&
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_3_link)) : ?>                	
-                    <a  class='koop-index-navigation custom_kachel' href='<?= str_replace('{ABSOLUTE_URI_STUDIP}plugins.php/courseware/courseware',$GLOBALS['ABSOLUTE_URI_STUDIP']."plugins.php/koop/pages/cw",UserConfig::get($GLOBALS['user']->id)->koop_custom_3_link); ?>' >
+                    <a  class='koop-index-navigation custom_kachel' href='<?= str_replace(array('{ABSOLUTE_URI_STUDIP}','plugins.php/courseware/courseware'),array($GLOBALS['ABSOLUTE_URI_STUDIP'],'plugins.php/koop/pages/cw'),UserConfig::get($GLOBALS['user']->id)->koop_custom_3_link); ?>' >
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img_hover ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_3_img ?>" />
                     </a>
@@ -154,7 +154,7 @@
                     <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img) && 
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img_hover) &&
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_4_link)) : ?>                	
-                    <a  style="margin-left: 3px;" class='koop-index-navigation custom_kachel' href='<?= str_replace('{ABSOLUTE_URI_STUDIP}plugins.php/courseware/courseware',$GLOBALS['ABSOLUTE_URI_STUDIP']."plugins.php/koop/pages/cw",UserConfig::get($GLOBALS['user']->id)->koop_custom_4_link); ?>' >
+                    <a  style="margin-left: 3px;" class='koop-index-navigation custom_kachel' href='<?= str_replace(array('{ABSOLUTE_URI_STUDIP}','plugins.php/courseware/courseware'),array($GLOBALS['ABSOLUTE_URI_STUDIP'],'plugins.php/koop/pages/cw'),UserConfig::get($GLOBALS['user']->id)->koop_custom_4_link); ?>' >
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img_hover ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_4_img ?>" />
                     </a>
@@ -208,7 +208,7 @@
                     <? if (isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img) && 
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img_hover) &&
                         isset(UserConfig::get($GLOBALS['user']->id)->koop_custom_5_link)) : ?>                	
-                    <a  style="margin-top: 17px;"  class='koop-index-navigation custom_kachel' href='<?= str_replace('{ABSOLUTE_URI_STUDIP}plugins.php/courseware/courseware',$GLOBALS['ABSOLUTE_URI_STUDIP']."plugins.php/koop/pages/cw",UserConfig::get($GLOBALS['user']->id)->koop_custom_5_link); ?>' >
+                    <a  style="margin-top: 17px;"  class='koop-index-navigation custom_kachel' href='<?= str_replace(array('{ABSOLUTE_URI_STUDIP}','plugins.php/courseware/courseware'),array($GLOBALS['ABSOLUTE_URI_STUDIP'],'plugins.php/koop/pages/cw'),UserConfig::get($GLOBALS['user']->id)->koop_custom_5_link); ?>' >
                         <img class="bottom" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img_hover ?>" />
                         <img class="top" src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images/'.UserConfig::get($GLOBALS['user']->id)->koop_custom_5_img ?>" />
                     </a>
@@ -443,7 +443,7 @@
 <? else: ?>
 	<div class="koop-content-centered2 ">
 		<div class="koop-content2 verlauf">
-			<img align="right" style="cursor: pointer;margin: 34px;" onclick="switchFullscreen()" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_forum.svg' ?>" />
+			<img align="right" style="cursor: pointer;margin: 32px;" onclick="switchFullscreen()" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_forum.svg' ?>" />
         	<img align="right" style="cursor: pointer;margin-top: 32px;" onclick="$( '#set_layout_form' ).submit();" width="72"  src="<?=$GLOBALS['ABSOLUTE_URI_STUDIP'] . $this->plugin->getPluginPath() . '/assets/images3/A0_switch.svg' ?>" />
         	
 		    <div class="teachuos_logo">
@@ -821,5 +821,7 @@ function submitCustomizable(img,hover,link){
 	$('input[name="k_link"]').val(link);
 	$( "#customizable_kachel_form" ).submit();
 }
+
+
 
 </script>

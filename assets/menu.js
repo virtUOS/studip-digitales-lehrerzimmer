@@ -18,8 +18,13 @@ $( document ).ready(function() {
 	$("#courseware").css("padding-left", "0");
 	
 	$(".navigate").attr("data-title","");
-	//$(".subchapters").prependTo(".koop-kacheln-behalter");
+
+	// add header to side menu
 	$(".chapter.selected").prependTo(".koop-kacheln-behalter");
+	if (typeof text_sidemenu == 'undefined'){
+		$(".subchapters").hide();
+	}
+	
 	// hide first sub section in menu
 	$(".active-subchapter").children(".section:first").hide();
 	$("ol.subchapters").children(".subchapter:first").hide();
@@ -37,6 +42,7 @@ $( document ).ready(function() {
 	  $(this).html(text);
 	});
 	
-	// align main images with heading in the first page of level 2 
-	$('img[alt~="-Main"]').css("margin-top", "-120px");
+	
+	// align main images with heading in the first page of level 2
+	$('img[alt~="-Main"]').css("margin-top", "-140px");
 });

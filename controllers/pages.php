@@ -167,11 +167,13 @@ class PagesController extends StudipController {
         $path_to_the_templates = dirname(__FILE__) . '/../templates';
         $factory = new Flexi_TemplateFactory($path_to_the_templates);
         $koop_page_template = '';
-        
+        // only for koop_layout =2, allows texts or blocks in sidemenu
+        $text_sidemenu = false;
         if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
             $koop_page_template = $factory->open('koop_page');
         }elseif (UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
             $koop_page_template = $factory->open('koop_page_2');
+            
         }
         
         /*
@@ -184,21 +186,33 @@ class PagesController extends StudipController {
         $koop_page_template->set_attribute('ABSOLUTE_URI_STUDIP', $GLOBALS['ABSOLUTE_URI_STUDIP']);
         $koop_page_template->set_attribute('getPluginPath', $this->plugin->getPluginPath());
         
+        $images_folder = 'images';
+        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
+            $images_folder = 'images3';
+        }
+        
+        $images_files = scandir($this->plugin->getPluginPath().'/assets/'.$images_folder.'/');
+        $kacheln_images=array();
+        foreach($images_files as $key => $img){
+            if(file_exists($this->plugin->getPluginPath().'/assets/'.$images_folder.'/'.str_replace('.','_hover.',$img))&& strlen($img)>4){
+                $kacheln_images[]=$img;
+            }
+            if(strlen($img)<3)unset($images_files[$key]);
+        }
+        
         // edit
-        $edit_menu_template = $factory->open('edit_menu');
+        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+            $edit_menu_template = $factory->open('edit_menu');
+        }else{
+            $edit_menu_template = $factory->open('edit_menu_2');
+        }
+        
         $edit_menu_template->set_attribute('cid',$_GET['cid']);
         $edit_menu_template->set_attribute('selected',$_GET['selected']);
         $edit_menu_template->set_attribute('ABSOLUTE_URI_STUDIP', $GLOBALS['ABSOLUTE_URI_STUDIP']);
         $edit_menu_template->set_attribute('getPluginPath', $this->plugin->getPluginPath());
         
-        $images_files = scandir($this->plugin->getPluginPath().'/assets/images/');
-        $kacheln_images=array();
-        foreach($images_files as $key => $img){
-            if(file_exists($this->plugin->getPluginPath().'/assets/images/'.str_replace('.','_hover.',$img))&& strlen($img)>4){
-                $kacheln_images[]=$img;
-            }
-            if(strlen($img)<3)unset($images_files[$key]);
-        }
+        
         $edit_menu_template->set_attribute('kacheln_images',$kacheln_images );
         $edit_menu_template->set_attribute('all_images',$images_files );
         
@@ -217,30 +231,59 @@ class PagesController extends StudipController {
             'comic_y_pos' => 10,
             'comic_width' => 42
         );
-        $title='';
-        if($koop_menu && UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+        $title=''; //&& UserConfig::get($GLOBALS['user']->id)->koop_layout == 1
+        if($koop_menu ){
             $content = json_decode($koop_menu['content'], true);
-            $kacheln = $content['kacheln'];
-            $title = $koop_menu['title'];
-            foreach($kacheln as $id => $kachel){
-                $kacheln[$id]['link']=str_replace('{ABSOLUTE_URI_STUDIP}',$GLOBALS['ABSOLUTE_URI_STUDIP'],$kachel['link']);
+            if(UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+                if(isset($content['kacheln'])){
+                    $kacheln = $content['kacheln'];
+                    $title = $koop_menu['title'];
+                    foreach($kacheln as $id => $kachel){
+                        $kacheln[$id]['link']=str_replace('{ABSOLUTE_URI_STUDIP}',$GLOBALS['ABSOLUTE_URI_STUDIP'],$kachel['link']);
+                    }
+                }else{
+                    // empty menu
+                    for($i=1;$i<=9;$i++){
+                        $kacheln[$i]=array('link'=>'../','img_hover'=>'B_teachuos_hover.svg', 'img'=>'B_teachuos.svg');
+                    }
+                }
+            }else{
+                if(isset($content['text_sidemenu']))if($content['text_sidemenu']){
+                    $text_sidemenu = true;
+                }
+                if(isset($content['kacheln_2'])){
+                    $kacheln = $content['kacheln_2'];
+                }else{
+                    // for layout 2 just disply text links for chapters
+                    $text_sidemenu = true;
+                }
             }
             
             if(isset($content['header']))$header = $content['header'];
             
         }else{
+            
             // empty menu
-            for($i=1;$i<=9;$i++){
-                $kacheln[$i]=array('link'=>'../','img_hover'=>'B_teachuos_hover.svg', 'img'=>'B_teachuos.svg');
+            if(UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+                for($i=1;$i<=9;$i++){
+                    $kacheln[$i]=array('link'=>'../','img_hover'=>'B_teachuos_hover.svg', 'img'=>'B_teachuos.svg');
+                }
+            }else{
+                // for layout 2 just disply text links for chapters
+                $text_sidemenu = true;
             }
             $new_page=true;
         }
         
         
         
+        
+        
         $koop_page_template->set_attribute('title',$title );
         $koop_page_template->set_attribute('kacheln', $kacheln);
         $koop_page_template->set_attribute('header', $header);
+        
+        $koop_page_template->set_attribute('text_sidemenu', $text_sidemenu);
         
         $menu_content = $koop_page_template->render();
         
@@ -250,6 +293,8 @@ class PagesController extends StudipController {
         $edit_menu_template->set_attribute('kacheln', $kacheln);
         $edit_menu_template->set_attribute('header', $header);
         $edit_menu_template->set_attribute('title',$title );
+        
+        $edit_menu_template->set_attribute('text_sidemenu', $text_sidemenu);
         
         $menu_content .= $edit_menu_template->render();
         
@@ -284,32 +329,68 @@ class PagesController extends StudipController {
             $kacheln[$id]['link']=str_replace($GLOBALS['ABSOLUTE_URI_STUDIP'],'{ABSOLUTE_URI_STUDIP}',$kachel['link']);
         }
         $content = array();
-        $content['kacheln'] = $kacheln;
+        //$content['kacheln'] = $kacheln;
+        
         
         if(isset($_POST['header']))$content['header'] =$_POST['header'];
         
-        
-        if($_POST['new_page'] == "1"){
-            $k1 = new KoopPage();
-            
-            $k1['type'] = '9kacheln';
-            $k1['parent_id'] = 0;
-            $k1['seminar_id'] = $_POST['cid'];
-            $k1['selected'] = $_POST['selected'];
-            $k1['title'] = $_POST['title'];
-            $k1['content'] = json_encode($content);
-            //$k1['user_id'] = $GLOBALS['user']->id;
-            $k1->store();
-            
+        if(isset($_POST['layout'])){
+            if($_POST['layout'] == 2){
+                
+                if($_POST['new_page'] == "1"){
+                    $content['kacheln_2'] = $kacheln;
+                    $k1 = new KoopPage();
+                    $content['text_sidemenu'] = false;
+                    if(isset($_POST['text_sidemenu']))$content['text_sidemenu'] = true;
+                    $k1['type'] = 'kacheln';
+                    $k1['parent_id'] = 0;
+                    $k1['seminar_id'] = $_POST['cid'];
+                    $k1['selected'] = $_POST['selected'];
+                    $k1['title'] = $_POST['title'];
+                    $k1['content'] = json_encode($content);
+                    //$k1['user_id'] = $GLOBALS['user']->id;
+                    $k1->store();
+                    
+                }else{
+                    $koop_page = KoopPage::findOneBySQL("seminar_id = ?  and selected = ?", [$_POST['cid'], $_POST['selected']]);
+                    $content = json_decode($koop_page['content'], true);
+                    $content['text_sidemenu'] = false;
+                    if(isset($_POST['text_sidemenu']))$content['text_sidemenu'] = true;
+                    $content['kacheln_2'] = $kacheln;
+                    $koop_page['type'] = '9kacheln';
+                    $koop_page['parent_id'] = 0;
+                    $koop_page['seminar_id'] = $_POST['cid'];
+                    $koop_page['selected'] = $_POST['selected'];
+                    $koop_page['title'] = $_POST['title'];
+                    $koop_page['content'] = json_encode($content);
+                    $koop_page->store();
+                }
+            }
         }else{
-            $koop_page = KoopPage::findOneBySQL("seminar_id = ?  and selected = ?", [$_POST['cid'], $_POST['selected']]);
-            $koop_page['type'] = '9kacheln';
-            $koop_page['parent_id'] = 0;
-            $koop_page['seminar_id'] = $_POST['cid'];
-            $koop_page['selected'] = $_POST['selected'];
-            $koop_page['title'] = $_POST['title'];
-            $koop_page['content'] = json_encode($content);
-            $koop_page->store();
+            if($_POST['new_page'] == "1"){
+                $content['kacheln'] = $kacheln;
+                $k1 = new KoopPage();
+                $k1['type'] = '9kacheln';
+                $k1['parent_id'] = 0;
+                $k1['seminar_id'] = $_POST['cid'];
+                $k1['selected'] = $_POST['selected'];
+                $k1['title'] = $_POST['title'];
+                $k1['content'] = json_encode($content);
+                //$k1['user_id'] = $GLOBALS['user']->id;
+                $k1->store();
+                
+            }else{
+                $koop_page = KoopPage::findOneBySQL("seminar_id = ?  and selected = ?", [$_POST['cid'], $_POST['selected']]);
+                $content = json_decode($koop_page['content'], true);
+                $content['kacheln'] = $kacheln;
+                $koop_page['type'] = '9kacheln';
+                $koop_page['parent_id'] = 0;
+                $koop_page['seminar_id'] = $_POST['cid'];
+                $koop_page['selected'] = $_POST['selected'];
+                $koop_page['title'] = $_POST['title'];
+                $koop_page['content'] = json_encode($content);
+                $koop_page->store();
+            }
         }
         $this->redirect($_SERVER['HTTP_REFERER']);
         

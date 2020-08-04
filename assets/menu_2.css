@@ -16,10 +16,14 @@
 	/*min-width: 1200px !important;*/
 }
 
+.margin_center{
+	margin: 0 auto;
+}
+
 
 
 .koop-footer22{
-     font-size: 10px;
+     font-size: 5px;
 
      color: #ffffff;
      float: left;
@@ -80,9 +84,30 @@
 .title h1{
     color:#28497C !important;
 }    
+
+.width50floatleft{
+	width: 50%;
+	float: left;
+}
+
+.width50floatright{
+	width: 50%;
+	float: right;
+}
+
+.width50floatleft a{
+	margin-right: 5px;
+	/*margin-bottom: 5px;*/
+}
+
+.width50floatright a{
+	margin-left: 5px;
+	/*margin-bottom: 5px;*/
+}
+
 a.sub_kacheln {
-    width: 100px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     /*margin-left: 1.9em;
     margin-top: 2.1em;*/
     position: relative;
@@ -165,8 +190,7 @@ ol.subchapters{
 
 .koop-sub-content{
     /*margin-top: 8em;*/
-    /*height: 100%;*/
-    height: 85.4%;
+    height: 100%;
 }
 
 .koop-back{
@@ -184,6 +208,7 @@ ol.subchapters{
     margin-top: -8em;*/
     position: relative;
 }
+
 
 
 
