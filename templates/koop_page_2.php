@@ -19,7 +19,7 @@
             </div>
         	<? endforeach ?>
         	<div class='flex-wrapper' style="width: 100%;">
-            	<a  class='koop-index-navigation sub_kacheln margin_center'  style="width: 90px;" href='##'>
+            	<a  class='koop-index-navigation sub_kacheln margin_center'  style="width: 90px;" href='..\'>
                         <img class='bottom' src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images3/B9_back_hover.svg'/>
                         <img class='top' src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images3/B9_back.svg'/>
                 </a>
