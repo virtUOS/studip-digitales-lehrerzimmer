@@ -39,6 +39,11 @@ $( document ).ready(function() {
 	  text = text.replace('Blick in die Fächer', '<b>Blick in die</b> Fächer');
 	  text = text.replace('Vom Studium in die Praxis', '<b>Vom Studium</b> in die Praxis');
 	  text = text.replace("Durch's Studium", "<b>Durch's</b> Studium");
+	  
+	  text = text.replace("BLICK IN DIE FÄCHER ", "<b>BLICK IN DIE</b> FÄCHER");
+	  text = text.replace("DIGITALE MEDIEN", "<b>DIGITALE</b> MEDIEN");
+	  text = text.replace("IN DIE PRAXIS", "<b>IN DIE</b> PRAXIS");
+	  text = text.replace("DURCH'S STUDIUM", "<b>DURCH'S</b> STUDIUM");
 	  $(this).html(text);
 	});
 	
