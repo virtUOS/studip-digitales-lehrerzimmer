@@ -161,7 +161,11 @@ class PagesController extends StudipController {
     
     public function get_koop_content(){
         $koop_menu = KoopPage::findOneBySQL("seminar_id = ?  and selected = ? ", [$_GET['cid'], $_GET['selected']]);
-        
+        // get the menu from parent
+        if($koop_menu['parent_id'] != 0 && $koop_menu['parent_id'] != $_GET['selected'] && $koop_menu['type'] != "text"){
+            $koop_menu_parent = KoopPage::findOneBySQL("seminar_id = ?  and selected = ?", [$_GET['cid'],$koop_menu['parent_id']]);
+            $koop_menu = $koop_menu_parent;
+        }
         
         # load flexi templates
         $path_to_the_templates = dirname(__FILE__) . '/../templates';
@@ -341,9 +345,12 @@ class PagesController extends StudipController {
                     $content['kacheln_2'] = $kacheln;
                     $k1 = new KoopPage();
                     $content['text_sidemenu'] = false;
-                    if(isset($_POST['text_sidemenu']))$content['text_sidemenu'] = true;
                     $k1['type'] = 'kacheln';
-                    $k1['parent_id'] = 0;
+                    if(isset($_POST['text_sidemenu'])){
+                        $content['text_sidemenu'] = true;
+                        $k1['type'] = 'text';
+                    }
+                    $k1['parent_id'] = $_POST['parent'];
                     $k1['seminar_id'] = $_POST['cid'];
                     $k1['selected'] = $_POST['selected'];
                     $k1['title'] = $_POST['title'];
@@ -355,10 +362,14 @@ class PagesController extends StudipController {
                     $koop_page = KoopPage::findOneBySQL("seminar_id = ?  and selected = ?", [$_POST['cid'], $_POST['selected']]);
                     $content = json_decode($koop_page['content'], true);
                     $content['text_sidemenu'] = false;
-                    if(isset($_POST['text_sidemenu']))$content['text_sidemenu'] = true;
+                    $koop_page['type'] = 'kacheln';
+                    if(isset($_POST['text_sidemenu'])){
+                        $content['text_sidemenu'] = true;
+                        $koop_page['type'] = 'text';
+                    }
                     $content['kacheln_2'] = $kacheln;
-                    $koop_page['type'] = '9kacheln';
-                    $koop_page['parent_id'] = 0;
+                    
+                    $koop_page['parent_id'] = $_POST['parent'];
                     $koop_page['seminar_id'] = $_POST['cid'];
                     $koop_page['selected'] = $_POST['selected'];
                     $koop_page['title'] = $_POST['title'];

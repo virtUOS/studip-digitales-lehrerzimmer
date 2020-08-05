@@ -5,6 +5,7 @@
 			<input type="hidden" name="selected" value="<?= $selected ?>" >
 			<input type="hidden" name="new_page" value="<?= $new_page ?>" >
 			<input type="hidden" name="layout" value="2" >
+			<input type="hidden" name="parent" value="0" >
 			<table id="edit_kacheln_table" style="float: left">
 			
 			<? foreach ($kacheln as $id => $kachel) : ?>
@@ -66,11 +67,7 @@ function getImagesFolder() {
 $( document ).ready(function() {
 	var add_count = $(".subchapter").length -1 - $(".edit_kachel").length;
 	var max_id = $(".subchapter").length -1 ;
-	/*
-	alert(".subchapter.length= "+$(".subchapter").length);
-	alert(".edit_kachel.length= "+$(".edit_kachel").length);
-
-*/
+	
 	// add a new edit box for each subchapter without a block 
     $(".subchapter").each(function( index ) {
     	 if(index>$(".edit_kachel").length){
@@ -78,10 +75,16 @@ $( document ).ready(function() {
     		 $('#edit_kacheln_table').append('<tr class="edit_kachel"><td><div> *neu*: '+$( this ).find("a").text()+'</div><br><div>'+current_add_id+'. Image:<select id="k'+current_add_id+'_img" name="kacheln['+current_add_id+'][img]" onchange="$(\'#k'+current_add_id+'_preview\').attr(\'src\',getImagesFolder()+$(this).val())"><? foreach ($kacheln_images as $kacheln_image) : ?><option value="<?= $kacheln_image ?>"><?= $kacheln_image ?></option><? endforeach ?></select></div></td><td><a href="#" class="koop-index-navigation sub_kacheln"><img id="k'+current_add_id+'_preview" src="<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images3/C1_deutsch.svg"/></a></td></tr>');
     	 }
     });
-    /*
-	for (current_add_id = $(".edit_kachel").length + 1; current_add_id <= max_id; current_add_id++) {
-    	$('#edit_kacheln_table').append('<tr class="edit_kachel"><td><div>'+current_add_id+'. Link:</div><br><div>'+current_add_id+'. Image:<select id="k'+current_add_id+'_img" name="kacheln['+current_add_id+'][img]" onchange="$(\'#k'+current_add_id+'_preview\').attr(\'src\',getImagesFolder()+$(this).val())"><? foreach ($kacheln_images as $kacheln_image) : ?><option value="<?= $kacheln_image ?>"><?= $kacheln_image ?></option><? endforeach ?></select></div></td><td><a href="#" class="koop-index-navigation sub_kacheln"><img id="k'+current_add_id+'_preview" src="<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images3/<?= $kachel['img'] ?>"/></a></td></tr>');
-    	
-	}*/
+
+    // set parent id
+    var parent_id = $(".chapter.selected").find('a').attr('href').split("selected=")[1];
+    $('input[name="parent"]').val(parent_id);
+
+    var urlParams = new URLSearchParams(window.location.search);
+    // disable box edit if on child page
+    if(parent_id != urlParams.get('selected')){
+    	$("#edit_kacheln_table").hide();
+    }
+
  });
 </script>
