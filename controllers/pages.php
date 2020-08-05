@@ -161,11 +161,63 @@ class PagesController extends StudipController {
     
     public function get_koop_content(){
         $koop_menu = KoopPage::findOneBySQL("seminar_id = ?  and selected = ? ", [$_GET['cid'], $_GET['selected']]);
-        // get the menu from parent
+        
+        if(!$koop_menu ){
+            // get id of parent chapter from courseware table
+            $db = DBManager::get();
+            $stmt = $db->prepare("
+                SELECT
+                    *
+                FROM
+                    mooc_blocks
+                WHERE
+                    seminar_id = :cid
+            ");
+            $stmt->bindParam(":cid", $_GET['cid']);
+            $stmt->execute();
+            $all_blocks = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $current_parent =0;
+            for($i=0;$i<5;$i++){
+                foreach ($all_blocks as $block){
+                    if($current_parent == 0 && $block['id'] == $_GET['selected']){
+                        if($block['type'] == 'Chapter'){
+                            $current_parent = $block['id'];
+                            break;break;
+                        }else{
+                            $current_parent = $block['parent_id'];
+                        }
+                    }
+                    if($current_parent != 0 && $block['id'] == $current_parent){
+                        if($block['type'] == 'Chapter'){
+                            $current_parent = $block['id'];
+                            break;break;
+                        }else{
+                            $current_parent = $block['parent_id'];
+                        }
+                    }
+                }
+            }
+            $koop_menu['parent_id'] = $current_parent;
+            $koop_menu['type'] = "kacheln";
+            
+            // add a new KoopPage and save parent
+            $k1 = new KoopPage();
+            $content['text_sidemenu'] = false;
+            $k1['type'] = 'kacheln';
+            $k1['parent_id'] = $koop_menu['parent_id'];
+            $k1['seminar_id'] = $_GET['cid'];
+            $k1['selected'] = $_GET['selected'];
+            $k1->store();
+        }
+        
+        // get the menu from parent if type not text
         if($koop_menu['parent_id'] != 0 && $koop_menu['parent_id'] != $_GET['selected'] && $koop_menu['type'] != "text"){
+            
             $koop_menu_parent = KoopPage::findOneBySQL("seminar_id = ?  and selected = ?", [$_GET['cid'],$koop_menu['parent_id']]);
             $koop_menu = $koop_menu_parent;
         }
+        
+        
         
         # load flexi templates
         $path_to_the_templates = dirname(__FILE__) . '/../templates';
@@ -235,7 +287,7 @@ class PagesController extends StudipController {
             'comic_y_pos' => 10,
             'comic_width' => 42
         );
-        $title=''; //&& UserConfig::get($GLOBALS['user']->id)->koop_layout == 1
+        $title='';
         if($koop_menu ){
             $content = json_decode($koop_menu['content'], true);
             if(UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
