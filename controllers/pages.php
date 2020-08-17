@@ -256,21 +256,7 @@ class PagesController extends StudipController {
             if(strlen($img)<3)unset($images_files[$key]);
         }
         
-        // edit
-        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
-            $edit_menu_template = $factory->open('edit_menu');
-        }else{
-            $edit_menu_template = $factory->open('edit_menu_2');
-        }
         
-        $edit_menu_template->set_attribute('cid',$_GET['cid']);
-        $edit_menu_template->set_attribute('selected',$_GET['selected']);
-        $edit_menu_template->set_attribute('ABSOLUTE_URI_STUDIP', $GLOBALS['ABSOLUTE_URI_STUDIP']);
-        $edit_menu_template->set_attribute('getPluginPath', $this->plugin->getPluginPath());
-        
-        
-        $edit_menu_template->set_attribute('kacheln_images',$kacheln_images );
-        $edit_menu_template->set_attribute('all_images',$images_files );
         
         
         $new_page=false;
@@ -341,19 +327,40 @@ class PagesController extends StudipController {
         
         $koop_page_template->set_attribute('text_sidemenu', $text_sidemenu);
         
-        $menu_content = $koop_page_template->render();
         
         
-        // edit
-        $edit_menu_template->set_attribute('new_page', $new_page);
-        $edit_menu_template->set_attribute('kacheln', $kacheln);
-        $edit_menu_template->set_attribute('header', $header);
-        $edit_menu_template->set_attribute('title',$title );
-        
-        $edit_menu_template->set_attribute('text_sidemenu', $text_sidemenu);
-        
-        $menu_content .= $edit_menu_template->render();
-        
+        // activate edit mode when there is an '&e' in URL
+        if(isset($_GET['e'])){
+            $koop_page_template->set_attribute('edit_mode', true);
+            
+            
+            // edit
+            if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+                $edit_menu_template = $factory->open('edit_menu');
+            }else{
+                $edit_menu_template = $factory->open('edit_menu_2');
+            }
+            
+            $edit_menu_template->set_attribute('cid',$_GET['cid']);
+            $edit_menu_template->set_attribute('selected',$_GET['selected']);
+            $edit_menu_template->set_attribute('ABSOLUTE_URI_STUDIP', $GLOBALS['ABSOLUTE_URI_STUDIP']);
+            $edit_menu_template->set_attribute('getPluginPath', $this->plugin->getPluginPath());
+            
+            
+            $edit_menu_template->set_attribute('kacheln_images',$kacheln_images );
+            $edit_menu_template->set_attribute('all_images',$images_files );
+            
+            $edit_menu_template->set_attribute('new_page', $new_page);
+            $edit_menu_template->set_attribute('kacheln', $kacheln);
+            $edit_menu_template->set_attribute('header', $header);
+            $edit_menu_template->set_attribute('title',$title );
+            
+            $edit_menu_template->set_attribute('text_sidemenu', $text_sidemenu);
+            
+            $menu_content .= $koop_page_template->render() . $edit_menu_template->render();
+        }else{
+            $menu_content = $koop_page_template->render();
+        }
         
         return $menu_content;
     }

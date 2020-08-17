@@ -26,6 +26,7 @@
             </div>
             
         <? endif ?>
+        <? if ($edit_mode == true) : ?>  
     	<div class='flex-wrapper' style="width: 100%;">
         	
            <button class="margin_center" style="margin-top:10px;background-color: #28497c;color: #FFFFFF;border: 2px solid #FFFFFF;" id='open_edit_menu_dialog' onClick='$( "#koop_edit_menu_dialog" ).dialog({
@@ -35,7 +36,7 @@
               <img width="20" src='<?=$ABSOLUTE_URI_STUDIP ?>assets/images/icons/white/edit.svg'>
               Bearbeiten</button>   
         </div>
-            
+        <? endif ?>
         <div class="koop-footer22 light">
             
          	<img width="90"  src="<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images2/B0_teachUOS1.svg" /><br>
