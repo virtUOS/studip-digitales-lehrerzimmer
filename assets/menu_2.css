@@ -13,6 +13,7 @@
 }
 #layout_container{
 	padding:0px !important;
+	min-width: 1000px !important;
 }
 #layout_page{
 	/*min-width: 1200px !important;*/
@@ -146,6 +147,12 @@ a.sub_kacheln img.top:hover {
     padding-top: 115px;
     font-size: Large;
     font-weight: 900;
+    min-height: 500px;
+    min-width: 200px;
+}
+
+.mobile-show-nav-button{
+	display: none !important;
 }
 
 a.navigate{
