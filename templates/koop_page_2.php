@@ -8,7 +8,7 @@
          </a>    
 
         <? else: ?>
-         <br>
+         
         	<? foreach ($kacheln as $id => $kachel) : ?>
         	<div class='flex-wrapper <?  if($id % 2 != 0): ?>width50floatleft<? else: ?>width50floatright<? endif ?>'>
     			 

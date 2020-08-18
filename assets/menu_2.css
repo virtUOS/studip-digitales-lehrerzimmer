@@ -68,12 +68,17 @@
 		    font-weight: normal;
 }
 
+.chapter.selected{
+	margin-bottom: 22px;
+}
 .section.selected{
 		  border-bottom: 4px double #28497c !important;
 }
 
 .active-section{
 	max-width: 1500px !important;
+	padding-top: 0em !important;
+	clear: none !important;
 }
 
 .subchapter:hover{
@@ -148,6 +153,7 @@ a.navigate{
 ol.active-subchapter {
     list-style: none !important;
     float: right;
+    padding: 0 !important;
 }
 
 ol.active-subchapter li  > a {
