@@ -8,6 +8,8 @@
 
 #layout_content{
 	padding:0px !important;
+	/*for double scroll bar*/
+	overflow: hidden;
 }
 #layout_container{
 	padding:0px !important;
