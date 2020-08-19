@@ -112,7 +112,7 @@ class PagesController extends StudipController {
         PageLayout::addStyle('.prev { display: none !important; }');
         PageLayout::addStyle('.next { display: none !important; }');
         
-        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1 || !isset(UserConfig::get($GLOBALS['user']->id)->koop_layout)){
             PageLayout::addStyle('.active-subchapter { display: none; }');
             PageLayout::addStyle('.subchapters { display: none; }');
             PageLayout::addStyle('.chapter { display: none; }');
@@ -269,7 +269,17 @@ class PagesController extends StudipController {
         $title='';
         if($koop_menu ){
             $content = json_decode($koop_menu['content'], true);
-            if(UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+            if(UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
+                if(isset($content['text_sidemenu']))if($content['text_sidemenu']){
+                    $text_sidemenu = true;
+                }
+                if(isset($content['kacheln_2'])){
+                    $kacheln = $content['kacheln_2'];
+                }else{
+                    // for layout 2 just disply text links for chapters
+                    $text_sidemenu = true;
+                }
+            }else{
                 if(isset($content['kacheln'])){
                     $kacheln = $content['kacheln'];
                     $title = $koop_menu['title'];
@@ -282,16 +292,6 @@ class PagesController extends StudipController {
                         $kacheln[$i]=array('link'=>'../','img_hover'=>'B_teachuos_hover.svg', 'img'=>'B_teachuos.svg');
                     }
                 }
-            }else{
-                if(isset($content['text_sidemenu']))if($content['text_sidemenu']){
-                    $text_sidemenu = true;
-                }
-                if(isset($content['kacheln_2'])){
-                    $kacheln = $content['kacheln_2'];
-                }else{
-                    // for layout 2 just disply text links for chapters
-                    $text_sidemenu = true;
-                }
             }
             
             if(isset($content['header']))$header = $content['header'];
@@ -299,11 +299,11 @@ class PagesController extends StudipController {
         }else{
             
             // empty menu
-            if(UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
+            if(UserConfig::get($GLOBALS['user']->id)->koop_layout == 1 || !isset(UserConfig::get($GLOBALS['user']->id)->koop_layout)){
                 for($i=1;$i<=9;$i++){
                     $kacheln[$i]=array('link'=>'../','img_hover'=>'B_teachuos_hover.svg', 'img'=>'B_teachuos.svg');
                 }
-            }else{
+            }elseif(UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
                 // for layout 2 just disply text links for chapters
                 $text_sidemenu = true;
             }
