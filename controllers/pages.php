@@ -225,20 +225,13 @@ class PagesController extends StudipController {
         $koop_page_template = '';
         // only for koop_layout =2, allows texts or blocks in sidemenu
         $text_sidemenu = false;
-        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 1){
-            $koop_page_template = $factory->open('koop_page');
-        }elseif (UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
+        if (UserConfig::get($GLOBALS['user']->id)->koop_layout == 2){
             $koop_page_template = $factory->open('koop_page_2');
-            
+        }else{
+            $koop_page_template = $factory->open('koop_page');
         }
         
-        /*
-         if (UserConfig::get($GLOBALS['user']->id)->koop_layout1 == true){
-         $koop_page_template = $factory->open('koop_page');
-         }else{
-         $koop_page_template = $factory->open('koop_page_2');
-         }
-         */
+        
         $koop_page_template->set_attribute('ABSOLUTE_URI_STUDIP', $GLOBALS['ABSOLUTE_URI_STUDIP']);
         $koop_page_template->set_attribute('getPluginPath', $this->plugin->getPluginPath());
         
