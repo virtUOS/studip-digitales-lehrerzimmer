@@ -72,8 +72,11 @@
 }
 
 .chapter.selected{
-	margin-bottom: 22px;
 	display: contents;
+}
+
+.chapter.selected div{
+	margin-bottom: 22px;
 }
 .section.selected{
 		  border-bottom: 4px double #28497c !important;
