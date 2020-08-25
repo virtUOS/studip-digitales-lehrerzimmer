@@ -63,13 +63,14 @@
                             
         <div class='sub_schwebend_blick'><img src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images/A_schweben.svg'>
             </div>
+        <? if ($edit_mode == true) : ?>
        <div class='flex-wrapper'>
            <button id='open_edit_menu_dialog' onClick='$( "#koop_edit_menu_dialog" ).dialog({
                 resizable: true,
                 modal: true,
               width: 900,});set_selected_images();'>Bearbeiten</button>   
         </div>
-         
+        <? endif ?> 
    </div>
    <div class='koop-text-behalter'>
             
