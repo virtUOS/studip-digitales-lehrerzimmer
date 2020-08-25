@@ -49,7 +49,7 @@ $( document ).ready(function() {
 
 	// align main images with heading in the first page of level 2 (layout 2)
 	$('img[alt~="-Main"]').css("margin-top", "-100px");
-	$('img[alt~="-Main"]').prependTo(".formatted-content");
+	$('img[alt~="-Main"]').prependTo($('img[alt~="-Main"]').parent());
 	
 	// hide main images for layout 1
 	if( $('.kacheln_header').length ){
