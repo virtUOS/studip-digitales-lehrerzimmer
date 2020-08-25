@@ -8,7 +8,7 @@
          </a>    
 
         <? else: ?>
-         
+         <div  style="width: 100%;">
         	<? foreach ($kacheln as $id => $kachel) : ?>
         	<div class='flex-wrapper <?  if($id % 2 != 0): ?>width50floatleft<? else: ?>width50floatright<? endif ?>'>
     			 
@@ -24,7 +24,7 @@
                         <img class='top' src='<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images3/B9_back.svg'/>
                 </a>
             </div>
-            
+         </div>   
         <? endif ?>
         <? if ($edit_mode == true) : ?>  
     	<div class='flex-wrapper' style="width: 100%;">
@@ -37,6 +37,7 @@
               Bearbeiten</button>   
         </div>
         <? endif ?>
+        
         <div class="koop-footer22 light">
             
          	<img width="90"  src="<?=$ABSOLUTE_URI_STUDIP ?><?= $getPluginPath ?>/assets/images2/B0_teachUOS1.svg" /><br>
@@ -46,6 +47,7 @@
          	</p>
            
         </div> 
+        
    </div>
    <div class='koop-text-behalter'>
       

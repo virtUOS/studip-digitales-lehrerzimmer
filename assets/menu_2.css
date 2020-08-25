@@ -26,22 +26,24 @@
 
 
 .koop-footer22{
-     font-size: 5px;
+     font-size: 9px;
 
      color: #ffffff;
      float: left;
+     text-align: center;
      
      /*
-     text-align: center;
-     margin-right: 4%;
-     margin-top: 5%;
-     */
-     text-align: center;
      position: absolute; 
      bottom: 72px; 
      width: 220px;
      min-width: 210px;
 	 width: 17%;
+     */
+     
+     width: 100%;
+     margin-top: auto;
+     margin-bottom: auto;
+     
 }
 .koop-footer22 img{
 	margin-bottom: 37px;
@@ -152,7 +154,10 @@ a.sub_kacheln img.top:hover {
     font-size: Large;
     font-weight: 900;
     min-height: 500px;
-    min-width: 200px;
+    min-width: 250px;
+    
+    display: flex;
+	flex-direction: column;
 }
 
 .mobile-show-nav-button{
@@ -196,7 +201,7 @@ ol.subchapters{
     width:60%;
     float:left;
     margin-left: 10%;
-    margin-right: 10%;
+    /*margin-right: 10%;*/
     padding-top: 5%;
 }
 .koop-text-behalter h3 {
