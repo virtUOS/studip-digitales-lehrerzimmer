@@ -25,6 +25,9 @@ class IndexController extends StudipController {
         Navigation::activateItem('koop/');
     }
     
+    /**
+     * return a json array of all unique kacheln to use in custom
+     */
     public function get_unique_kacheln_action(){
         $koop_pages = KoopPage::findBySQL("parent_id != ?", array(-1));
         $unique_kacheln=array();
