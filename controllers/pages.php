@@ -370,17 +370,8 @@ class PagesController extends StudipController
 
         header('Content-disposition: attachment; filename=koop_export.json');
         header('Content-type: application/json');
-        foreach ($koop_pages as $page) {
-            /*
-            var_dump($page['id']);echo '<br>';
-            var_dump($page['type']);echo '<br>';
-            var_dump($page['parent_id']);echo '<br>';
-            var_dump($page['seminar_id']);echo '<br>';
-            var_dump($page['selected']);echo '<br>';
-            var_dump($page['title']);echo '<br>';
-            var_dump($page['content']);echo '<br>';
-            echo '<hr>';
-            */
+        foreach ($koop_pages as $page) 
+        {
             $json_data[] = array($page['type'], $page['parent_id'], $page['seminar_id'], $page['selected'], $page['title'], $page['content'], $page['chdate'], $page['mkdate']);
         }
         echo json_encode($json_data);
